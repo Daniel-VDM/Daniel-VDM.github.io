@@ -37,7 +37,7 @@ body{
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 18%;
+  bottom: 32%;
   z-index: 1;
   color: white;
 }
@@ -45,12 +45,12 @@ body{
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: .1rem;
-  text-shadow: .1rem .1rem .8rem black;
+  text-shadow: .1rem .1rem .7rem black;
 }
 .caption h3 {
   font-size: 2rem;
-  font-weight: 400;
-  text-shadow: .1rem .1rem .6rem black;
+  font-weight: 500;
+  text-shadow: .2rem .2rem .4rem black;
   padding-bottom:  1.5rem;
 }
 .btn-lg{
@@ -64,10 +64,6 @@ body{
 }
 .btn-lg:hover{
   background-color: white; 
-}
-.img-fluid {
-  max-width: auto;
-  height: auto;
 }
 
 
