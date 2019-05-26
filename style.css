@@ -31,7 +31,6 @@ body{
 
 /* Landing Page stuff */
 .home-inner{
-  /*background-image: url(img/bg2.png);*/
   background-image: url(img/bg.jpeg);
 }
 .caption{
@@ -55,12 +54,17 @@ body{
   padding-bottom:  1.5rem;
 }
 .btn-lg{
+  background-color: #4db8ff; 
   border-width: medium;
   border-radius: 0;
   text-transform: uppercase;
   padding: .6rem 1.3rem;
   font-size: 1.1rem;
+  box-shadow: .1rem .1rem 2rem black;
 }
 .btn-lg:hover{
-  background-color: #4db8ff; 
+  background-color: white; 
 }
+
+
+/*About Me stuff*/
