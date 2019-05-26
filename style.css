@@ -37,12 +37,12 @@ body{
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 31%;
+  top: 18%;
   z-index: 1;
   color: white;
 }
 .caption h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: .1rem;
   text-shadow: .1rem .1rem .8rem black;
