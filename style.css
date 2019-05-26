@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+
+body{
+  overflow-x hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+/* Navbar Stuff */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  background: rgba(0,0,0,0.7)!important
+}
+.navbar-brand img{
+  height: 2rem;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #4db8ff;
+}
+
+/* Landing Page stuff */
+.home-inner{
+  /*background-image: url(img/bg2.png);*/
+  background-image: url(img/bg.jpeg);
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 31%;
+  z-index: 1;
+  color: white;
+}
+.caption h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-shadow: .1rem .1rem .8rem black;
+}
+.caption h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: .1rem .1rem .6rem black;
+  padding-bottom:  1.5rem;
+}
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+.btn-lg:hover{
+  background-color: #4db8ff; 
+}
