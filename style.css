@@ -65,6 +65,10 @@ body{
 .btn-lg:hover{
   background-color: white; 
 }
+.img-fluid {
+  max-width: auto;
+  height: auto;
+}
 
 
 /*About Me stuff*/
