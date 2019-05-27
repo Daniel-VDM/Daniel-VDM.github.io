@@ -12,7 +12,21 @@ body{
   margin-top: -3.8rem;
 }
 
-/* Navbar Stuff */
+/*Content Layout*/
+.narrow{
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 1rem;
+}
+.narrow p{
+  font-size: 1.1rem;
+}
+.narrow img{
+  width: 100%;
+  border-radius: 7%;
+}
+
+/*Navbar Stuff*/
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
@@ -35,7 +49,7 @@ body{
   color: #4db8ff;
 }
 
-/* Landing Page stuff */
+/*Landing Page stuff*/
 .home-inner{
   background-image: url(img/bg.jpeg);
 }
@@ -86,22 +100,10 @@ h3.heading{
 }
 
 /*About Me stuff*/
-.narrow{
-  width: 75%;
-  margin: 1.5rem auto;
-  padding-top: 1rem;
-}
-.narrow p{
-  font-size: 1.1rem;
-}
 .jumbotron{
   margin-bottom: 0;
   padding: 1rem 0 3.5rem;
   border-radius: 0;
-}
-.narrow img{
-  width: 100%;
-  border-radius: 7%;
 }
 
 /*Experience stuff*/
@@ -176,6 +178,20 @@ footer svg.svg-inline--fa:hover{
 
 /*Mobile Changes*/
 @media (max-width: 767px){
+  /*Mobile Content Sizing*/
+  .narrow{
+    width: 100%;
+    margin: 0.8rem auto;
+    padding-top: 1rem;
+  }
+  .narrow p{
+    font-size: .95rem;
+  }
+   .narrow img{
+    width: 60%;
+    border-radius: 7%;
+  }
+
   /*Mobile Landing Page stuff*/
   .caption{
   width: 100%;
@@ -208,14 +224,9 @@ footer svg.svg-inline--fa:hover{
     opacity: 0;
   }
 
-  /*Mobile About Me*/
-  .narrow img{
-    width: 65%;
-    border-radius: 7%;
-  }
   /*Mobile headers*/
   h3.heading{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
   }
