@@ -79,7 +79,7 @@ h3.heading{
   text-transform: uppercase;
 }
 .heading-underline{
-  width: 11rem;
+  width: 15rem;
   height: .1rem;
   background-color: #4db8ff;
   margin: 0 auto 1rem;
@@ -87,7 +87,7 @@ h3.heading{
 
 /*About Me stuff*/
 .narrow{
-  width: 72.5%;
+  width: 75%;
   margin: 1.5rem auto;
   padding-top: 1rem;
 }
@@ -101,7 +101,7 @@ h3.heading{
 }
 .narrow img{
   width: 100%;
-  border-radius: 50%;
+  border-radius: 10%;
   display: block;
 }
 
@@ -117,16 +117,18 @@ h3.heading{
 }
 .exp{
   background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
   border-width: 1px;
   border-color: #4db8ff;
 }
+.exp b{
+  padding-right: 1rem;
+  font-size: 2rem;
+}
 
 /*Card stuff*/
-.card-img{
-  display: block;
-}
 small{
   color: #4db8ff;
   text-transform: uppercase;
