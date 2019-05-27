@@ -74,12 +74,12 @@ body{
 
 /*Section Heading stuff*/
 h3.heading{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 .heading-underline{
-  width: 15rem;
+  width: 17rem;
   height: .1rem;
   background-color: #4db8ff;
   margin: 0 auto 1rem;
@@ -101,8 +101,7 @@ h3.heading{
 }
 .narrow img{
   width: 100%;
-  border-radius: 10%;
-  display: block;
+  border-radius: 7%;
 }
 
 /*Experience stuff*/
@@ -124,7 +123,6 @@ h3.heading{
   border-color: #4db8ff;
 }
 .exp b{
-  padding-right: 1rem;
   font-size: 2rem;
 }
 .exp a{
@@ -212,11 +210,9 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile About Me*/
   .narrow img{
-    display: block;
     width: 65%;
-    border-radius: 50%;
+    border-radius: 7%;
   }
-
   /*Mobile headers*/
   h3.heading{
     font-size: 1.5rem;
@@ -232,10 +228,12 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile Card stuff*/
   .card-img{
-    display: block;
-    padding-right: 1rem;
     max-width: 25%;
   }
+  .exp b{
+    font-size: 1.5rem;
+  }
+
 
   /*Mobile Contact Info stuff*/
   footer p{
