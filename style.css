@@ -96,12 +96,22 @@ h3.heading{
 }
 .jumbotron{
   margin-bottom: 0;
-  padding: 2rem 0 3.5rem;
+  padding: 1rem 0 3.5rem;
   border-radius: 0;
 }
 .narrow img{
   width: 100%;
   border-radius: 50%;
+}
+
+/*Card stuff*/
+.card-img{
+  padding-right: 1rem;
+}
+small{
+  color: #4db8ff;
+  text-transform: uppercase;
+  font-size: .875rem;
 }
 
 /*Experience stuff*/
@@ -110,15 +120,21 @@ h3.heading{
   z-index: -1;
 }
 .dark{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 6rem 2rem; 
+  padding: 3.8rem 2rem; 
 }
-/*TODO: Styling for Experience*/
+.exp{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 1px;
+  border-color: #4db8ff;
+}
 
 /*Portfolio Stuff*/
 .portfolio{
-  padding: 6rem 2rem; 
+  padding: 3.8rem 2rem; 
 }
 /*TODO: Styling for Portfolio*/
 
@@ -187,7 +203,7 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile About Me*/
   .narrow img{
-    width: 69%;
+    width: 65%;
     border-radius: 50%;
   }
 
@@ -202,6 +218,12 @@ footer svg.svg-inline--fa:hover{
     height: .1rem;
     background-color: #4db8ff;
     margin: 0 auto 1rem;
+  }
+
+  /*Mobile Card stuff*/
+  .card-img{
+    padding-right: 1rem;
+    max-width: 30%;
   }
 
   /*Mobile Contact Info stuff*/
