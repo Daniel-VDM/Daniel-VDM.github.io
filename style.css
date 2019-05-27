@@ -87,7 +87,7 @@ h3.heading{
 
 /*About Me stuff*/
 .narrow{
-  width: 80%;
+  width: 72.5%;
   margin: 1.5rem auto;
   padding-top: 1rem;
 }
@@ -102,16 +102,7 @@ h3.heading{
 .narrow img{
   width: 100%;
   border-radius: 50%;
-}
-
-/*Card stuff*/
-.card-img{
-  padding-right: 1rem;
-}
-small{
-  color: #4db8ff;
-  text-transform: uppercase;
-  font-size: .875rem;
+  display: block;
 }
 
 /*Experience stuff*/
@@ -130,6 +121,16 @@ small{
   padding-right: 1rem;
   border-width: 1px;
   border-color: #4db8ff;
+}
+
+/*Card stuff*/
+.card-img{
+  display: block;
+}
+small{
+  color: #4db8ff;
+  text-transform: uppercase;
+  font-size: .875rem;
 }
 
 /*Portfolio Stuff*/
@@ -203,6 +204,7 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile About Me*/
   .narrow img{
+    display: block;
     width: 65%;
     border-radius: 50%;
   }
@@ -222,8 +224,9 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile Card stuff*/
   .card-img{
+    display: block;
     padding-right: 1rem;
-    max-width: 27%;
+    max-width: 25%;
   }
 
   /*Mobile Contact Info stuff*/
@@ -241,3 +244,5 @@ footer svg.svg-inline--fa:hover{
     margin: 0 .5rem 0 0;
   }
 }
+
+/*TODO: Ultra-wide Changes*/
