@@ -127,6 +127,12 @@ h3.heading{
   padding-right: 1rem;
   font-size: 2rem;
 }
+.exp a{
+  color: #4db8ff;
+}
+.exp a:hover{
+  text-decoration: underline;
+}
 
 /*Card stuff*/
 small{
