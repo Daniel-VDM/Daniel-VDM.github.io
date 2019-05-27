@@ -101,7 +101,7 @@ h3.heading{
 }
 .narrow img{
   width: 100%;
-  border-radius: 30%;
+  border-radius: 50%;
 }
 
 /*Experience stuff*/
@@ -188,7 +188,7 @@ footer svg.svg-inline--fa:hover{
   /*Mobile About Me*/
   .narrow img{
     width: 69%;
-    border-radius: 30%;
+    border-radius: 50%;
   }
 
   /*Mobile headers*/
