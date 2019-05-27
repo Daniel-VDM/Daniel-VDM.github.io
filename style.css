@@ -5,6 +5,12 @@ body{
   font-family: 'Lato', sans-serif;
   color: #505962;
 }
+.offset:before {
+  display: block;
+  content: "";
+  height: 3.8rem;
+  margin-top: -3.8rem;
+}
 
 /* Navbar Stuff */
 .navbar {
@@ -37,7 +43,7 @@ body{
   width: 100%;
   max-width: 100%;
   position: absolute;
-  bottom: 25%;
+  bottom: 24%;
   z-index: 1;
   color: white;
 }
@@ -48,8 +54,8 @@ body{
   text-shadow: .1rem .1rem .7rem black;
 }
 .caption h3 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   text-shadow: .2rem .2rem .4rem black;
   padding-bottom:  1.5rem;
 }
@@ -58,13 +64,150 @@ body{
   border-width: medium;
   border-radius: 0;
   text-transform: uppercase;
-  padding: .6rem 1.3rem;
-  font-size: 1.1rem;
+  padding: .6rem 1.4rem;
+  font-size: 1.2rem;
   box-shadow: .1rem .1rem 2rem black;
 }
 .btn-lg:hover{
   background-color: white; 
 }
 
+/*Section Heading stuff*/
+h3.heading{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.heading-underline{
+  width: 11rem;
+  height: .1rem;
+  background-color: #4db8ff;
+  margin: 0 auto 1rem;
+}
 
 /*About Me stuff*/
+.narrow{
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 1rem;
+}
+.narrow p{
+  font-size: 1.1rem;
+}
+.jumbotron{
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+.narrow img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+/*Experience stuff*/
+.fixed{
+  background-image: url(img/expBG.jpg);
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6rem 2rem; 
+}
+/*TODO: Styling for Experience*/
+
+/*Portfolio Stuff*/
+  /*TODO: Styling for Portfolio*/
+
+/*Contact Info stuff*/
+footer{
+  background-color: #4db8ff;
+  color: white;
+  padding: 2rem 0 0;
+  margin-top: 1rem;
+}
+footer a{
+  color: white;
+  text-decoration: underline;
+}
+footer a:hover{
+  color: black;
+  text-decoration: underline;
+}
+footer p{
+  font-size: 1.2rem;
+  padding-top: .1rem;
+}
+footer svg.svg-inline--fa{
+  font-size: 3rem;
+  margin: 0 .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+  color: black;
+  font-size: 3rem;
+  margin: 0 .5rem 0 0;
+}
+
+
+/*Mobile Changes*/
+@media (max-width: 767px){
+  /*Mobile Landing Page stuff*/
+  .caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  bottom: 35%;
+  z-index: 1;
+  color: white;
+  }
+  .caption h1 {
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+  }
+  .caption h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom:  .8rem;
+  }
+  .btn-lg{
+    background-color: #4db8ff; 
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: .4rem 1rem;
+    font-size: .8rem;
+  }
+  .btn-lg:hover{
+    background-color: white; 
+  }
+  .caption img {
+    opacity: 0;
+  }
+
+  /*Mobile headers*/
+  h3.heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .heading-underline{
+    width: 9rem;
+    height: .1rem;
+    background-color: #4db8ff;
+    margin: 0 auto 1rem;
+  }
+
+  /*Mobile Contact Info stuff*/
+  footer p{
+    font-size: 1rem;
+    padding-top: .1rem;
+  }
+  footer svg.svg-inline--fa{
+    font-size: 2.5rem;
+    margin: 0 .5rem 0 0;
+  }
+  footer svg.svg-inline--fa:hover{
+    color: black;
+    font-size: 2.5rem;
+    margin: 0 .5rem 0 0;
+  }
+}
