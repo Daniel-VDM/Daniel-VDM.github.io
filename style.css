@@ -87,7 +87,7 @@ h3.heading{
 
 /*About Me stuff*/
 .narrow{
-  width: 75%;
+  width: 80%;
   margin: 1.5rem auto;
   padding-top: 1rem;
 }
@@ -101,7 +101,7 @@ h3.heading{
 }
 .narrow img{
   width: 100%;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 /*Experience stuff*/
@@ -183,6 +183,12 @@ footer svg.svg-inline--fa:hover{
   }
   .caption img {
     opacity: 0;
+  }
+
+  /*Mobile About Me*/
+  .narrow img{
+    width: 69%;
+    border-radius: 30%;
   }
 
   /*Mobile headers*/
