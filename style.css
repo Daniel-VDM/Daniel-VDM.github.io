@@ -130,7 +130,7 @@ h3.heading{
 }
 .educ h6{
   padding-left: 1rem;
-  padding-top: 0rem;
+  padding-top: .25rem;
   padding-bottom: 0rem;
   font-size: 1rem;
   font-weight: 600;
@@ -305,7 +305,7 @@ footer svg.svg-inline--fa:hover{
   }
   .educ h6{
     padding-left: 1rem;
-    padding-top: 0rem;
+    padding-top: .15rem;
     padding-bottom: 0rem;
     font-size: .8rem;
     font-weight: 600;
