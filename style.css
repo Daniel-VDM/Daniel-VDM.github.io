@@ -225,16 +225,13 @@ footer svg.svg-inline--fa:hover{
     max-width: 1910px;
   }
 }
-/*Tablet Changes*/
-@media (max-width: 1199px){
+/*Mobile Changes*/
+@media (max-width: 1210px){
   .narrow{
     width: 95%;
   }
-}
-/*Mobile Changes*/
-@media (max-width: 1210px){
   .edu{
-    width: 100%;
+    width: 95%;
   }
 }
 @media (max-width: 767px){
