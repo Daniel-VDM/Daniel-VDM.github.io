@@ -208,7 +208,12 @@ footer svg.svg-inline--fa:hover{
   margin: 0 .5rem 0 0;
 }
 
-
+/*Ultra-wide Correction*/
+@media (min-width: 1610px){
+  .narrow{
+    width: 1500px;
+  }
+}
 
 /*Mobile Changes*/
 @media (max-width: 1210px){
