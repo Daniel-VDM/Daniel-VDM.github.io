@@ -137,8 +137,8 @@ h3.heading{
   text-transform: uppercase;
 }
 .educ h5{
-  padding-bottom: 1px;
-  border-bottom: 2px dotted grey;
+  padding-bottom: 1.5px;
+  border-bottom: 1.5px dotted grey;
 }
 .educ small{
   padding-left: 1rem;
