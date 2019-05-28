@@ -136,6 +136,10 @@ h3.heading{
   font-weight: 600;
   text-transform: uppercase;
 }
+.educ h5{
+  padding-bottom: .25rem;
+  border-bottom: 2px dotted grey;
+}
 .educ small{
   padding-left: 1rem;
   color: grey;
