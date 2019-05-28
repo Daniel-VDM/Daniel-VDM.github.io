@@ -145,9 +145,6 @@ h3.heading{
   color: grey;
   text-transform: none;
 }
-.educ span{
-  float:right;
-}
 
 /*Experience stuff*/
 .fixed{
@@ -315,7 +312,7 @@ footer svg.svg-inline--fa:hover{
     text-transform: uppercase;
   }
   .educ span{
-    font-size: .9rem;
+    font-size: 1rem;
   }
   .educ small{
     font-size: .6rem;
