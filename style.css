@@ -295,6 +295,7 @@ footer svg.svg-inline--fa:hover{
     float:none;
   }
   .educ small{
+    font-size: .6rem;
     color: grey;
     text-transform: none;
   }
