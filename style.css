@@ -315,9 +315,7 @@ footer svg.svg-inline--fa:hover{
     text-transform: uppercase;
   }
   .educ span{
-    font-size: 1rem;
-    float:none;
-    padding-left: 2rem;
+    font-size: .9rem;
   }
   .educ small{
     font-size: .6rem;
