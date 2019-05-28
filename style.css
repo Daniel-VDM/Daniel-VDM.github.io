@@ -30,15 +30,15 @@ body{
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: .05rem;
+  font-size: .95rem;
+  letter-spacing: 0rem;
   background: rgba(0,0,0,0.7)!important
 }
 .navbar-brand img{
   height: 2rem;
 }
 .navbar-nav li{
-  padding-right: .7rem;
+  padding-right: .4rem;
 }
 .navbar-dark .navbar-nav .nav-link{
   color: white;
