@@ -14,7 +14,7 @@ body{
 
 /*Content Layout*/
 .narrow{
-  width: 75%;
+  width: 66%;
   margin: 1.5rem auto;
   padding-top: 1rem;
 }
@@ -60,6 +60,9 @@ body{
   bottom: 24%;
   z-index: 1;
   color: white;
+}
+.caption a{
+  color: #4db8ff;
 }
 .caption h1 {
   font-size: 3.5rem;
@@ -158,9 +161,9 @@ small{
 }
 .exp{
   background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 2.4rem;
+  padding-left: 39.6px;
   padding-right: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 1rem;
   border-width: 1px;
   border-color: #4db8ff;
 }
@@ -208,10 +211,14 @@ footer svg.svg-inline--fa:hover{
   margin: 0 .5rem 0 0;
 }
 
+/*TODO: Styling for Skills
+
+
+
 /*Ultra-wide Correction*/
-@media (min-width: 1610px){
+@media (min-width: 1910px){
   .narrow{
-    width: 1500px;
+    max-width: 1910px;
   }
 }
 
@@ -334,7 +341,6 @@ footer svg.svg-inline--fa:hover{
     border-color: #4db8ff;
   }
 
-
   /*Mobile Contact Info stuff*/
   footer p{
     font-size: 1rem;
@@ -350,5 +356,3 @@ footer svg.svg-inline--fa:hover{
     margin: 0 .5rem 0 0;
   }
 }
-
-/*TODO: Ultra-wide Changes*/
