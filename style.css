@@ -222,7 +222,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Tablet Changes*/
-@media (max-width: 991px){
+@media (max-width: 1199px){
   .narrow{
     width: 95%;
   }
