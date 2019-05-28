@@ -137,7 +137,7 @@ h3.heading{
   text-transform: uppercase;
 }
 .educ h5{
-  padding-bottom: 1.5px;
+  padding-bottom: 4px;
   border-bottom: 1.5px dotted grey;
 }
 .educ small{
@@ -319,6 +319,9 @@ footer svg.svg-inline--fa:hover{
     font-size: .6rem;
     color: grey;
     text-transform: none;
+  }
+  .educ h5{
+    padding-bottom: 0px;
   }
 
   /*Mobile headers*/
