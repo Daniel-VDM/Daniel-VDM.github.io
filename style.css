@@ -370,6 +370,9 @@ footer svg.svg-inline--fa:hover{
     border-width: 1px;
     border-color: #4db8ff;
   }
+  .exp small{
+    font-size: .65rem;
+  }
 
   /*Mobile Contact Info stuff*/
   footer{
