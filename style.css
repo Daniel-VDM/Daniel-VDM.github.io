@@ -131,10 +131,14 @@ h3.heading{
   font-size: 1.1rem;
   border-width: 0px;
 }
+.educol.col-md-6{
+  padding: 4px 4px 4px 4px;
+}
 .educ h6{
   padding-left: 1rem;
   padding-top: .25rem;
   padding-bottom: 0rem;
+  margin-bottom: 0px;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
