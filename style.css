@@ -184,11 +184,11 @@ footer svg.svg-inline--fa:hover{
   /*Mobile Content Sizing*/
   .narrow{
     width: 100%;
-    margin: 0.5rem auto;
-    padding-top: 1rem;
+    margin: 0.5rem 0rem;
+    padding-top: .5rem;
   }
   .narrow p{
-    font-size: .95rem;
+    font-size: .9rem;
   }
    .narrow img{
     width: 60%;
@@ -197,12 +197,12 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile Landing Page stuff*/
   .caption{
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  bottom: 35%;
-  z-index: 1;
-  color: white;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 35%;
+    z-index: 1;
+    color: white;
   }
   .caption h1 {
     font-size: 2.5rem;
@@ -234,7 +234,7 @@ footer svg.svg-inline--fa:hover{
     text-transform: uppercase;
   }
   .heading-underline{
-    width: 12rem;
+    width: 10rem;
     height: .1rem;
     background-color: #4db8ff;
     margin: 0 auto 1rem;
@@ -248,13 +248,13 @@ footer svg.svg-inline--fa:hover{
     font-size: 1.5rem;
   }
   .exp{
-  background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-bottom: 0.1rem;
-  border-width: 1px;
-  border-color: #4db8ff;
-}
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    border-width: 1px;
+    border-color: #4db8ff;
+  }
 
 
   /*Mobile Contact Info stuff*/
