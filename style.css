@@ -12,7 +12,7 @@ body{
   margin-top: -3.8rem;
 }
 
-/*Content Layout*/
+/*Overall Content Layout*/
 .narrow{
   width: 66%;
   margin: 1.5rem auto;
@@ -192,6 +192,7 @@ h3.heading{
 
 /*Contact Info stuff*/
 footer{
+  font-size: .8rem; 
   background-color: #4db8ff;
   color: white;
   padding: 2rem 0 0;
@@ -240,6 +241,7 @@ footer svg.svg-inline--fa:hover{
     width: 95%;
   }
 }
+/*Mobile Changes*/
 @media (max-width: 767px){
   /*Mobile Content Sizing*/
   .narrow{
@@ -287,6 +289,19 @@ footer svg.svg-inline--fa:hover{
     opacity: 0;
   }
 
+  /*Mobile headers*/
+  h3.heading{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .heading-underline{
+    width: 10rem;
+    height: .1rem;
+    background-color: #4db8ff;
+    margin: 0 auto 1rem;
+  }
+
   /*Mobile Education stuff*/
   .edu{
     width: 100%;
@@ -330,19 +345,6 @@ footer svg.svg-inline--fa:hover{
     padding: 0 0 0 0;
   }
 
-  /*Mobile headers*/
-  h3.heading{
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  .heading-underline{
-    width: 10rem;
-    height: .1rem;
-    background-color: #4db8ff;
-    margin: 0 auto 1rem;
-  }
-
   /*Mobile Card stuff*/
   .card-img{
     max-width: 25%;
@@ -360,17 +362,23 @@ footer svg.svg-inline--fa:hover{
   }
 
   /*Mobile Contact Info stuff*/
+  footer{
+    font-size: .65rem;
+  }
+  footer b{
+    font-size: 1.3rem;
+  }
   footer p{
-    font-size: 1rem;
+    font-size: .9rem;
     padding-top: .1rem;
   }
   footer svg.svg-inline--fa{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0 .5rem 0 0;
   }
   footer svg.svg-inline--fa:hover{
     color: black;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0 .5rem 0 0;
   }
 }
