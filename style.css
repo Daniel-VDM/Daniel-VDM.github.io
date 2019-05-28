@@ -293,11 +293,11 @@ footer svg.svg-inline--fa:hover{
   }
   .edu a{
     color: #4db8ff!important;
-    font-size: .7rem;
+    font-size: .65rem;
   }
   .edu i{
     color: grey;
-    font-size: .7rem;
+    font-size: .65rem;
   }
   .educ{
     font-size: .8rem;
@@ -312,7 +312,7 @@ footer svg.svg-inline--fa:hover{
     text-transform: uppercase;
   }
   .educ span{
-    font-size: .7rem;
+    font-size: .65rem;
   }
   .educ small{
     font-size: .6rem;
