@@ -221,7 +221,12 @@ footer svg.svg-inline--fa:hover{
     max-width: 1910px;
   }
 }
-
+/*Tablet Changes*/
+@media (max-width: 991px){
+  .narrow{
+    width: 95%;
+  }
+}
 /*Mobile Changes*/
 @media (max-width: 1210px){
   .edu{
