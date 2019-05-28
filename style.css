@@ -106,8 +106,38 @@ h3.heading{
   border-radius: 0;
 }
 
-/*TODO: Education stuff*/
-
+/*Education stuff*/
+.edu{
+  width: 1200px;
+}
+.edu b{
+  font-size: 2rem;
+}
+.edu a{
+  color: #4db8ff!important;
+  font-size: 1.3rem;
+}
+.edu i{
+  color: grey;
+  font-size: 1.2rem;
+}
+.educ{
+  font-size: 1.1rem;
+  border-width: 0px;
+}
+.educ h6{
+  padding-left: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.educ small{
+  padding-left: 1rem;
+  color: grey;
+  text-transform: none;
+}
 
 /*Card stuff*/
 small{
@@ -179,7 +209,13 @@ footer svg.svg-inline--fa:hover{
 }
 
 
+
 /*Mobile Changes*/
+@media (max-width: 1210px){
+  .edu{
+    width: 100%;
+  }
+}
 @media (max-width: 767px){
   /*Mobile Content Sizing*/
   .narrow{
@@ -225,6 +261,42 @@ footer svg.svg-inline--fa:hover{
   }
   .caption img {
     opacity: 0;
+  }
+
+  /*Mobile Education stuff*/
+  .edu{
+    width: 100%;
+  }
+  .edu b{
+    font-size: 1.15rem;
+  }
+  .edu a{
+    color: #4db8ff!important;
+    font-size: 1rem;
+  }
+  .edu i{
+    color: grey;
+    font-size: .95rem;
+  }
+  .educ{
+    font-size: .8rem;
+    border-width: 0px;
+  }
+  .educ h6{
+    padding-left: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .educ span{
+    font-size: .75rem;
+    float:none;
+  }
+  .educ small{
+    color: grey;
+    text-transform: none;
   }
 
   /*Mobile headers*/
