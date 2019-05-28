@@ -111,7 +111,7 @@ h3.heading{
 
 /*Education stuff*/
 .edu{
-  width: 1200px;
+  width: 1175px;
 }
 .edu b{
   font-size: 2rem;
@@ -226,7 +226,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Tablet Changes*/
-@media (max-width: 1210px){
+@media (max-width: 1200px){
   .narrow{
     width: 95%;
   }
