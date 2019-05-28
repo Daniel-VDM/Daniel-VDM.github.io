@@ -131,9 +131,6 @@ h3.heading{
   font-size: 1.1rem;
   border-width: 0px;
 }
-.educol.col-md-6{
-  padding: 4px 4px 4px 4px;
-}
 .educ h6{
   padding-left: 1rem;
   padding-top: .25rem;
@@ -151,6 +148,9 @@ h3.heading{
   padding-left: 1rem;
   color: grey;
   text-transform: none;
+}
+.educol.col-md-6{
+  padding: 4px 4px 4px 4px;
 }
 
 /*Experience stuff*/
@@ -340,7 +340,7 @@ footer svg.svg-inline--fa:hover{
     padding-top: 0rem;
     padding-bottom: 0rem;
     margin-bottom: 2px;
-    font-size: .8rem;
+    font-size: .725rem;
     font-weight: 600;
     text-transform: uppercase;
   }
