@@ -191,6 +191,40 @@ h3.heading{
 }
 /*TODO: Styling for Portfolio*/
 
+/*Skills Stuff*/
+.skills-bg{
+  padding: 1px 2rem; 
+  background-color: #E9ECEF;
+}
+.skills-card{
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0px;
+}
+.skills-body{
+  font-size: 1.25rem;
+  padding: 0 0 0 0;
+}
+.skills b{
+  font-size: 2rem;
+  color: #4db8ff;
+  line-height: 32px;
+}
+.skills-pad{
+  padding: 1.5rem;
+}
+.col-md-4.col-xs-0.skills-label {
+  border-right: 1.5px solid grey;
+  padding-right: 6px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: right;
+}
+.col-md-8.col-xs-12.skills-body{
+  padding-left: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
 
 
 /*Contact Info stuff*/
@@ -232,13 +266,6 @@ footer svg.svg-inline--fa:hover{
   padding-bottom: 5px;
 }
 
-/*Skills Stuff*/
-.skills-bg{
-  padding: 1px 2rem; 
-  background-color: #E9ECEF;
-}
-
-
 
 
 /*Ultra-wide Correction*/
@@ -248,7 +275,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Tablet Changes*/
-@media (max-width: 1200px){
+@media (max-width: 1300px){
   .narrow{
     width: 95%;
   }
@@ -257,6 +284,10 @@ footer svg.svg-inline--fa:hover{
   }
   .exp{
     width: 95%;
+  }
+  .skills-body{
+    font-size: 1.1rem;
+    padding: 0 0 0 0;
   }
 }
 /*Mobile Changes*/
@@ -370,18 +401,6 @@ footer svg.svg-inline--fa:hover{
     padding: 0 0 0 0;
   }
 
-  /*Mobile portfolio*/
-  .portfolio-bg{
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /*Mobile Skills*/
-  .skills-bg{
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   /*Mobile Card stuff*/
   .card-img{
     max-width: 25%;
@@ -400,6 +419,41 @@ footer svg.svg-inline--fa:hover{
   .exp small{
     font-size: .65rem;
   }
+
+  /*Mobile portfolio*/
+  .portfolio-bg{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /*Mobile Skills*/
+  .skills-bg{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skills-body{
+    font-size: .9rem;
+    padding: 0 0 0 0;
+  }
+  .skills b{
+    font-size: 1.2rem;
+    color: #4db8ff;
+    line-height: 0px;
+  }
+  .col-md-4.col-xs-0.skills-label {
+    border-right: 0px solid grey;
+    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .col-md-8.col-xs-12.skills-body{
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
 
   /*Mobile Contact Info stuff*/
   footer{
