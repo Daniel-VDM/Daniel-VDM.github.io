@@ -274,7 +274,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Tablet Changes*/
-@media (max-width: 1450px){
+@media (max-width: 1475px){
   .narrow{
     width: 95%;
   }
@@ -290,7 +290,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Mobile Changes*/
-@media (max-width: 920px){
+@media (max-width: 950px){
   /*Mobile Content Sizing*/
   .narrow{
     width: 100%;
@@ -431,13 +431,16 @@ footer svg.svg-inline--fa:hover{
     padding-right: 0;
   }
   .skills-body{
-    font-size: .9rem;
+    font-size: .8rem;
     padding: 0 0 0 0;
   }
   .skills b{
     font-size: 1.2rem;
     color: #4db8ff;
     line-height: 0px;
+  }
+  .skills small{
+    font-size: .7rem;
   }
   .col-md-4.col-xs-0.skills-label {
     border-right: 0px solid grey;
