@@ -191,6 +191,8 @@ h3.heading{
 }
 /*TODO: Styling for Portfolio*/
 
+
+
 /*Skills Stuff*/
 .skills-bg{
   padding: 1px 2rem; 
@@ -205,7 +207,7 @@ h3.heading{
   padding: 0 0 0 0;
 }
 .skills b{
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #4db8ff;
   line-height: 34px;
 }
@@ -289,7 +291,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Mobile Changes*/
-@media (max-width: 950px){
+@media (max-width: 935px){
   /*Mobile Content Sizing*/
   .narrow{
     width: 100%;
