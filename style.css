@@ -100,12 +100,11 @@ h3.heading{
 }
 
 /*About Me stuff*/
-.jumbotron{
-  margin-bottom: 0;
-  padding: 0rem 0 3.5rem;
-  border-radius: 0;
+.about-bg{
+  padding: 1px 2rem; 
+  background-color: #E9ECEF;
 }
-.jumbotron a{
+.about-bg a{
   color: #4db8ff;
 }
 
@@ -187,8 +186,8 @@ h3.heading{
 }
 
 /*Portfolio Stuff*/
-.portfolio{
-  padding: 40px 2rem; 
+.portfolio-bg{
+  padding: 1px 2rem; 
 }
 /*TODO: Styling for Portfolio*/
 
@@ -235,7 +234,7 @@ footer svg.svg-inline--fa:hover{
 
 /*Skills Stuff*/
 .skills-bg{
-  padding: 40px 40px 40px 40px;
+  padding: 1px 2rem; 
   background-color: #E9ECEF;
 }
 
@@ -245,7 +244,7 @@ footer svg.svg-inline--fa:hover{
 /*Ultra-wide Correction*/
 @media (min-width: 1910px){
   .narrow{
-    max-width: 1910px;
+    max-width: 1268px; /*1920 * .66 ~= 1268*/
   }
 }
 /*Tablet Changes*/
@@ -321,6 +320,12 @@ footer svg.svg-inline--fa:hover{
     margin: 0 auto 1rem;
   }
 
+  /*Mobile About Me*/
+  .about-bg{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /*Mobile Education stuff*/
   .edu{
     width: 100%;
@@ -363,6 +368,18 @@ footer svg.svg-inline--fa:hover{
   }
   .educol.col-md-6{
     padding: 0 0 0 0;
+  }
+
+  /*Mobile portfolio*/
+  .portfolio-bg{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /*Mobile Skills*/
+  .skills-bg{
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /*Mobile Card stuff*/
