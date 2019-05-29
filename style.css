@@ -207,13 +207,12 @@ h3.heading{
 .skills b{
   font-size: 2rem;
   color: #4db8ff;
-  line-height: 32px;
+  line-height: 34px;
 }
 .skills-pad{
-  padding: 1.5rem;
+  padding: 1.35rem;
 }
 .col-md-4.col-xs-0.skills-label {
-  border-right: 1.5px solid grey;
   padding-right: 6px;
   padding-top: 0;
   padding-bottom: 0;
@@ -275,7 +274,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Tablet Changes*/
-@media (max-width: 1300px){
+@media (max-width: 1450px){
   .narrow{
     width: 95%;
   }
@@ -291,7 +290,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Mobile Changes*/
-@media (max-width: 767px){
+@media (max-width: 920px){
   /*Mobile Content Sizing*/
   .narrow{
     width: 100%;
