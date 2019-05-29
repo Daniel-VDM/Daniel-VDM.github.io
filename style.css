@@ -225,7 +225,6 @@ h3.heading{
   text-align: left;
 }
 
-
 /*Contact Info stuff*/
 .socket{
   width: 100%;
@@ -431,7 +430,7 @@ footer svg.svg-inline--fa:hover{
     padding-right: 0;
   }
   .skills-body{
-    font-size: .8rem;
+    font-size: .74rem;
     padding: 0 0 0 0;
   }
   .skills b{
@@ -440,7 +439,7 @@ footer svg.svg-inline--fa:hover{
     line-height: 0px;
   }
   .skills small{
-    font-size: .7rem;
+    font-size: .74rem;
   }
   .col-md-4.col-xs-0.skills-label {
     border-right: 0px solid grey;
