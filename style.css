@@ -169,9 +169,9 @@ h3.heading{
 }
 .exp{
   background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 39.6px;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border-width: 1px;
   border-color: #4db8ff;
 }
@@ -183,6 +183,13 @@ h3.heading{
 }
 .exp a:hover{
   text-decoration: underline;
+}
+.card-body.exp-body{
+  padding-right: 0;
+}
+.col-md-2.col-xs-0.text-center.exp-pic{
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 /*Portfolio Stuff*/
@@ -276,7 +283,7 @@ footer svg.svg-inline--fa:hover{
 }
 /*Tablet Changes*/
 @media (max-width: 1475px){
-  
+
   .narrow{
     width: 95%;
   }
