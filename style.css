@@ -107,6 +107,13 @@ h3.heading{
 .about-bg a{
   color: #4db8ff;
 }
+.col-md-3.text-center.about-pad{
+  padding-top: 0px;
+}
+.col-md-9.about-pad{
+  padding-top: 0px;
+}
+
 
 /*Education stuff*/
 .edu{
@@ -151,6 +158,12 @@ h3.heading{
 .educol.col-md-6{
   padding: 4px 4px 4px 4px;
 }
+.card-body.edu-first{
+  padding-top: 0px;
+}
+.edu-pad{
+  padding-bottom: 1rem;
+}
 
 /*Experience stuff*/
 .fixed{
@@ -190,6 +203,9 @@ h3.heading{
 .col-md-2.col-xs-0.text-center.exp-pic{
   padding-top: 36px;
   padding-bottom: 36px;
+}
+.card.exp.narrow{
+  margin-top: 0px;
 }
 
 /*Portfolio Stuff*/
@@ -299,7 +315,7 @@ footer svg.svg-inline--fa:hover{
   }
 }
 /*Mobile Changes*/
-@media (max-width: 935px){
+@media (max-width: 850px){
   /*Mobile Content Sizing*/
   .narrow{
     width: 100%;
@@ -411,7 +427,7 @@ footer svg.svg-inline--fa:hover{
 
   /*Mobile Card stuff*/
   .card-img{
-    max-width: 25%;
+    max-width: 100px;
   }
   .exp b{
     font-size: 1.5rem;
@@ -426,6 +442,14 @@ footer svg.svg-inline--fa:hover{
   }
   .exp small{
     font-size: .65rem;
+  }
+  .card-body.exp-body{
+    padding-right: 20px;
+    padding-top: 0px;
+  }
+  .col-md-2.col-xs-0.text-center.exp-pic{
+    padding-top: 20px;
+    padding-bottom: 0px;
   }
 
   /*Mobile portfolio*/
@@ -465,13 +489,12 @@ footer svg.svg-inline--fa:hover{
     text-align: center;
   }
 
-
   /*Mobile Contact Info stuff*/
   footer{
     font-size: .65rem;
   }
   footer b{
-    font-size: 1.3rem;
+    font-size: 1.45rem;
   }
   footer p{
     font-size: .9rem;
