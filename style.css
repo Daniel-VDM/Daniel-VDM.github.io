@@ -215,6 +215,7 @@ h3.heading{
 }
 .btn.port-header-btn.text-left{
   width: 100%;
+  line-height: 1.5rem;
   padding: 0 0 0 0;
   border: none;
   color: white;
@@ -230,7 +231,7 @@ h3.heading{
 .btn.port-header-btn.text-left:after {
   display: inline-block;
   font: normal normal normal 18px/1 FontAwesome;
-  font-size: 30px;
+  font-size: 26px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -255,6 +256,32 @@ h3.heading{
   background-color: #505962;
   font-size: 1.1rem;
 }
+.card-body.port a{
+  color: #4db8ff;
+}
+.badge.badge-info.port-badge1{
+  border-radius: 4px;
+  font-size: .85rem;
+  background-color: #aa0066;
+}
+.badge.badge-info.port-badge{
+  border-radius: 4px;
+  font-size: .85rem;
+  background-color: #b76800;
+}
+.btn.btn.port-body-btn{
+  float: right;
+  border-radius: 0px;
+  background-color: white;
+  color: #4db8ff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.btn.btn.port-body-btn:hover{
+  background-color: #E9ECEF;
+}
+
+
 
 /*Skills Stuff*/
 .skills-bg{
@@ -535,13 +562,22 @@ footer svg.svg-inline--fa:hover{
     padding-right: 16px
   }
   .btn.port-header-btn.text-left{
-    font-size: .92rem;
+    line-height: 1.25rem;
+    font-size: 1rem;
   }
   .btn.port-header-btn.text-left:after{
     font-size: 20px;
   }
   .card-body.port{
     font-size: .875rem;
+  }
+  .badge.badge-info.port-badge1,
+  .badge.badge-info.port-badge{
+    font-size: .7rem;
+  }
+  .btn.btn.port-body-btn{
+    margin-top: .5rem;
+    font-size: 0.875rem;
   }
 
   /*Mobile Contact Info stuff*/
