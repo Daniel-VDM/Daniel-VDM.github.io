@@ -215,7 +215,7 @@ h3.heading{
 }
 .btn.port-header-btn.text-left{
   width: 100%;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   padding: 0 0 0 0;
   border: none;
   color: white;
@@ -231,7 +231,7 @@ h3.heading{
 .btn.port-header-btn.text-left:after {
   display: inline-block;
   font: normal normal normal 18px/1 FontAwesome;
-  font-size: 26px;
+  font-size: 24px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -261,12 +261,12 @@ h3.heading{
 }
 .badge.badge-info.port-badge1{
   border-radius: 4px;
-  font-size: .85rem;
+  font-size: .775rem;
   background-color: #d1007d;
 }
 .badge.badge-info.port-badge{
   border-radius: 4px;
-  font-size: .85rem;
+  font-size: .775rem;
   background-color: #dd8902;
 }
 .btn.btn.port-body-btn{
