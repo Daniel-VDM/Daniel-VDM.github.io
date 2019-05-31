@@ -262,12 +262,12 @@ h3.heading{
 .badge.badge-info.port-badge1{
   border-radius: 4px;
   font-size: .85rem;
-  background-color: #bc0071;
+  background-color: #d1007d;
 }
 .badge.badge-info.port-badge{
   border-radius: 4px;
   font-size: .85rem;
-  background-color: #d68400;
+  background-color: #dd8902;
 }
 .btn.btn.port-body-btn{
   float: right;
