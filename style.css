@@ -101,7 +101,8 @@ h3.heading{
 
 /*About Me stuff*/
 .about-bg{
-  padding: 1px 2rem; 
+  padding: .1px 2rem;  /*It will bug if we use 0px*/
+  padding-bottom: 44.8px;
   background-color: #E9ECEF;
 }
 .about-bg a{
@@ -118,6 +119,7 @@ h3.heading{
 /*Education stuff*/
 .edu{
   width: 1175px;
+  padding-bottom: 44.8px;
 }
 .edu b{
   font-size: 2rem;
@@ -161,9 +163,6 @@ h3.heading{
 .card-body.edu-first{
   padding-top: 0px;
 }
-.edu-pad{
-  padding-bottom: 1rem;
-}
 
 /*Experience stuff*/
 .fixed{
@@ -173,7 +172,7 @@ h3.heading{
 .dark{
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 40px 1rem; 
+  padding: 60.8px 1rem; 
 }
 .card-text small{
   color: #4db8ff;
@@ -187,6 +186,7 @@ h3.heading{
   padding-right: 2rem;
   border-width: 1px;
   border-color: #4db8ff;
+  border-radius: 0;
 }
 .exp b{
   font-size: 2.1rem;
@@ -210,15 +210,55 @@ h3.heading{
 
 /*Portfolio Stuff*/
 .portfolio-bg{
-  padding: 1px 2rem; 
+  padding: 0.1px 2rem;
+  padding-bottom: 60.8px;
 }
-/*TODO: Styling for Portfolio*/
-
-
+.btn.port-header-btn.text-left{
+  width: 100%;
+  padding: 0 0 0 0;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+.btn.port-header-btn.text-left:hover,
+.btn.port-header-btn.text-left.collapsed:hover{
+  color: black;
+}
+.btn.port-header-btn.text-left:after {
+  display: inline-block;
+  font: normal normal normal 18px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f13a";
+  float: right;
+}   
+.btn.port-header-btn.text-left.collapsed:after {
+  color: #00FF00;
+  content: "\f058";
+}
+.card.card-port{
+  border-radius: 0px;
+  border-width: 1px;
+  border-color: white;
+}
+.card-header.port{
+  background-color: #4db8ff;
+  border-radius: 0px;
+}
+.card-body.port{
+  color: white;
+  background-color: #505962;
+  font-size: 1.1rem;
+}
 
 /*Skills Stuff*/
 .skills-bg{
-  padding: 1px 2rem; 
+  padding: 0.1px 2rem;
   background-color: #E9ECEF;
 }
 .skills-card{
@@ -487,6 +527,21 @@ footer svg.svg-inline--fa:hover{
     padding-top: 0;
     padding-bottom: 0;
     text-align: center;
+  }
+
+  /*Portfolio Stuff*/
+  .portfolio-bg{
+    padding-left: 16px;
+    padding-right: 16px
+  }
+  .btn.port-header-btn.text-left{
+    font-size: .92rem;
+  }
+  .btn.port-header-btn.text-left:after{
+    font-size: 20px;
+  }
+  .card-body.port{
+    font-size: .875rem;
   }
 
   /*Mobile Contact Info stuff*/
