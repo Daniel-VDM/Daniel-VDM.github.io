@@ -271,15 +271,20 @@ h3.heading{
   background-color: #dd8902;
 }
 .btn.btn.port-body-btn{
+  -webkit-appearance: none!important;
   float: right;
   border-radius: 0px;
+  border-width: 1px;
+  border-color: white;
   background-color: #28a745;
   color: white;
   font-size: 1.1rem;
   font-weight: 700;
   word-spacing: .15rem;
 }
-
+.btn.btn.port-body-btn:hover{
+  box-shadow: 0 0 2px 2px #ddd;
+}
 
 /*Skills Stuff*/
 .skills-bg{
