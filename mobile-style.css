@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+
+/*Ultra-wide Correction*/
+@media (min-width: 1910px) {
+    .narrow {
+        max-width: 1268px; /*1920 * .66 ~= 1268*/
+    }
+}
+
+
+/*Tablet Changes*/
+@media (max-width: 1475px) {
+
+    .narrow {
+        width: 95%;
+    }
+
+    .edu {
+        width: 95%;
+    }
+
+    .exp {
+        width: 95%;
+    }
+
+    .skills-body {
+        font-size: 1.1rem;
+        padding: 0 0 0 0;
+    }
+}
+
+
+/*Mobile Changes*/
+@media (max-width: 850px) {
+    /*Mobile Nav Bar*/
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .navbar-toggler {
+        font-size: 1.5rem;
+        padding: 0 6px;
+    }
+
+    .offset:before {
+        height: 54px;
+        margin-top: -54px;
+    }
+
+
+    /*Mobile Content Sizing*/
+    .narrow {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding-top: .5rem;
+    }
+
+    .narrow p {
+        font-size: .9rem;
+    }
+
+    .narrow img {
+        width: 60%;
+        border-radius: 7%;
+    }
+
+
+    /*Mobile Landing Page stuff*/
+    .caption {
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        bottom: 35%;
+        z-index: 1;
+        color: white;
+    }
+
+    .caption h1 {
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
+
+    .caption h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-bottom: .8rem;
+    }
+
+    .btn-lg {
+        background-color: #4db8ff;
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: .4rem 1rem;
+        font-size: .8rem;
+    }
+
+    .btn-lg:hover {
+        background-color: white;
+    }
+
+    .caption img {
+        opacity: 0;
+    }
+
+
+    /*Mobile headers*/
+    h3.heading {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .heading-underline {
+        width: 10rem;
+        height: .1rem;
+        background-color: #4db8ff;
+        margin: 0 auto 1rem;
+    }
+
+
+    /*Mobile About Me*/
+    .about-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    /*Mobile Education stuff*/
+    .edu {
+        width: 100%;
+    }
+
+    .edu b {
+        font-size: 1.15rem;
+    }
+
+    .edu a {
+        color: #4db8ff !important;
+        font-size: .63rem;
+    }
+
+    .edu i {
+        color: grey;
+        font-size: .63rem;
+    }
+
+    .educ {
+        font-size: .8rem;
+        border-width: 0;
+    }
+
+    .educ h6 {
+        padding-left: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 2px;
+        font-size: .725rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h5.card-title.text-center {
+        font-size: .63rem;
+        margin-bottom: 8px;
+    }
+
+    .educ small {
+        font-size: .6rem;
+        color: grey;
+        text-transform: none;
+    }
+
+    .educ h5 {
+        padding-bottom: 2px;
+    }
+
+    .educol.col-md-6 {
+        padding: 0 0 0 0;
+    }
+
+
+    /*Mobile Card stuff*/
+    .card-img {
+        max-width: 100px;
+    }
+
+    .exp b {
+        font-size: 1.44rem;
+    }
+
+    .exp h5 {
+        font-size: 1.1rem;
+    }
+
+    .exp {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        border-width: 1px;
+        border-color: #4db8ff;
+    }
+
+    .exp small {
+        font-size: .65rem;
+    }
+
+    .card-body.exp-body {
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .col-md-2.col-xs-0.text-center.exp-pic {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+
+    /*Mobile portfolio*/
+    .portfolio-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    /*Mobile Skills*/
+    .skills-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .skills-body {
+        font-size: .76rem;
+        padding: 0 0 0 0;
+    }
+
+    .skills b {
+        font-size: 1.2rem;
+        color: #4db8ff;
+        line-height: 0;
+    }
+
+    .skills small {
+        font-size: .76rem;
+    }
+
+    .col-md-4.col-xs-0.skills-label {
+        border-right: 0 solid grey;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .col-md-8.col-xs-12.skills-body {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+
+    /*Portfolio Stuff*/
+    .portfolio-bg {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+
+    .btn.port-header-btn.text-left {
+        line-height: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .btn.port-header-btn.text-left:after {
+        font-size: 20px;
+    }
+
+    .card-body.port {
+        font-size: .875rem;
+    }
+
+    .badge.badge-info.port-badge1,
+    .badge.badge-info.port-badge {
+        font-size: .7rem;
+    }
+
+    .btn.btn.port-body-btn {
+        margin-top: .5rem;
+        margin-left: 3px;
+        font-size: 0.7rem;
+    }
+
+
+    /*Mobile Contact Info stuff*/
+    footer {
+        font-size: .65rem;
+    }
+
+    footer b {
+        font-size: 1.45rem;
+    }
+
+    footer p {
+        font-size: .9rem;
+        padding-top: .1rem;
+    }
+
+    footer svg.svg-inline--fa {
+        font-size: 2.2rem;
+        margin: 0 .5rem 0 0;
+    }
+
+    footer svg.svg-inline--fa:hover {
+        color: black;
+        font-size: 2.2rem;
+        margin: 0 .5rem 0 0;
+    }
+}
