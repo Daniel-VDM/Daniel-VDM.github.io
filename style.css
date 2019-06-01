@@ -196,6 +196,9 @@ h3.heading{
   border-color: #4db8ff;
   border-radius: 0;
 }
+.exp h5{
+  font-size: 1.35rem;
+}
 .exp b{
   font-size: 2.1rem;
 }
@@ -539,7 +542,10 @@ footer svg.svg-inline--fa:hover{
     max-width: 100px;
   }
   .exp b{
-    font-size: 1.49rem;
+    font-size: 1.4rem;
+  }
+  .exp h5{
+    font-size: 1.1rem;
   }
   .exp{
     background-color: rgba(0, 0, 0, 0.8);
