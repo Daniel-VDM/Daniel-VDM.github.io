@@ -1,301 +1,350 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
 
-body{
-  overflow-x hidden;
-  font-family: 'Lato', sans-serif;
-  color: #505962;
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
 }
+
 .offset:before {
-  display: block;
-  content: "";
-  height: 59px;
-  margin-top: -59px;
+    display: block;
+    content: "";
+    height: 59px;
+    margin-top: -59px;
 }
 
 /*Overall Content Layout*/
-.narrow{
-  width: 66%;
-  margin: 1.5rem auto;
-  padding-top: 1rem;
+.narrow {
+    width: 66%;
+    margin: 1.5rem auto;
+    padding-top: 1rem;
 }
-.narrow p{
-  font-size: 1.15rem;
+
+.narrow p {
+    font-size: 1.15rem;
 }
-.narrow img{
-  width: 100%;
-  border-radius: 7%;
+
+.narrow img {
+    width: 100%;
+    border-radius: 7%;
 }
 
 /*Navbar Stuff*/
 .navbar {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .95rem;
-  letter-spacing: 0rem;
-  background: rgba(0,0,0,0.7)!important
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .95rem;
+    letter-spacing: 0;
+    background: rgba(0, 0, 0, 0.7) !important
 }
-.navbar-brand{
-  font-size: 1.8rem;
-  padding: 0 0 0 0;
+
+.navbar-brand {
+    font-size: 1.8rem;
+    padding: 0 0 0 0;
 }
-.navbar-brand:hover{
-  color: #4db8ff!important;
+
+.navbar-brand:hover {
+    color: #4db8ff !important;
 }
-.nav-link{
-  padding-top: 8px!important;
+
+.nav-link {
+    padding-top: 8px !important;
 }
-.navbar-nav li{
-  padding-right: .4rem;
+
+.navbar-nav li {
+    padding-right: .4rem;
 }
-.navbar-dark .navbar-nav .nav-link{
-  color: white;
-  padding-top: .8rem;
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
 }
-.navbar-dark .navbar-nav .nav-link.active, 
+
+.navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #4db8ff;
+    color: #4db8ff;
 }
 
 /*Landing Page stuff*/
-.home-inner{
-  background-image: url(img/bg.jpeg);
+.home-inner {
+    background-image: url(img/bg.jpeg);
 }
-.caption{
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  bottom: 24%;
-  z-index: 1;
-  color: white;
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 24%;
+    z-index: 1;
+    color: white;
 }
+
 .caption h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: .1rem;
-  text-shadow: .1rem .1rem .7rem black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-shadow: .1rem .1rem .7rem black;
 }
+
 .caption h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-shadow: .2rem .2rem .4rem black;
-  padding-bottom:  1.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-shadow: .2rem .2rem .4rem black;
+    padding-bottom: 1.5rem;
 }
-.btn-lg{
-  background-color: #4db8ff; 
-  border-width: medium;
-  border-radius: 0;
-  text-transform: uppercase;
-  padding: .6rem 1.4rem;
-  font-size: 1.2rem;
-  box-shadow: .1rem .1rem 2rem black;
+
+.btn-lg {
+    background-color: #4db8ff;
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: .6rem 1.4rem;
+    font-size: 1.2rem;
+    box-shadow: .1rem .1rem 2rem black;
 }
-.btn-lg:hover{
-  background-color: white; 
+
+.btn-lg:hover {
+    background-color: white;
 }
 
 /*Section Heading stuff*/
-h3.heading{
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
+h3.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-.heading-underline{
-  width: 17rem;
-  height: .1rem;
-  background-color: #4db8ff;
-  margin: 0 auto 1rem;
+
+.heading-underline {
+    width: 17rem;
+    height: .1rem;
+    background-color: #4db8ff;
+    margin: 0 auto 1rem;
 }
 
 /*About Me stuff*/
-.about-bg{
-  padding: .1px 2rem;  /*It will bug if we use 0px*/
-  padding-bottom: 44.8px;
-  background-color: #E9ECEF;
+.about-bg {
+    /*It will bug if we use 0px*/
+    padding: .1px 2rem 44.8px;
+    background-color: #E9ECEF;
 }
-.about-bg a{
-  color: #4db8ff;
+
+.about-bg a {
+    color: #4db8ff;
 }
-.col-md-3.text-center.about-pad{
-  padding-top: 0px;
+
+.col-md-3.text-center.about-pad {
+    padding-top: 0;
 }
-.col-md-9.about-pad{
-  padding-top: 0px;
+
+.col-md-9.about-pad {
+    padding-top: 0;
 }
 
 
 /*Education stuff*/
-.edu{
-  width: 1175px;
-  padding-bottom: 44.8px;
+.edu {
+    width: 1175px;
+    padding-bottom: 44.8px;
 }
-.edu b{
-  font-size: 2rem;
+
+.edu b {
+    font-size: 2rem;
 }
-.edu a{
-  color: #4db8ff!important;
-  font-size: 1.3rem;
+
+.edu a {
+    color: #4db8ff !important;
+    font-size: 1.3rem;
 }
-.edu i{
-  color: grey;
-  font-size: 1.2rem;
+
+.edu i {
+    color: grey;
+    font-size: 1.2rem;
 }
-.edu p{
-  margin-bottom: 0px;
+
+.edu p {
+    margin-bottom: 0;
 }
-.educ{
-  font-size: 1.1rem;
-  border-width: 0px;
+
+.educ {
+    font-size: 1.1rem;
+    border-width: 0;
 }
-.educ h6{
-  padding-left: 1rem;
-  padding-top: .25rem;
-  padding-bottom: 0rem;
-  margin-bottom: 0px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
+
+.educ h6 {
+    padding-left: 1rem;
+    padding-top: .25rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.educ h5{
-  padding-bottom: 4px;
-  border-bottom: 1.5px dotted grey;
+
+.educ h5 {
+    padding-bottom: 4px;
+    border-bottom: 1.5px dotted grey;
 }
-.educ small{
-  padding-left: 1rem;
-  color: grey;
-  text-transform: none;
+
+.educ small {
+    padding-left: 1rem;
+    color: grey;
+    text-transform: none;
 }
-.educol.col-md-6{
-  padding: 4px 4px 4px 4px;
+
+.educol.col-md-6 {
+    padding: 4px 4px 4px 4px;
 }
-.card-body.edu-first{
-  padding-top: 0px;
+
+.card-body.edu-first {
+    padding-top: 0;
 }
 
 /*Experience stuff*/
-.fixed{
-  background-image: url(img/expBG.jpg);
-  z-index: -1;
+.fixed {
+    background-image: url(img/expBG.jpg);
+    z-index: -1;
 }
-.dark{
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 40px 1rem;
-  padding-bottom: 60.8px; 
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 40px 1rem 60.8px;
 }
-.card-text small{
-  color: #4db8ff;
-  text-transform: uppercase;
-  font-size: .875rem;
+
+.card-text small {
+    color: #4db8ff;
+    text-transform: uppercase;
+    font-size: .875rem;
 }
-.exp{
-  background-color: rgba(0, 0, 0, 0.8);
-  padding-top: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-width: 1px;
-  border-color: #4db8ff;
-  border-radius: 0;
+
+.exp {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-width: 1px;
+    border-color: #4db8ff;
+    border-radius: 0;
 }
-.exp h5{
-  font-size: 1.35rem;
+
+.exp h5 {
+    font-size: 1.35rem;
 }
-.exp b{
-  font-size: 2.1rem;
+
+.exp b {
+    font-size: 2.1rem;
 }
-.exp a{
-  color: #4db8ff;
+
+.exp a {
+    color: #4db8ff;
 }
-.exp a:hover{
-  text-decoration: underline;
+
+.exp a:hover {
+    text-decoration: underline;
 }
-.card-body.exp-body{
-  padding-right: 0;
+
+.card-body.exp-body {
+    padding-right: 0;
 }
-.col-md-2.col-xs-0.text-center.exp-pic{
-  padding-top: 36px;
-  padding-bottom: 36px;
+
+.col-md-2.col-xs-0.text-center.exp-pic {
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
-.card.exp.narrow{
-  margin-top: 0px;
+
+.card.exp.narrow {
+    margin-top: 0;
 }
 
 /*Portfolio Stuff*/
-.portfolio-bg{
-  padding: 0.1px 2rem;
-  padding-bottom: 60.8px;
+.portfolio-bg {
+    padding: 0.1px 2rem 60.8px;
 }
-.btn.port-header-btn.text-left{
-  width: 100%;
-  line-height: 1.4rem;
-  padding: 0 0 0 0;
-  border: none;
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: none;
+
+.btn.port-header-btn.text-left {
+    width: 100%;
+    line-height: 1.4rem;
+    padding: 0 0 0 0;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
 }
+
 .btn.port-header-btn.text-left:hover,
-.btn.port-header-btn.text-left.collapsed:hover{
-  color: #505962;
+.btn.port-header-btn.text-left.collapsed:hover {
+    color: #505962;
 }
+
 .btn.port-header-btn.text-left:after {
-  display: inline-block;
-  font: normal normal normal 18px/1 FontAwesome;
-  font-size: 24px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f13a";
-  float: right;
-}   
+    display: inline-block;
+    font: normal normal normal 18px/1 FontAwesome;
+    font-size: 24px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f13a";
+    float: right;
+}
+
 .btn.port-header-btn.text-left.collapsed:after {
-  color: #00FF00;
-  content: "\f058";
+    color: #00FF00;
+    content: "\f058";
 }
-.card.card-port{
-  border-radius: 0px;
-  border-width: 1px;
-  border-color: white;
+
+.card.card-port {
+    border-radius: 0;
+    border-width: 1px;
+    border-color: white;
 }
-.card-header.port{
-  background-color: #4db8ff;
-  border-radius: 0px;
+
+.card-header.port {
+    background-color: #4db8ff;
+    border-radius: 0;
 }
-.card-body.port{
-  color: white;
-  background-color: #505962;
-  font-size: 1.1rem;
+
+.card-body.port {
+    color: white;
+    background-color: #505962;
+    font-size: 1.1rem;
 }
-.card-body.port a{
-  color: #4db8ff;
+
+.card-body.port a {
+    color: #4db8ff;
 }
-.badge.badge-info.port-badge1{
-  border-radius: 4px;
-  font-size: .775rem;
-  background-color: #d1007d;
+
+.badge.badge-info.port-badge1 {
+    border-radius: 4px;
+    font-size: .775rem;
+    background-color: #d1007d;
 }
-.badge.badge-info.port-badge{
-  border-radius: 4px;
-  font-size: .775rem;
-  background-color: #dd8902;
+
+.badge.badge-info.port-badge {
+    border-radius: 4px;
+    font-size: .775rem;
+    background-color: #dd8902;
 }
+
 /* Green Button for portfolio */
-.btn.btn.port-body-btn{
-  -webkit-appearance: none!important;
-  float: right;
-  border-radius: 0px;
-  border-width: 1px;
-  border-color: white;
-  background-color: #28a745;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 700;
-  word-spacing: .15rem;
+.btn.btn.port-body-btn {
+    -webkit-appearance: none !important;
+    float: right;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: white;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    word-spacing: .15rem;
 }
-.btn.btn.port-body-btn:hover{
-  box-shadow: 0 0 4px 2px #4db8ff;
+
+.btn.btn.port-body-btn:hover {
+    box-shadow: 0 0 4px 2px #4db8ff;
 }
+
 /* Muted Button for portfolio */
 /*.btn.btn.port-body-btn{
   -webkit-appearance: none!important;
@@ -316,337 +365,393 @@ h3.heading{
 */
 
 /*Skills Stuff*/
-.skills-bg{
-  padding: 0.1px 2rem;
-  background-color: #E9ECEF;
+.skills-bg {
+    padding: .1px 2rem;
+    background-color: #E9ECEF;
 }
-.skills-card{
-  background-color: rgba(0, 0, 0, 0);
-  border-width: 0px;
+
+.skills-card {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
 }
-.skills-body{
-  font-size: 1.25rem;
-  padding: 0 0 0 0;
+
+.skills-body {
+    font-size: 1.25rem;
+    padding: 0 0 0 0;
 }
-.skills b{
-  font-size: 1.7rem;
-  color: #4db8ff;
-  line-height: 34px;
+
+.skills b {
+    font-size: 1.7rem;
+    color: #4db8ff;
+    line-height: 34px;
 }
-.skills-pad{
-  padding: 1.35rem;
+
+.skills-pad {
+    padding: 1.35rem;
 }
+
 .col-md-4.col-xs-0.skills-label {
-  padding-right: 6px;
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: right;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right;
 }
-.col-md-8.col-xs-12.skills-body{
-  padding-left: 1rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: left;
+
+.col-md-8.col-xs-12.skills-body {
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
 }
 
 /*Contact Info stuff*/
-.socket{
-  width: 100%;
-  height: 2px;
-  background-color: #505962;
-  margin-bottom: 5px;
-}
-footer{
-  font-size: .8rem; 
-  background-color: #4db8ff;
-  color: white;
-  padding: 24px 0 0;
-}
-footer a{
-  color: white;
-  text-decoration: underline;
-}
-footer a:hover{
-  color: #505962;
-  text-decoration: underline;
-}
-footer p{
-  font-size: 1.2rem;
-  padding-top: .1rem;
-}
-footer svg.svg-inline--fa{
-  font-size: 3rem;
-  margin: 0 .5rem 0 0;
-}
-footer svg.svg-inline--fa:hover{
-  color: #505962;
-  font-size: 3rem;
-  margin: 0 .5rem 0 0;
-}
-.col-md-5.text-center.footer{
-  padding-top: 0px;
-  padding-bottom: 5px;
+.socket {
+    width: 100%;
+    height: 2px;
+    background-color: #505962;
+    margin-bottom: 5px;
 }
 
+footer {
+    font-size: .8rem;
+    background-color: #4db8ff;
+    color: white;
+    padding: 24px 0 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #505962;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1.2rem;
+    padding-top: .1rem;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 3rem;
+    margin: 0 .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: #505962;
+    font-size: 3rem;
+    margin: 0 .5rem 0 0;
+}
+
+.col-md-5.text-center.footer {
+    padding-top: 0;
+    padding-bottom: 5px;
+}
 
 
 /*Ultra-wide Correction*/
-@media (min-width: 1910px){
-  .narrow{
-    max-width: 1268px; /*1920 * .66 ~= 1268*/
-  }
+@media (min-width: 1910px) {
+    .narrow {
+        max-width: 1268px; /*1920 * .66 ~= 1268*/
+    }
 }
+
 /*Tablet Changes*/
-@media (max-width: 1475px){
+@media (max-width: 1475px) {
 
-  .narrow{
-    width: 95%;
-  }
-  .edu{
-    width: 95%;
-  }
-  .exp{
-    width: 95%;
-  }
-  .skills-body{
-    font-size: 1.1rem;
-    padding: 0 0 0 0;
-  }
+    .narrow {
+        width: 95%;
+    }
+
+    .edu {
+        width: 95%;
+    }
+
+    .exp {
+        width: 95%;
+    }
+
+    .skills-body {
+        font-size: 1.1rem;
+        padding: 0 0 0 0;
+    }
 }
+
 /*Mobile Changes*/
-@media (max-width: 850px){
-  /*Mobile Nav Bar*/
-  .navbar-brand{
-    font-size: 1.6rem;
-  }
-  .navbar-toggler{
-    font-size: 1.5rem;
-    padding: 0px 6px;  
-  }
-  .offset:before {
-    height: 54px;
-    margin-top: -54px;
-  }
+@media (max-width: 850px) {
+    /*Mobile Nav Bar*/
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
 
-  /*Mobile Content Sizing*/
-  .narrow{
-    width: 100%;
-    margin: 0.5rem 0rem;
-    padding-top: .5rem;
-  }
-  .narrow p{
-    font-size: .9rem;
-  }
-   .narrow img{
-    width: 60%;
-    border-radius: 7%;
-  }
+    .navbar-toggler {
+        font-size: 1.5rem;
+        padding: 0 6px;
+    }
 
-  /*Mobile Landing Page stuff*/
-  .caption{
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    bottom: 35%;
-    z-index: 1;
-    color: white;
-  }
-  .caption h1 {
-    font-size: 2.5rem;
-    letter-spacing: .1rem;
-  }
-  .caption h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding-bottom:  .8rem;
-  }
-  .btn-lg{
-    background-color: #4db8ff; 
-    border-radius: 0;
-    text-transform: uppercase;
-    padding: .4rem 1rem;
-    font-size: .8rem;
-  }
-  .btn-lg:hover{
-    background-color: white; 
-  }
-  .caption img {
-    opacity: 0;
-  }
+    .offset:before {
+        height: 54px;
+        margin-top: -54px;
+    }
 
-  /*Mobile headers*/
-  h3.heading{
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  .heading-underline{
-    width: 10rem;
-    height: .1rem;
-    background-color: #4db8ff;
-    margin: 0 auto 1rem;
-  }
+    /*Mobile Content Sizing*/
+    .narrow {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding-top: .5rem;
+    }
 
-  /*Mobile About Me*/
-  .about-bg{
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .narrow p {
+        font-size: .9rem;
+    }
 
-  /*Mobile Education stuff*/
-  .edu{
-    width: 100%;
-  }
-  .edu b{
-    font-size: 1.15rem;
-  }
-  .edu a{
-    color: #4db8ff!important;
-    font-size: .63rem;
-  }
-  .edu i{
-    color: grey;
-    font-size: .63rem;
-  }
-  .educ{
-    font-size: .8rem;
-    border-width: 0px;
-  }
-  .educ h6{
-    padding-left: 1rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    margin-bottom: 2px;
-    font-size: .725rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  h5.card-title.text-center{
-    font-size: .63rem;
-    margin-bottom: 8px;
-  }
-  .educ small{
-    font-size: .6rem;
-    color: grey;
-    text-transform: none;
-  }
-  .educ h5{
-    padding-bottom: 2px;
-  }
-  .educol.col-md-6{
-    padding: 0 0 0 0;
-  }
+    .narrow img {
+        width: 60%;
+        border-radius: 7%;
+    }
 
-  /*Mobile Card stuff*/
-  .card-img{
-    max-width: 100px;
-  }
-  .exp b{
-    font-size: 1.44rem;
-  }
-  .exp h5{
-    font-size: 1.1rem;
-  }
-  .exp{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 0rem;
-    border-width: 1px;
-    border-color: #4db8ff;
-  }
-  .exp small{
-    font-size: .65rem;
-  }
-  .card-body.exp-body{
-    padding-right: 20px;
-    padding-top: 0px;
-  }
-  .col-md-2.col-xs-0.text-center.exp-pic{
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
+    /*Mobile Landing Page stuff*/
+    .caption {
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        bottom: 35%;
+        z-index: 1;
+        color: white;
+    }
 
-  /*Mobile portfolio*/
-  .portfolio-bg{
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .caption h1 {
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
 
-  /*Mobile Skills*/
-  .skills-bg{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .skills-body{
-    font-size: .76rem;
-    padding: 0 0 0 0;
-  }
-  .skills b{
-    font-size: 1.2rem;
-    color: #4db8ff;
-    line-height: 0px;
-  }
-  .skills small{
-    font-size: .76rem;
-  }
-  .col-md-4.col-xs-0.skills-label {
-    border-right: 0px solid grey;
-    padding-right: 0px;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: center;
-  }
-  .col-md-8.col-xs-12.skills-body{
-    padding-left: 0rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: center;
-  }
+    .caption h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-bottom: .8rem;
+    }
 
-  /*Portfolio Stuff*/
-  .portfolio-bg{
-    padding-left: 16px;
-    padding-right: 16px
-  }
-  .btn.port-header-btn.text-left{
-    line-height: 1.25rem;
-    font-size: 1rem;
-  }
-  .btn.port-header-btn.text-left:after{
-    font-size: 20px;
-  }
-  .card-body.port{
-    font-size: .875rem;
-  }
-  .badge.badge-info.port-badge1,
-  .badge.badge-info.port-badge{
-    font-size: .7rem;
-  }
-  .btn.btn.port-body-btn{
-    margin-top: .5rem;
-    margin-left: 3px;
-    font-size: 0.7rem;
-  }
+    .btn-lg {
+        background-color: #4db8ff;
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: .4rem 1rem;
+        font-size: .8rem;
+    }
 
-  /*Mobile Contact Info stuff*/
-  footer{
-    font-size: .65rem;
-  }
-  footer b{
-    font-size: 1.45rem;
-  }
-  footer p{
-    font-size: .9rem;
-    padding-top: .1rem;
-  }
-  footer svg.svg-inline--fa{
-    font-size: 2.2rem;
-    margin: 0 .5rem 0 0;
-  }
-  footer svg.svg-inline--fa:hover{
-    color: black;
-    font-size: 2.2rem;
-    margin: 0 .5rem 0 0;
-  }
+    .btn-lg:hover {
+        background-color: white;
+    }
+
+    .caption img {
+        opacity: 0;
+    }
+
+    /*Mobile headers*/
+    h3.heading {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .heading-underline {
+        width: 10rem;
+        height: .1rem;
+        background-color: #4db8ff;
+        margin: 0 auto 1rem;
+    }
+
+    /*Mobile About Me*/
+    .about-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*Mobile Education stuff*/
+    .edu {
+        width: 100%;
+    }
+
+    .edu b {
+        font-size: 1.15rem;
+    }
+
+    .edu a {
+        color: #4db8ff !important;
+        font-size: .63rem;
+    }
+
+    .edu i {
+        color: grey;
+        font-size: .63rem;
+    }
+
+    .educ {
+        font-size: .8rem;
+        border-width: 0;
+    }
+
+    .educ h6 {
+        padding-left: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 2px;
+        font-size: .725rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h5.card-title.text-center {
+        font-size: .63rem;
+        margin-bottom: 8px;
+    }
+
+    .educ small {
+        font-size: .6rem;
+        color: grey;
+        text-transform: none;
+    }
+
+    .educ h5 {
+        padding-bottom: 2px;
+    }
+
+    .educol.col-md-6 {
+        padding: 0 0 0 0;
+    }
+
+    /*Mobile Card stuff*/
+    .card-img {
+        max-width: 100px;
+    }
+
+    .exp b {
+        font-size: 1.44rem;
+    }
+
+    .exp h5 {
+        font-size: 1.1rem;
+    }
+
+    .exp {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        border-width: 1px;
+        border-color: #4db8ff;
+    }
+
+    .exp small {
+        font-size: .65rem;
+    }
+
+    .card-body.exp-body {
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .col-md-2.col-xs-0.text-center.exp-pic {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    /*Mobile portfolio*/
+    .portfolio-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*Mobile Skills*/
+    .skills-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .skills-body {
+        font-size: .76rem;
+        padding: 0 0 0 0;
+    }
+
+    .skills b {
+        font-size: 1.2rem;
+        color: #4db8ff;
+        line-height: 0;
+    }
+
+    .skills small {
+        font-size: .76rem;
+    }
+
+    .col-md-4.col-xs-0.skills-label {
+        border-right: 0 solid grey;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .col-md-8.col-xs-12.skills-body {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    /*Portfolio Stuff*/
+    .portfolio-bg {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+
+    .btn.port-header-btn.text-left {
+        line-height: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .btn.port-header-btn.text-left:after {
+        font-size: 20px;
+    }
+
+    .card-body.port {
+        font-size: .875rem;
+    }
+
+    .badge.badge-info.port-badge1,
+    .badge.badge-info.port-badge {
+        font-size: .7rem;
+    }
+
+    .btn.btn.port-body-btn {
+        margin-top: .5rem;
+        margin-left: 3px;
+        font-size: 0.7rem;
+    }
+
+    /*Mobile Contact Info stuff*/
+    footer {
+        font-size: .65rem;
+    }
+
+    footer b {
+        font-size: 1.45rem;
+    }
+
+    footer p {
+        font-size: .9rem;
+        padding-top: .1rem;
+    }
+
+    footer svg.svg-inline--fa {
+        font-size: 2.2rem;
+        margin: 0 .5rem 0 0;
+    }
+
+    footer svg.svg-inline--fa:hover {
+        color: black;
+        font-size: 2.2rem;
+        margin: 0 .5rem 0 0;
+    }
 }
