@@ -226,7 +226,7 @@ h3.heading{
 }
 .btn.port-header-btn.text-left:hover,
 .btn.port-header-btn.text-left.collapsed:hover{
-  color: black;
+  color: #505962;
 }
 .btn.port-header-btn.text-left:after {
   display: inline-block;
@@ -272,15 +272,12 @@ h3.heading{
 .btn.btn.port-body-btn{
   float: right;
   border-radius: 0px;
-  background-color: white;
-  color: #4db8ff;
+  background-color: #28a745;
+  color: white;
   font-size: 1.1rem;
   font-weight: 700;
+  word-spacing: .15rem;
 }
-.btn.btn.port-body-btn:hover{
-  background-color: #E9ECEF;
-}
-
 
 
 /*Skills Stuff*/
@@ -335,7 +332,7 @@ footer a{
   text-decoration: underline;
 }
 footer a:hover{
-  color: black;
+  color: #505962;
   text-decoration: underline;
 }
 footer p{
@@ -347,7 +344,7 @@ footer svg.svg-inline--fa{
   margin: 0 .5rem 0 0;
 }
 footer svg.svg-inline--fa:hover{
-  color: black;
+  color: #505962;
   font-size: 3rem;
   margin: 0 .5rem 0 0;
 }
