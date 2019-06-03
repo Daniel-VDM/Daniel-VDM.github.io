@@ -198,13 +198,13 @@
                             <h5 class="card-title"><b>Software Engineering Intern</b>
                                 <br>Microsemi | <i>Frequency and Timing Division</i></h5>
                             <p class="card-text text-justify">I was part of a team that worked on a modernized eLoran
-                                (radio navigation and data) system. It would function as a position, navigation, and
-                                timing system that is similar to (but independent of) GPS. I was tasked with efficiently
-                                implementing a proprietary eLoran signal scheme (in Python and C) which interfaced with
-                                a <a href="https://www.microsemi.com/company/about-us">Microsemi</a> eLoran transmitter
-                                timing unit. Once that was finished, I was tasked with creating development tools that
+                                (radio navigation and data) system. In short, it would function as a position,
+                                navigation, and timing system that is similar to (but independent of) GPS. I was tasked
+                                with efficiently implementing a proprietary eLoran signal scheme (in Python and C) which
+                                interfaced with a <a href="https://www.microsemi.com/company/about-us">Microsemi</a>
+                                eLoran transmitter timing unit. I was also tasked with creating development tools that
                                 simulated said timing unit’s behavior and outputted vital timing statistics. The
-                                development tools were mostly done in Python using Scipy, with some use of C for unit
+                                development tools were mostly done in Python using Scipy, with some use of C for the
                                 interfacing tasks. I ended my internship by presenting my work to the rest of the eLoran
                                 team at their frequency and timing division headquarters in Boulder, Colorado.</p>
                             <p class="card-text">
@@ -474,13 +474,57 @@
             </div>
 
             <div class="card card-port">
+                <div class="card-header port" id="npApproxHeading">
+                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                            data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
+                        Approximate NP-Hard Problem Solver<br>
+                        <span class="badge badge-info port-badge1">Python 3</span> <span
+                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Matplotlib</span>
+                        <span class="badge badge-info port-badge">NetworkX</span>
+                    </button>
+                </div>
+                <div id="npApprox" class="collapse" aria-labelledby="npApproxHeading">
+                    <div class="card-body port text-justify">
+                        <p>This was a group project for the <a href="https://cs170.org/">Efficient Algorithms and
+                            Intractable Problems</a> course at UC Berkeley.</p>
+
+                        <p>It approximates a solution to the following problem: Given a group of children, friendship
+                            relations, <i>n</i> buses and a set of trouble groups, find an assignment of students to the
+                            buses that maximizes the number of friendship relations that are on the same bus. The
+                            difficulty comes from this added condition: Groups of children that form a trouble group and
+                            are all assigned to the same bus do not have their friendships counted.</p>
+
+                        <p>My group's solver used a combination of greedy algorithms and local searches. Note that the
+                            details of our solver can be found in a write-up that is included in the project repo. </p>
+
+                        <p><b>Achievements:</b> My group’s approximate solution was in the top 10% of all approximations
+                            in the course (ranking metric is explained in the repo). I also learned to coordinate and
+                            utilize the expertise of my team-mates as we all had different backgrounds (EE, Math,
+                            CS).</p>
+
+                        <div class="row">
+                            <div class="col-md-9 col-xs-12 port-foot">
+                                The project files and an in-depth overview can be found on <a
+                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                            </div>
+                            <div class="col-md-3 col-xs-12 port-foot text-center">
+                                <a type="button" href="https://github.com/Daniel-VDM/CS170_Project"
+                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-port">
                 <div class="card-header port" id="coRefHeading">
                     <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#coRef" aria-expanded="false" aria-controls="coRef">
-                        Pronominal Coreference Annotator<br>
+                        Coreference Annotator<br>
                         <span class="badge badge-info port-badge1">Python 3</span> <span
-                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Sklearn</span>
-                        <span class="badge badge-info port-badge">nltk</span>
+                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Pandas</span>
+                        <span class="badge badge-info port-badge">Scikit-learn</span> <span
+                            class="badge badge-info port-badge">nltk</span>
                     </button>
                 </div>
                 <div id="coRef" class="collapse" aria-labelledby="coRefHeading">
@@ -496,46 +540,7 @@
                                     href="https://github.com/Daniel-VDM">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/Pronominal-Coreference-Annotator"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-port">
-                <div class="card-header port" id="npApproxHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
-                        NP-Hard Problem Approximator<br>
-                        <span class="badge badge-info port-badge1">Python 3</span> <span
-                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Matplotlib</span>
-                        <span class="badge badge-info port-badge">NetworkX</span>
-                    </button>
-                </div>
-                <div id="npApprox" class="collapse" aria-labelledby="npApproxHeading">
-                    <div class="card-body port text-justify">
-                        <p>This was a group project for the <a href="https://cs170.org/">Efficient Algorithms and
-                            Intractable Problems</a> course at UC Berkeley.</p>
-
-                        <p>It approximates a solution to the following problem: Given a group of children, friendship
-                            relations, <i>n</i> buses and a set of trouble groups, find an assignment of students to the
-                            buses that maximizes the number of friendship relations that are in the same bus. The
-                            difficulty comes from this added condition: Groups of children that form a trouble group and
-                            are all assigned to the same bus do not have their friendships counted. The script uses a
-                            combination of greedy algorithms and local searches.</p>
-
-                        <p> My group’s program generated solutions that were in the top 10% of all approximations in the
-                            course.</p>
-
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/CS170_Project"
+                                <a type="button" href="https://github.com/Daniel-VDM/Coreference-Annotator"
                                    class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
                             </div>
                         </div>
@@ -627,7 +632,7 @@
                                 UC Berkeley, I am unable to post my project files due to concerns of plagiarism.
                                 However, I would be happy to send the files over upon request.
                             </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
+                            <div class="col-md-3 col-xs-12 port-foot text-center align-content-end">
                                 <a type="button"
                                    class="btn btn port-body-btn disabled"
                                    aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
@@ -740,7 +745,7 @@
                     </div>
                     <div class="col-md-8 col-xs-12 skills-body">
                         <div class="card-body skills-body">
-                            Scipy/Numpy/Pandas &nbsp; NLTK &nbsp; Keras &nbsp; Tensorflow &nbsp; NetworkX &nbsp;
+                            Scipy/Numpy/Pandas &nbsp; NLTK &nbsp; Keras &nbsp; Scikit-learn &nbsp; NetworkX &nbsp;
                             JUnit<br>
                             Spark &nbsp; OpenMP &nbsp; Intel AVX &nbsp; CUnit &nbsp; AWS EC2 &nbsp; MySQL &nbsp;
                             Bootstrap

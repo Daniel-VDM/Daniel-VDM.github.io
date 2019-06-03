@@ -354,6 +354,7 @@ h3.heading {
 .btn.btn.port-body-btn {
     -webkit-appearance: none !important;
     float: right;
+    margin-top: auto;
     border-radius: 0;
     border-width: 1px;
     border-color: white;
