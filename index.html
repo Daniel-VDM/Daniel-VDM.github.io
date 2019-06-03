@@ -42,16 +42,18 @@
     }
 
     // Add fading when elements come in/out of view.
-    $(window).on("load",function() {
-        $(window).scroll(function() {
+    $(window).on("load", function () {
+        $(window).scroll(function () {
             var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function() {
-                var objectBottom = $(this).offset().top + $(this).outerHeight()/5;
-
-                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                    if ($(this).css("opacity")==0) {$(this).fadeTo(380,1);}
+            $(".fade").each(function () {
+                if ($(this).offset().top < windowBottom) { //object comes into view (scrolling down)
+                    if ($(this).css("opacity") == 0) {
+                        $(this).fadeTo(400, 1);
+                    }
                 } else { //object goes out of view (scrolling up)
-                    if ($(this).css("opacity")==1) {$(this).fadeTo(0,0);}
+                    if ($(this).css("opacity") == 1) {
+                        $(this).fadeTo(0, 0);
+                    }
                 }
             });
         }).scroll();
@@ -136,33 +138,35 @@
                 <div class="heading-underline"></div>
             </div>
             <!-- Section Content -->
-            <div class="row fade">
-                <div class="col-md-3 text-center about-pad">
+            <div class="row">
+                <div class="col-md-3 text-center about-pad fade">
                     <img src="img/ProfileCover.jpg">
                 </div>
                 <div class="col-md-9 about-pad">
-                    <p class="text-justify">Hi there! I am a senior at the University Of California, Berkeley pursuing a
-                        B.A. in Computer Science. I am currently finishing up my degree (3 classes remaining) this fall
-                        and I am looking to do an experience building internship at the same time.
+                    <p class="text-justify fade">Hi there! I am a senior at the University Of California, Berkeley
+                        pursuing a B.A. in Computer Science. I am currently finishing up my degree (3 classes remaining)
+                        this fall and I am looking to do an experience building internship at the same time.
                     <p>
-                    <p class="text-justify">Whether it be building lego sets as a kid or creating Minecraft servers in
-                        High School, I have always enjoyed the process of building and showing my creations. This is why
-                        software development/engineering appealed so much to me throughout my time in higher education —
-                        and has ultimately pushed me to learn a vast skill set in the world of Computer Science. I have
-                        also gained a particular academic interest in Natural Language Processing, Human-Computer
-                        Interaction, and Artificial Intelligence throughout my time at UC Berkeley. </p>
-                    <p class="text-justify">I also enjoy helping and teaching other people. I spent a semester at UC
-                        Berkeley tutoring C, C++, Java, and Python in the EECS department's <a
-                                href="https://selfpaced.bitbucket.io">self-paced center</a>. I also joined a student
-                        organization called <a href="https://csmberkeley.github.io">Computer Science Mentors</a> where I
-                        mentored a group of 5 students through their lower division EECS courses. Currently in my spare
-                        time, I am working on a <a href="https://github.com/Daniel-VDM/Seq2Seq-chatbot">chatbot</a>
-                        program that allows a student to more easily learn how different parameters of a neural network
-                        model affects the fidelity of a chatbot.</p>
-                    <p class="text-justify">Outside of academia and work, I enjoy traveling to different countries and
-                        experiencing the culture whenever I get the chance. I also enjoy working on my car and anything
-                        to do with motorsports (really into F1 at the moment). And when I can find the time, I enjoy
-                        playing video games, specifically Path of Exile (let me know if you play as well!).</p>
+                    <p class="text-justify fade">Whether it be building lego sets as a kid or creating Minecraft servers
+                        in High School, I have always enjoyed the process of building and showing my creations. This is
+                        why software development/engineering appealed so much to me throughout my time in higher
+                        education — and has ultimately pushed me to learn a vast skill set in the world of Computer
+                        Science. I have also gained a particular academic interest in Natural Language Processing,
+                        Human-Computer Interaction, and Artificial Intelligence throughout my time at UC Berkeley. </p>
+                    <p class="text-justify fade">I also enjoy helping and teaching other people. I spent a semester at
+                        UC Berkeley tutoring C, C++, Java, and Python in the EECS department's <a
+                                href="https://selfpaced.bitbucket.io" target="_blank">self-paced center</a>. I also
+                        joined a student organization called <a href="https://csmberkeley.github.io" target="_blank">
+                            Computer Science Mentors</a> where I mentored a group of 5 students through their lower
+                        division
+                        EECS courses. Currently in my spare time, I am working on a <a
+                                href="https://github.com/Daniel-VDM/Seq2Seq-chatbot" target="_blank">chatbot</a> program
+                        that allows a student to more easily learn how different parameters of a neural network model
+                        affects the fidelity of a chatbot.</p>
+                    <p class="text-justify fade">Outside of academia and work, I enjoy traveling to different countries
+                        and experiencing the culture whenever I get the chance. I also enjoy working on my car and
+                        anything to do with motorsports (really into F1 at the moment). And when I can find the time, I
+                        enjoy playing video games, specifically Path of Exile (let me know if you play as well!).</p>
                 </div>
             </div>
         </div>
@@ -177,13 +181,13 @@
             <div class="heading-underline"></div>
         </div>
         <!-- Section Content -->
-        <div class="card educ fade">
+        <div class="card educ ">
             <div class="row no-gutters">
-                <div class="card-body edu-first">
+                <div class="card-body edu-first fade">
                     <h5 class="card-title text-center"><b>University Of California, Berkeley</b>
                         <br><a>B.A. Computer Science</a> - <i>GPA: 3.68/4.00</i> - Graduating December 2019</h5>
                     <h6>RELEVANT Course Work:</h6>
-                    <div class="row text-center">
+                    <div class="row text-center fade">
                         <div class="educol col-md-6">
                             <u>Computer Security</u><br>
                             <u>Intro to Database Systems</u><br>
@@ -209,7 +213,7 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="card-body">
+                <div class="card-body fade">
                     <h5 class="card-title text-center"><b>Irvine Valley College</b>
                         <br><a>Transferred</a> - <i>GPA: 3.92/4.00</i> - Transferred August 2017</h5>
                 </div>
@@ -242,7 +246,7 @@
                                 (radio navigation and data) system. In short, it would function as a position,
                                 navigation, and timing system that is similar to (but independent of) GPS. I was tasked
                                 with efficiently implementing a proprietary eLoran signal scheme (in Python and C) which
-                                interfaced with a <a href="https://www.microsemi.com/company/about-us">Microsemi</a>
+                                interfaced with a <a href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>
                                 eLoran transmitter timing unit. I was also tasked with creating development tools that
                                 simulated said timing unit’s behavior and outputted vital timing statistics. The
                                 development tools were mostly done in Python using Scipy, with some use of C for the
@@ -266,11 +270,11 @@
                             <h5 class="card-title"><b>Tutor</b>
                                 <br>UC Berkeley | <i>EECS Self-Paced Center</i></h5>
                             <p class="card-text text-justify">The EECS department at UC Berkeley provides <a
-                                    href="https://selfpaced.bitbucket.io/">self-paced courses</a> where students can
-                                learn MATLAB, C, UNIX, C++, Java, and Python. I was one of the course's tutors. We
-                                proctored and graded all of the in-person quizzes, conducted project checkoffs, and
-                                graded final exams. We also helped students debug their projects and answered questions
-                                during our office hours.</p>
+                                    href="https://selfpaced.bitbucket.io/" target="_blank">self-paced courses</a> where
+                                students can learn MATLAB, C, UNIX, C++, Java, and Python. I was one of the course's
+                                tutors. We proctored and graded all of the in-person quizzes, conducted project
+                                checkoffs, and graded final exams. We also helped students debug their projects and
+                                answered questions during our office hours.</p>
                             <p class="card-text">
                                 <small>January 2019 — May 2019</small>
                             </p>
@@ -289,10 +293,10 @@
                             <h5 class="card-title"><b>Academic Intern</b>
                                 <br>UC Berkeley | <i>Structure and Interpretation of Computer Programs</i></h5>
                             <p class="card-text text-justify">I was an intern for the <a
-                                    href="https://cs61a.org/articles/about.html">Structure and Interpretation of
-                                Computer Programs</a> (CS 61A) course where I assisted course staff by providing
-                                students with guidance and help on homeworks and projects during office hours. I was
-                                also tasked with answering questions during lab and conducting lab checkoffs. </p>
+                                    href="https://cs61a.org/articles/about.html" target="_blank">Structure and
+                                Interpretation of Computer Programs</a> (CS 61A) course where I assisted course staff by
+                                providing students with guidance and help on homeworks and projects during office hours.
+                                I was also tasked with answering questions during lab and conducting lab checkoffs. </p>
                             <p class="card-text">
                                 <small>August 2018 — December 2018</small>
                             </p>
@@ -310,14 +314,16 @@
                         <div class="card-body exp-body">
                             <h5 class="card-title"><b>Mentor</b>
                                 <br>UC Berkeley | <i>Computer Science Mentors</i></h5>
-                            <p class="card-text text-justify">I was part of the <a href="https://csmberkeley.github.io">Computer
-                                Science Mentors</a> student organization at UC Berkeley. The organization’s goal is to
-                                provide guidance and supplemental teaching sections for students taking computer
-                                sciences courses. My focus was to help students taking <a
-                                        href="https://inst.eecs.berkeley.edu/~ee16a">Designing Information Devices and
-                                    Systems 1</a> by holding a one and a half hour teaching section each week with a
-                                group of 5 students to review that week's course content. I also provided extra support
-                                when it came to course selection and general support throughout the year.</p>
+                            <p class="card-text text-justify">I was part of the <a href="https://csmberkeley.github.io"
+                                                                                   target="_blank">Computer Science
+                                Mentors</a> student organization at UC Berkeley. The organization’s goal is to provide
+                                guidance and supplemental teaching sections for students taking computer sciences
+                                courses. My focus was to help students taking <a
+                                        href="https://inst.eecs.berkeley.edu/~ee16a" target="_blank">Designing
+                                    Information Devices and Systems 1</a> by holding a one and a half hour teaching
+                                section each week with a group of 5 students to review that week's course content. I
+                                also provided extra support when it came to course selection and general support
+                                throughout the year.</p>
                             <p class="card-text">
                                 <small>January 2019 — May 2019</small>
                             </p>
@@ -336,11 +342,11 @@
                             <h5 class="card-title"><b>Technology Advisor</b>
                                 <br>J-Sei Community Center</h5>
                             <p class="card-text text-justify">I was part of a <a
-                                    href="https://decal.berkeley.edu/courses/4855">student group</a> at UC Berkeley that
-                                volunteered their weekends to help teach/advise the elderly at <a
-                                        href="https://j-sei.org/">J-Sei</a> on a variety of tech-related topics. I
-                                primarily focused on tech safety topics with a heavy emphasis on privacy, recognizing
-                                scams, and avoiding identity theft.</p>
+                                    href="https://decal.berkeley.edu/courses/4855" target="_blank">student group</a> at
+                                UC Berkeley that volunteered their weekends to help teach/advise the elderly at <a
+                                        href="https://j-sei.org/" target="_blank">J-Sei</a> on a variety of tech-related
+                                topics. I primarily focused on tech safety topics with a heavy emphasis on privacy,
+                                recognizing scams, and avoiding identity theft.</p>
                             <p class="card-text">
                                 <small>September 2017 — November 2017</small>
                             </p>
@@ -382,8 +388,9 @@
                             <h5 class="card-title"><b>Graphic Designer</b>
                                 <br>Cauldron Ice Cream</h5>
                             <p class="card-text text-justify">I worked with the store owners to design their launch
-                                website and marketing assets along with a <a href="https://imgur.com/a/Wt4MI3A">dynamic
-                                    menu</a> that could be easily modified.</p>
+                                website and marketing assets along with a <a href="https://imgur.com/a/Wt4MI3A"
+                                                                             target="_blank">dynamic menu</a>
+                                that could be easily modified.</p>
                             <p class="card-text">
                                 <small>September 2015 — December 2015</small>
                             </p>
@@ -401,9 +408,9 @@
 
 <div id="portfolio" class="offset">
     <div class="row portfolio-bg">
-        <div class="narrow">
+        <div class="narrow fade">
             <!-- Section Heading -->
-            <div class="col-12 text-center fade">
+            <div class="col-12 text-center">
                 <h3 class="heading">Portfolio</h3>
                 <div class="heading-underline"></div>
             </div>
@@ -413,7 +420,7 @@
             </button>
 
             <!-- Section Content -->
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="chatBotHeading">
                     <button id="_chatBot" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#chatBot" aria-expanded="true" aria-controls="chatBot">
@@ -445,18 +452,19 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href="https://github.com/Daniel-VDM/Easy-Seq2Seq-chatbot"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="websiteHeading">
                     <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#website" aria-expanded="true" aria-controls="website">
@@ -476,18 +484,19 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href="https://github.com/Daniel-VDM/Daniel-VDM.github.io"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="loranHeading">
                     <button id="_loran" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#loran" aria-expanded="false" aria-controls="loran">
@@ -519,7 +528,7 @@
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="npApproxHeading">
                     <button id="_npApprox" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
@@ -531,8 +540,8 @@
                 </div>
                 <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
                     <div class="card-body port text-justify">
-                        <p>This was a group project for the <a href="https://cs170.org/">Efficient Algorithms and
-                            Intractable Problems</a> course at UC Berkeley.</p>
+                        <p>This was a group project for the <a href="https://cs170.org/" target="_blank">Efficient
+                            Algorithms and Intractable Problems</a> course at UC Berkeley.</p>
 
                         <p>It approximates a solution to the following problem: Given a group of children, friendship
                             relations, <i>n</i> buses and a set of trouble groups, find an assignment of students to the
@@ -551,18 +560,19 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href="https://github.com/Daniel-VDM/CS170_Project"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="coRefHeading">
                     <button id="_coRef" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#coRef" aria-expanded="false" aria-controls="coRef">
@@ -583,11 +593,12 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href="https://github.com/Daniel-VDM/Coreference-Annotator"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
@@ -614,18 +625,19 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href=""
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="cnnHeading">
                     <button id="_cnn" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#cnn" aria-expanded="false" aria-controls="cnn">
@@ -657,7 +669,7 @@
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="compilerHeading">
                     <button id="_compiler" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#compiler" aria-expanded="false" aria-controls="compiler">
@@ -688,7 +700,7 @@
                 </div>
             </div>
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="schemeHeading">
                     <button id="_scheme" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#scheme" aria-expanded="false" aria-controls="scheme">
@@ -706,11 +718,12 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href="https://github.com/Daniel-VDM/Scheme-Interpreter"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
@@ -718,7 +731,7 @@
             </div>
 
 
-            <div class="card card-port fade">
+            <div class="card card-port">
                 <div class="card-header port" id="blocksHeading">
                     <button id="_blocks" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#blocks" aria-expanded="false" aria-controls="blocks">
@@ -735,11 +748,12 @@
                         <div class="row">
                             <div class="col-md-9 col-xs-12 port-foot">
                                 The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM">my GitHub page</a>.
+                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
                             </div>
                             <div class="col-md-3 col-xs-12 port-foot text-center">
                                 <a type="button" href="https://github.com/Daniel-VDM/Sliding-Block-Puzzle-Solver"
-                                   class="btn btn port-body-btn"><i class="fab fa-github"></i> Project Repo</a>
+                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
+                                    Repo</a>
                             </div>
                         </div>
                     </div>
@@ -747,6 +761,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <div id="skills" class="offset">
@@ -849,10 +864,10 @@
             <div class="socket"></div>
             <div class="col-md-5 text-center footer">
                 Website built by Daniel Van Der Maden with Bootstrap 4<br>
-                Images from <a href="http://www.freepik.com">Onlyyouqj</a> and <a
+                Images from <a href="http://www.freepik.com">Onlyyouqj</a> and <a target="_blank"
                     href='https://jooinn.com/coding.html?ref=22842'>Negativespace</a><br>
-                Website theme inspired by <a href="https://www.youtube.com/channel/UCtXGz0MBuqZUC8rmGddc07Q"> Drew
-                Ryan</a>
+                Website theme inspired by <a href="https://www.youtube.com/channel/UCtXGz0MBuqZUC8rmGddc07Q"
+                                             target="_blank"> Drew Ryan</a>
             </div>
         </div>
     </footer>
