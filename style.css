@@ -288,12 +288,12 @@ h3.heading {
 .btn.port-header-btn:after {
     display: inline-block;
     font: normal normal normal 20px/1 FontAwesome;
-    content: "\f068";
+    content: "\f077";
     float: right;
 }
 
 .btn.port-header-btn.collapsed:after {
-    content: "\f067";
+    content: "\f078";
 }
 
 .card.card-port {

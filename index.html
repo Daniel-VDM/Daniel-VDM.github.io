@@ -18,7 +18,7 @@
 
 <script>
     window.onload = function () {
-        portfolioToggle(); // Portfolio icon fix.
+        portfolioToggle(); // Portfolio icon fix
     };
 
     var isPortfolioToggled = true; // Global for portfolioToggle()
@@ -28,14 +28,12 @@
         var btnObjs = document.getElementsByClassName("btn port-header-btn text-left")
         for (var i = 0; i < btnObjs.length; i++) {
             var classStr = document.getElementById(btnObjs[i].id.toString().slice(1,)).className.toString()
-            if (isPortfolioToggled) {
-                if (classStr == "collapse portfolioBody show" || classStr == "portfolioBody collapse show") {
-                    btnObjs[i].click();
-                }
-            } else {
-                if (classStr == "collapse portfolioBody" || classStr == "portfolioBody collapse") {
-                    btnObjs[i].click();
-                }
+            if (isPortfolioToggled
+                && (classStr == "collapse portfolioBody show" || classStr == "portfolioBody collapse show")) {
+                btnObjs[i].click();
+            } else if (!isPortfolioToggled
+                && (classStr == "collapse portfolioBody" || classStr == "portfolioBody collapse")) {
+                btnObjs[i].click();
             }
         }
         isPortfolioToggled = !isPortfolioToggled;
@@ -48,7 +46,7 @@
             $(".fade").each(function () {
                 if ($(this).offset().top < windowBottom) { //object comes into view (scrolling down)
                     if ($(this).css("opacity") == 0) {
-                        $(this).fadeTo(400, 1);
+                        $(this).fadeTo(350, 1);
                     }
                 } else { //object goes out of view (scrolling up)
                     if ($(this).css("opacity") == 1) {
@@ -89,7 +87,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="DanielVDMadenResume.pdf"><i class="fa fa-file-pdf"
+                    <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
                                                                           aria-hidden="true"> </i> Resume</a>
                 </li>
                 <li class="nav-item">
@@ -124,7 +122,7 @@
         <img src="img/sig.png" class="img-fluid" alt="Responsive image">
         <h1><b>Daniel Van Der Maden</b></h1>
         <h3><i>Student | Software Engineer</i></h3>
-        <a class="btn btn-outline-light btn-lg" href="DanielVDMadenResume.pdf"><i class="fa fa-file-pdf"
+        <a class="btn btn-outline-light btn-lg" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
                                                                                   aria-hidden="true"> </i> My Resume</a>
     </div>
 </div>
@@ -762,7 +760,6 @@
         </div>
     </div>
 </div>
-</div>
 
 <div id="skills" class="offset">
     <div class="row skills-bg">
@@ -865,9 +862,7 @@
             <div class="col-md-5 text-center footer">
                 Website built by Daniel Van Der Maden with Bootstrap 4<br>
                 Images from <a href="http://www.freepik.com">Onlyyouqj</a> and <a target="_blank"
-                    href='https://jooinn.com/coding.html?ref=22842'>Negativespace</a><br>
-                Website theme inspired by <a href="https://www.youtube.com/channel/UCtXGz0MBuqZUC8rmGddc07Q"
-                                             target="_blank"> Drew Ryan</a>
+                                                                                  href='https://jooinn.com/coding.html?ref=22842'>Negativespace</a><br>
             </div>
         </div>
     </footer>
