@@ -76,22 +76,22 @@
     }
 
     .caption h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         letter-spacing: .1rem;
     }
 
     .caption h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 400;
-        padding-bottom: .8rem;
+        padding-bottom: .5rem;
     }
 
     .btn-lg {
         background-color: #4db8ff;
         border-radius: 0;
         text-transform: uppercase;
-        padding: .4rem 1rem;
-        font-size: .8rem;
+        padding: .3rem .5rem;
+        font-size: 0.7rem;
     }
 
     .btn-lg:hover {
@@ -221,6 +221,11 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .btn.btn-outline-success.port-intro{
+        margin-top: 12px;
+        font-size: .8rem;
+
+    }
 
 
     /*Mobile Skills*/
@@ -291,8 +296,8 @@
 
     .btn.btn.port-body-btn {
         float: none;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        margin-top: .75rem;
+        margin-bottom: .1rem;
         margin-left: 3px;
         font-size: 0.7rem;
     }
@@ -324,5 +329,31 @@
         color: black;
         font-size: 2.2rem;
         margin: 0 .5rem 0 0;
+    }
+}
+
+/*Super Small Changes*/
+@media (max-width: 321px){
+    .caption h1 {
+        font-size: 1.7rem;
+    }
+    .caption h3 {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+    .btn.port-header-btn.text-left {
+        line-height: 1rem;
+        font-size: .85rem;
+    }
+    .skills-body {
+        font-size: .65rem;
+    }
+    .skills b {
+        font-size: 1rem;
+    }
+    h5.card-title.text-center,
+    h5.card-title.text-center i,
+    h5.card-title.text-center a{
+        font-size: .55rem;
     }
 }

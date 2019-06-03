@@ -18,8 +18,19 @@
 
 <script>
     window.onload = function () {
+        sleep(700) // Midpage reload fade fix
         portfolioToggle(); // Portfolio icon fix
     };
+
+    // Simple sleep function.
+    function sleep(ms) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > ms) {
+                break;
+            }
+        }
+    }
 
     var isPortfolioToggled = true; // Global for portfolioToggle()
 
@@ -88,7 +99,8 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                          aria-hidden="true"> </i> Resume</a>
+                                                                                          aria-hidden="true"> </i>
+                        Resume</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -123,7 +135,8 @@
         <h1><b>Daniel Van Der Maden</b></h1>
         <h3><i>Student | Software Engineer</i></h3>
         <a class="btn btn-outline-light btn-lg" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                  aria-hidden="true"> </i> My Resume</a>
+                                                                                                  aria-hidden="true"> </i>
+            My Resume</a>
     </div>
 </div>
 
@@ -413,9 +426,29 @@
                 <div class="heading-underline"></div>
             </div>
 
-            <button class="btn btn-primary" type="button" onclick="portfolioToggle()" aria-expanded="false">Toggle both
-                elements
-            </button>
+            <div class="row fade">
+                <div class="col-md-12 port-intro-pad">
+                    <div class="card port-intro">
+                        <p>
+                            Below you will find an interactive list of notable projects that I've done throughout my
+                            time at UC Berkeley and beyond.<br><br>
+
+                            You can click on each project to see a short description of what it is, some detail on its
+                            key features as well as an overview of what I've learned from the project. Also, if
+                            available, a link to each project's repository can be found in their respective
+                            descriptions. Lastly, if you would like to know more about any of the projects listed below,
+                            feel free to contact me! <br><br>
+
+                            I will be updating the list once I have new things to share!
+                            <button class="btn btn-outline-success port-intro" type="button" onclick="portfolioToggle()"
+                                    aria-expanded="false">
+                                Toggle All Discriptions
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Section Content -->
             <div class="card card-port">
