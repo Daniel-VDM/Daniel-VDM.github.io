@@ -338,6 +338,18 @@ h3.heading {
     box-shadow: inset 0 1px 7px #000000;
 }
 
+.col-12.port{
+    padding: 0;
+}
+
+.col-md-9.col-xs-12.port-foot{
+    padding: 0;
+}
+
+.col-md-3.col-xs-12.port-foot{
+    padding: 0;
+}
+
 /* Green Button for portfolio */
 .btn.btn.port-body-btn {
     -webkit-appearance: none !important;
