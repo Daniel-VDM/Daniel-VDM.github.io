@@ -21,8 +21,9 @@
         portfolioToggle(); // Portfolio icon fix.
     };
 
-    var isPortfolioToggled = true;
+    var isPortfolioToggled = true; // Global for portfolioToggle()
 
+    // Global toggler for the interactive list in the portfolio section.
     function portfolioToggle() {
         var btnObjs = document.getElementsByClassName("btn port-header-btn text-left")
         for (var i = 0; i < btnObjs.length; i++) {
@@ -40,8 +41,24 @@
         isPortfolioToggled = !isPortfolioToggled;
     }
 
+    // Add fading when elements come in/out of view.
+    $(window).on("load",function() {
+        $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fade").each(function() {
+                var objectBottom = $(this).offset().top + $(this).outerHeight()/5;
+
+                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                    if ($(this).css("opacity")==0) {$(this).fadeTo(400,1);}
+                } else { //object goes out of view (scrolling up)
+                    if ($(this).css("opacity")==1) {$(this).fadeTo(0,0);}
+                }
+            });
+        }).scroll();
+    });
+
+    // Add smooth scrolling to all links
     $(document).ready(function () {
-        // Add smooth scrolling to all links
         $("a").on('click', function (event) {
             if (this.hash !== "") {
                 event.preventDefault();
@@ -114,12 +131,12 @@
     <div class="about-bg">
         <div class="narrow">
             <!-- Section Heading -->
-            <div class="col-12 text-center">
+            <div class="col-12 text-center fade">
                 <h3 class="heading">About Me</h3>
                 <div class="heading-underline"></div>
             </div>
             <!-- Section Content -->
-            <div class="row">
+            <div class="row fade">
                 <div class="col-md-3 text-center about-pad">
                     <img src="img/ProfileCover.jpg">
                 </div>
@@ -155,12 +172,12 @@
 <div id="education" class="offset">
     <div class="narrow edu">
         <!-- Section Heading -->
-        <div class="col-12 text-center">
+        <div class="col-12 text-center fade">
             <h3 class="heading">Education</h3>
             <div class="heading-underline"></div>
         </div>
         <!-- Section Content -->
-        <div class="card educ">
+        <div class="card educ fade">
             <div class="row no-gutters">
                 <div class="card-body edu-first">
                     <h5 class="card-title text-center"><b>University Of California, Berkeley</b>
@@ -206,13 +223,13 @@
     <div class="fixed-background">
         <div class="row dark">
             <!-- Section Heading -->
-            <div class="col-12 text-center">
+            <div class="col-12 text-center fade">
                 <h3 class="heading">Experience</h3>
                 <div class="heading-underline"></div>
             </div>
 
             <!-- Section Content -->
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/microsemi.png" class="card-img img-fluid">
@@ -239,7 +256,7 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/ucbseal.png" class="card-img">
@@ -262,7 +279,7 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/ucbseal.png" class="card-img">
@@ -284,7 +301,7 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/csm.png" class="card-img">
@@ -309,7 +326,7 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/jsei.png" class="card-img">
@@ -332,7 +349,7 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/tutor.jpg" class="card-img">
@@ -355,7 +372,7 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow">
+            <div class="card exp narrow fade">
                 <div class="row no-gutters">
                     <div class="col-md-2 col-xs-0 text-center exp-pic">
                         <img src="img/cauldron.jpg" class="card-img">
@@ -386,7 +403,7 @@
     <div class="row portfolio-bg">
         <div class="narrow">
             <!-- Section Heading -->
-            <div class="col-12 text-center">
+            <div class="col-12 text-center fade">
                 <h3 class="heading">Portfolio</h3>
                 <div class="heading-underline"></div>
             </div>
@@ -396,7 +413,7 @@
             </button>
 
             <!-- Section Content -->
-            <div class="card">
+            <div class="card card-port fade">
                 <div class="card-header port" id="chatBotHeading">
                     <button id="_chatBot" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#chatBot" aria-expanded="true" aria-controls="chatBot">
@@ -439,7 +456,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card card-port fade">
                 <div class="card-header port" id="websiteHeading">
                     <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#website" aria-expanded="true" aria-controls="website">
@@ -470,7 +487,7 @@
                 </div>
             </div>
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="loranHeading">
                     <button id="_loran" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#loran" aria-expanded="false" aria-controls="loran">
@@ -502,7 +519,7 @@
                 </div>
             </div>
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="npApproxHeading">
                     <button id="_npApprox" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
@@ -545,7 +562,7 @@
                 </div>
             </div>
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="coRefHeading">
                     <button id="_coRef" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#coRef" aria-expanded="false" aria-controls="coRef">
@@ -608,7 +625,7 @@
                 </div>
             </div>
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="cnnHeading">
                     <button id="_cnn" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#cnn" aria-expanded="false" aria-controls="cnn">
@@ -640,7 +657,7 @@
                 </div>
             </div>
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="compilerHeading">
                     <button id="_compiler" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#compiler" aria-expanded="false" aria-controls="compiler">
@@ -671,7 +688,7 @@
                 </div>
             </div>
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="schemeHeading">
                     <button id="_scheme" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#scheme" aria-expanded="false" aria-controls="scheme">
@@ -701,7 +718,7 @@
             </div>
 
 
-            <div class="card card-port">
+            <div class="card card-port fade">
                 <div class="card-header port" id="blocksHeading">
                     <button id="_blocks" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#blocks" aria-expanded="false" aria-controls="blocks">
@@ -736,12 +753,12 @@
     <div class="row skills-bg">
         <div class="narrow skills">
             <!-- Section Heading -->
-            <div class="col-12 text-center">
+            <div class="col-12 text-center fade">
                 <h3 class="heading">Skills</h3>
                 <div class="heading-underline"></div>
             </div>
             <!-- Section Content -->
-            <div class="card skills-card">
+            <div class="card skills-card fade">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-xs-0 skills-label">
                         <b>Programming<br>Languages</b>
@@ -765,7 +782,7 @@
                 </div>
             </div>
             <br>
-            <div class="card skills-card">
+            <div class="card skills-card fade">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-xs-0 skills-label">
                         <b>Technologies</b>
@@ -781,7 +798,7 @@
                 </div>
             </div>
             <br>
-            <div class="card skills-card">
+            <div class="card skills-card fade">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-xs-0 skills-label">
                         <b>Misc Tools</b>
@@ -795,7 +812,7 @@
                 </div>
             </div>
             <br>
-            <div class="card skills-card">
+            <div class="card skills-card fade">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-xs-0 skills-label">
                         <b>Spoken languages</b>
