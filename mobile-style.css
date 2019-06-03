@@ -268,15 +268,20 @@
 
     .btn.port-header-btn.text-left {
         line-height: 1.1rem;
-        font-size: .97rem;
+        font-size: 1rem;
     }
 
     .btn.port-header-btn.text-left:after {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .card-body.port {
         font-size: .875rem;
+        padding: 16px;
+    }
+
+    .card-header.port{
+        padding: 6px 12px;
     }
 
     .badge.badge-info.port-badge1,

@@ -280,25 +280,20 @@ h3.heading {
     box-shadow: none;
 }
 
-.btn.port-header-btn.text-left:hover,
-.btn.port-header-btn.text-left.collapsed:hover {
+.btn.port-header-btn:hover,
+.btn.port-header-btn.collapsed:hover {
     color: #505962;
 }
 
-.btn.port-header-btn.text-left:after {
+.btn.port-header-btn:after {
     display: inline-block;
-    font: normal normal normal 18px/1 FontAwesome;
-    font-size: 24px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f13a";
+    font: normal normal normal 20px/1 FontAwesome;
+    content: "\f068";
     float: right;
 }
 
-.btn.port-header-btn.text-left.collapsed:after {
-    color: #00FF00;
-    content: "\f058";
+.btn.port-header-btn.collapsed:after {
+    content: "\f067";
 }
 
 .card.card-port {
@@ -310,12 +305,14 @@ h3.heading {
 .card-header.port {
     background-color: #4db8ff;
     border-radius: 0;
+    padding: 10px 16px;
 }
 
 .card-body.port {
     color: white;
     background-color: #505962;
     font-size: 1.1rem;
+    padding: 16px;
 }
 
 .card-body.port a {

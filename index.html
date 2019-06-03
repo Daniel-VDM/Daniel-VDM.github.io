@@ -17,6 +17,29 @@
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 
 <script>
+    window.onload = function () {
+        portfolioToggle(); // Portfolio icon fix.
+    };
+
+    var isPortfolioToggled = true;
+
+    function portfolioToggle() {
+        var btnObjs = document.getElementsByClassName("btn port-header-btn text-left")
+        for (var i = 0; i < btnObjs.length; i++) {
+            var classStr = document.getElementById(btnObjs[i].id.toString().slice(1,)).className.toString()
+            if (isPortfolioToggled) {
+                if (classStr == "collapse portfolioBody show" || classStr == "portfolioBody collapse show") {
+                    btnObjs[i].click();
+                }
+            } else {
+                if (classStr == "collapse portfolioBody" || classStr == "portfolioBody collapse") {
+                    btnObjs[i].click();
+                }
+            }
+        }
+        isPortfolioToggled = !isPortfolioToggled;
+    }
+
     $(document).ready(function () {
         // Add smooth scrolling to all links
         $("a").on('click', function (event) {
@@ -187,6 +210,7 @@
                 <h3 class="heading">Experience</h3>
                 <div class="heading-underline"></div>
             </div>
+
             <!-- Section Content -->
             <div class="card exp narrow">
                 <div class="row no-gutters">
@@ -366,10 +390,15 @@
                 <h3 class="heading">Portfolio</h3>
                 <div class="heading-underline"></div>
             </div>
+
+            <button class="btn btn-primary" type="button" onclick="portfolioToggle()" aria-expanded="false">Toggle both
+                elements
+            </button>
+
             <!-- Section Content -->
             <div class="card">
                 <div class="card-header port" id="chatBotHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_chatBot" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#chatBot" aria-expanded="true" aria-controls="chatBot">
                         Easy Seq2Seq Chatbot<br>
                         <span class="badge badge-info port-badge1">Python 3</span> <span
@@ -377,7 +406,7 @@
                         <span class="badge badge-info port-badge">nltk</span> <span class="badge badge-info port-badge">spaCy</span>
                     </button>
                 </div>
-                <div id="chatBot" class="collapse show" aria-labelledby="chatBotHeading">
+                <div id="chatBot" class="collapse portfolioBody show" aria-labelledby="chatBotHeading">
                     <div class="card-body port text-justify">
                         <p>This is a personal project that I work on in my free time.</p>
 
@@ -412,7 +441,7 @@
 
             <div class="card">
                 <div class="card-header port" id="websiteHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#website" aria-expanded="true" aria-controls="website">
                         My Resume Website<br>
                         <span class="badge badge-info port-badge1">HTML5</span> <span
@@ -421,7 +450,7 @@
                             class="badge badge-info port-badge">Bootstrap 4</span>
                     </button>
                 </div>
-                <div id="website" class="collapse" aria-labelledby="websiteHeading">
+                <div id="website" class="collapse portfolioBody show" aria-labelledby="websiteHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of website
@@ -443,7 +472,7 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="loranHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_loran" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#loran" aria-expanded="false" aria-controls="loran">
                         Modernized eLoran Implementation<br>
                         <span class="badge badge-info port-badge1">C</span> <span
@@ -452,7 +481,7 @@
                             class="badge badge-info port-badge">Matplotlib</span>
                     </button>
                 </div>
-                <div id="loran" class="collapse" aria-labelledby="loranHeading">
+                <div id="loran" class="collapse portfolioBody show" aria-labelledby="loranHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of eLoran
@@ -475,7 +504,7 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="npApproxHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_npApprox" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
                         Approximate Solver for a NP-Hard Problem<br>
                         <span class="badge badge-info port-badge1">Python 3</span> <span
@@ -483,7 +512,7 @@
                         <span class="badge badge-info port-badge">NetworkX</span>
                     </button>
                 </div>
-                <div id="npApprox" class="collapse" aria-labelledby="npApproxHeading">
+                <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
                     <div class="card-body port text-justify">
                         <p>This was a group project for the <a href="https://cs170.org/">Efficient Algorithms and
                             Intractable Problems</a> course at UC Berkeley.</p>
@@ -518,7 +547,7 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="coRefHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_coRef" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#coRef" aria-expanded="false" aria-controls="coRef">
                         Coreference Annotator<br>
                         <span class="badge badge-info port-badge1">Python 3</span> <span
@@ -527,7 +556,7 @@
                             class="badge badge-info port-badge">nltk</span>
                     </button>
                 </div>
-                <div id="coRef" class="collapse" aria-labelledby="coRefHeading">
+                <div id="coRef" class="collapse portfolioBody show" aria-labelledby="coRefHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of Coref
@@ -550,13 +579,13 @@
 
             <div class="card">
                 <div class="card-header port" id="fileServerHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_fileServer" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#fileServer" aria-expanded="true" aria-controls="fileServer">
                         Concurrent Cached File Server<br>
                         <span class="badge badge-info port-badge1">Golang</span>
                     </button>
                 </div>
-                <div id="fileServer" class="collapse" aria-labelledby="fileServerHeading">
+                <div id="fileServer" class="collapse portfolioBody show" aria-labelledby="fileServerHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of FileServer
@@ -581,7 +610,7 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="cnnHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_cnn" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#cnn" aria-expanded="false" aria-controls="cnn">
                         Parallelized CNN Image Classifier<br>
                         <span class="badge badge-info port-badge1">C</span> <span class="badge badge-info port-badge">Gprof</span>
@@ -589,7 +618,7 @@
                             class="badge badge-info port-badge">OpenMP</span>
                     </button>
                 </div>
-                <div id="cnn" class="collapse" aria-labelledby="cnnHeading">
+                <div id="cnn" class="collapse portfolioBody show" aria-labelledby="cnnHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of CNN
@@ -613,14 +642,14 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="compilerHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_compiler" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#compiler" aria-expanded="false" aria-controls="compiler">
                         61Ccc Compiler (to RISC-V)<br>
                         <span class="badge badge-info port-badge1">C</span> <span class="badge badge-info port-badge1">RISC-V</span>
                         <span class="badge badge-info port-badge">CUnit</span>
                     </button>
                 </div>
-                <div id="compiler" class="collapse" aria-labelledby="compilerHeading">
+                <div id="compiler" class="collapse portfolioBody show" aria-labelledby="compilerHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of Compiler
@@ -644,14 +673,14 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="schemeHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_scheme" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#scheme" aria-expanded="false" aria-controls="scheme">
                         Scheme Interpreter<br>
                         <span class="badge badge-info port-badge1">Python 3</span> <span
                             class="badge badge-info port-badge1">Scheme</span>
                     </button>
                 </div>
-                <div id="scheme" class="collapse" aria-labelledby="schemeHeading">
+                <div id="scheme" class="collapse portfolioBody show" aria-labelledby="schemeHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of Scheme
@@ -674,13 +703,13 @@
 
             <div class="card card-port">
                 <div class="card-header port" id="blocksHeading">
-                    <button class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                    <button id="_blocks" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
                             data-target="#blocks" aria-expanded="false" aria-controls="blocks">
                         Sliding Block Puzzle Solver<br>
                         <span class="badge badge-info port-badge1">Java</span>
                     </button>
                 </div>
-                <div id="blocks" class="collapse" aria-labelledby="blocksHeading">
+                <div id="blocks" class="collapse portfolioBody show" aria-labelledby="blocksHeading">
                     <div class="card-body port text-justify">
                         <p>
                             TODO: Body of Blocks
@@ -699,8 +728,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
