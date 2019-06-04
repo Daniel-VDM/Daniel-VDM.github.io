@@ -89,10 +89,11 @@
     .btn-lg {
         background-color: #4db8ff;
         border-radius: 0;
+        border-width: 2px;
         text-transform: uppercase;
         padding: .3rem .5rem;
         font-size: 0.7rem;
-        box-shadow: 0 1px 0.5rem black;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.7);
     }
 
     .btn-lg:hover {
@@ -297,7 +298,7 @@
 
     .btn.btn.port-body-btn {
         float: none;
-        margin-top: .75rem;
+        margin-top: 12px;
         margin-bottom: .1rem;
         margin-left: 3px;
         font-size: 0.7rem;
