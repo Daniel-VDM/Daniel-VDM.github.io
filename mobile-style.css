@@ -92,6 +92,7 @@
         text-transform: uppercase;
         padding: .3rem .5rem;
         font-size: 0.7rem;
+        box-shadow: 0 0.1rem 0.8rem black;
     }
 
     .btn-lg:hover {
