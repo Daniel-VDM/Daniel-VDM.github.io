@@ -131,8 +131,19 @@
         padding-right: 0;
     }
 
+    .card.about-pad {
+        margin: auto;
+        width: 95%;
+        border-width: 3px!important;
+        box-shadow: 0 0 5px #4db8ff;
+    }
 
-    /*Mobile Education stuff*/
+    .card.about-pad p{
+        font-size: .87rem;
+    }
+
+
+        /*Mobile Education stuff*/
     .heading-underline.education-line {
         margin-bottom: 5px;
         height: 1px;

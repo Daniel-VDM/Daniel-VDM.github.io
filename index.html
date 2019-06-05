@@ -12,78 +12,6 @@
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-
-<script>
-    window.onload = function () {
-        sleep(600) // Midpage reload fade fix
-        portfolioToggle(); // Portfolio icon fix
-    };
-
-    // Simple sleep function.
-    function sleep(ms) {
-        var start = new Date().getTime();
-        for (var i = 0; i < 1e7; i++) {
-            if ((new Date().getTime() - start) > ms) {
-                break;
-            }
-        }
-    }
-
-    var isPortfolioToggled = true; // Global for portfolioToggle()
-
-    // Global toggler for the interactive list in the portfolio section.
-    function portfolioToggle() {
-        var btnObjs = document.getElementsByClassName("btn port-header-btn text-left")
-        for (var i = 0; i < btnObjs.length; i++) {
-            var classStr = document.getElementById(btnObjs[i].id.toString().slice(1,)).className.toString()
-            if (isPortfolioToggled
-                && (classStr == "collapse portfolioBody show" || classStr == "portfolioBody collapse show")) {
-                btnObjs[i].click();
-            } else if (!isPortfolioToggled
-                && (classStr == "collapse portfolioBody" || classStr == "portfolioBody collapse")) {
-                btnObjs[i].click();
-            }
-        }
-        isPortfolioToggled = !isPortfolioToggled;
-    }
-
-    // Add fading when elements come in/out of view.
-    $(window).on("load", function () {
-        $(window).scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function () {
-                if ($(this).offset().top < windowBottom) { //object comes into view (scrolling down)
-                    if ($(this).css("opacity") == 0) {
-                        $(this).fadeTo(300, 1);
-                    }
-                } else { //object goes out of view (scrolling up)
-                    if ($(this).css("opacity") == 1) {
-                        $(this).fadeTo(0, 0);
-                    }
-                }
-            });
-        }).scroll();
-    });
-
-    // Add smooth scrolling to all links
-    $(document).ready(function () {
-        $("a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 400, function () {
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-</script>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
 <div id="home">
@@ -155,19 +83,17 @@
             </div>
             <!-- Section Content -->
             <div class="row">
-                <div class="col-md-3 text-center about-pad fade">
-                    <img src="img/ProfileCover.jpg">
-                </div>
-                <div class="col-md-9 about-pad">
+                <div class="card about-pad fade">
                     <p class="text-justify fade">Hi there! I am a senior at the University Of California, Berkeley
                         pursuing a B.A. in Computer Science. I am currently finishing up my degree (3 classes remaining)
-                        this fall and I am looking to do an experience building internship at the same time.
-                    <p>
+                        this fall and I am looking to do an experience building internship at the same time.</p>
+
                     <p class="text-justify fade">I have always enjoyed the process of building and showing my creations.
                         This is why software development/engineering appealed so much to me throughout my time in higher
                         education — and has ultimately pushed me to learn a vast skill set in the world of Computer
                         Science. I have also gained a particular academic interest in Natural Language Processing,
-                        Human-Computer Interaction, and Artificial Intelligence throughout my time at UC Berkeley. </p>
+                        Human-Computer Interaction, and Artificial Intelligence throughout my time at UC Berkeley.</p>
+
                     <p class="text-justify fade">I also enjoy helping and teaching other people. I spent a semester at
                         UC Berkeley tutoring C, C++, Java, and Python in the EECS department's <a
                                 href="https://selfpaced.bitbucket.io" target="_blank">self-paced center</a>. I also
@@ -178,10 +104,17 @@
                                 href="https://github.com/Daniel-VDM/Seq2Seq-chatbot" target="_blank">chatbot</a> program
                         that allows a student to more easily learn how different parameters of a neural network model
                         affects the fidelity of a chatbot.</p>
-                    <p class="text-justify fade">Outside of academia and work, I enjoy traveling to different countries
-                        and experiencing the culture whenever I get the chance. I also enjoy working on my car and
-                        anything to do with motorsports (really into F1 at the moment). And when I can find the time, I
-                        enjoy playing video games, specifically Path of Exile (let me know if you play as well!).</p>
+
+                    <p class="text-justify fade">
+                        I have had the opportunity to professionally work with a team during my 2018 summer internship
+                        at <a href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a> where I
+                        helped develop a modernized eLoran (radio navigation and data) system. During my time there, I
+                        implemented the new eLoran logic in a custom transmitter timer unit and created development
+                        tools for the timer unit. The internship taught me a lot of practical skills such as how the
+                        code review process works in a professional setting, how to create a robust test suite, and how
+                        to communicate with different teams to get a task done.
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -928,4 +861,76 @@
     </footer>
 </div>
 </body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script>
+    window.onload = function () {
+        sleep(500) // Midpage reload fade fix
+        portfolioToggle(); // Portfolio icon fix
+    };
+
+    // Simple sleep function.
+    function sleep(ms) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > ms) {
+                break;
+            }
+        }
+    }
+
+    var isPortfolioToggled = true; // Global for portfolioToggle()
+
+    // Global toggler for the interactive list in the portfolio section.
+    function portfolioToggle() {
+        var btnObjs = document.getElementsByClassName("btn port-header-btn text-left")
+        for (var i = 0; i < btnObjs.length; i++) {
+            var classStr = document.getElementById(btnObjs[i].id.toString().slice(1,)).className.toString()
+            if (isPortfolioToggled
+                && (classStr == "collapse portfolioBody show" || classStr == "portfolioBody collapse show")) {
+                btnObjs[i].click();
+            } else if (!isPortfolioToggled
+                && (classStr == "collapse portfolioBody" || classStr == "portfolioBody collapse")) {
+                btnObjs[i].click();
+            }
+        }
+        isPortfolioToggled = !isPortfolioToggled;
+    }
+
+    // Add fading when elements come in/out of view.
+    $(window).on("load", function () {
+        $(window).scroll(function () {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fade").each(function () {
+                if ($(this).offset().top < windowBottom) { //object comes into view (scrolling down)
+                    if ($(this).css("opacity") == 0) {
+                        $(this).fadeTo(300, 1);
+                    }
+                } else { //object goes out of view (scrolling up)
+                    if ($(this).css("opacity") == 1) {
+                        $(this).fadeTo(0, 0);
+                    }
+                }
+            });
+        }).scroll();
+    });
+
+    // Add smooth scrolling to all links
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 400, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
 </html>
