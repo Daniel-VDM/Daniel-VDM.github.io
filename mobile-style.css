@@ -112,15 +112,14 @@
         text-transform: uppercase;
     }
 
-    .heading-underline {
-        width: 10rem;
-        height: .1rem;
-        background-color: #4db8ff;
-        margin: 0 auto 1rem;
-    }
-
 
     /*Mobile About Me*/
+    .heading-underline.about {
+        margin-bottom: 5px;
+        height: 1px;
+        width: 9.5rem;
+    }
+
     .about-bg {
         padding-left: 0;
         padding-right: 0;
@@ -128,6 +127,12 @@
 
 
     /*Mobile Education stuff*/
+    .heading-underline.education {
+        margin-bottom: 5px;
+        height: 1px;
+        width: 10.3rem;
+    }
+
     .edu {
         width: 100%;
     }
@@ -181,7 +186,17 @@
     }
 
 
-    /*Mobile Card stuff*/
+    /*Mobile Experience stuff*/
+    .row.dark {
+        padding-top: 16px;
+    }
+
+    .heading-underline.experience {
+        height: 1px;
+        width: 10.5rem;
+        margin-bottom: 5px;
+    }
+
     .card-img {
         max-width: 100px;
     }
@@ -219,11 +234,18 @@
 
 
     /*Mobile portfolio*/
+    .heading-underline.portfolio {
+        height: 1px;
+        width: 10.15rem;
+        margin-bottom: 5px;
+    }
+
     .portfolio-bg {
         padding-left: 0;
         padding-right: 0;
     }
-    .btn.btn-outline-success.port-intro{
+
+    .btn.btn-outline-success.port-intro {
         margin-top: 12px;
         font-size: .8rem;
 
@@ -231,6 +253,11 @@
 
 
     /*Mobile Skills*/
+    .heading-underline.skills{
+        height: 1px;
+        width: 6.15rem;
+        margin-bottom: 5px;
+    }
     .skills-bg {
         padding-left: 0;
         padding-right: 0;
@@ -287,7 +314,7 @@
         padding: 16px;
     }
 
-    .card-header.port{
+    .card-header.port {
         padding: 6px 12px;
     }
 
@@ -303,6 +330,7 @@
         margin-left: 3px;
         font-size: 0.7rem;
     }
+
     .card-body.port {
         box-shadow: inset 0 1px 5px #000000;
     }
@@ -335,27 +363,32 @@
 }
 
 /*Super Small Changes*/
-@media (max-width: 321px){
+@media (max-width: 321px) {
     .caption h1 {
         font-size: 1.7rem;
     }
+
     .caption h3 {
         font-size: 1.2rem;
         letter-spacing: 0;
     }
+
     .btn.port-header-btn.text-left {
         line-height: 1rem;
         font-size: .85rem;
     }
+
     .skills-body {
         font-size: .65rem;
     }
+
     .skills b {
         font-size: 1rem;
     }
+
     h5.card-title.text-center,
     h5.card-title.text-center i,
-    h5.card-title.text-center a{
+    h5.card-title.text-center a {
         font-size: .55rem;
     }
 }

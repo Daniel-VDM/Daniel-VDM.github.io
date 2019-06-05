@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
@@ -115,6 +119,7 @@ body {
 h3.heading {
     font-size: 2.6em;
     font-weight: 700;
+    margin-bottom: 6px;
     text-transform: uppercase;
 }
 
@@ -128,6 +133,10 @@ h3.heading {
 
 
 /*About Me stuff*/
+.heading-underline.about {
+    width: 15rem;
+}
+
 .about-bg {
     /*It will bug if we use 0px*/
     padding: .1px 2rem 44.8px;
@@ -148,6 +157,10 @@ h3.heading {
 
 
 /*Education stuff*/
+.heading-underline.education {
+    width: 16.5rem;
+}
+
 .edu {
     width: 1175px;
     padding-bottom: 44.8px;
@@ -265,15 +278,19 @@ h3.heading {
 
 
 /*Portfolio Stuff*/
+.heading-underline.portfolio {
+    width: 16rem;
+}
+
 .portfolio-bg {
     padding: 0.1px 2rem 60.8px;
 }
 
-.col-md-12.port-intro-pad{
-    padding: 0 1px 20px 1px!important;
+.col-md-12.port-intro-pad {
+    padding: 0 1px 20px 1px !important;
 }
 
-.card.port-intro{
+.card.port-intro {
     padding: 16px;
     background-color: #E9ECEF;
     border-width: 5px;
@@ -282,11 +299,11 @@ h3.heading {
     /*box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);*/
 }
 
-.card.port-intro p{
+.card.port-intro p {
     margin: 0;
 }
 
-.btn.btn-outline-success.port-intro{
+.btn.btn-outline-success.port-intro {
     border-radius: 0;
     float: right;
 }
@@ -354,19 +371,19 @@ h3.heading {
     background-color: #dd8902;
 }
 
-.card-body.port{
+.card-body.port {
     box-shadow: inset 0 1px 7px rgba(0, 0, 0, 0.75);
 }
 
-.col-12.port{
+.col-12.port {
     padding: 0;
 }
 
-.col-md-9.col-xs-12.port-foot{
+.col-md-9.col-xs-12.port-foot {
     padding: 0;
 }
 
-.col-md-3.col-xs-12.port-foot{
+.col-md-3.col-xs-12.port-foot {
     margin-top: auto;
     padding: 0;
 }
@@ -389,12 +406,16 @@ h3.heading {
     background-color: white;
 }
 
-.btn.btn.port-body-btn:focus{
-    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.75);
+.btn.btn.port-body-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .75);
 }
 
 
 /*Skills Stuff*/
+.heading-underline.skills{
+    width: 9.6rem;
+}
+
 .skills-bg {
     padding: .1px 2rem;
     background-color: #E9ECEF;
