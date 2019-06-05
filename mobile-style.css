@@ -3,7 +3,7 @@
 /*Ultra-wide Correction*/
 @media (min-width: 1910px) {
     .narrow {
-        max-width: 1268px; /*1920 * .66 ~= 1268*/
+        max-width: 1265px; /*1920 * .66 ~= 1265*/
     }
 }
 
@@ -70,7 +70,7 @@
         width: 100%;
         max-width: 100%;
         position: absolute;
-        bottom: 35%;
+        bottom: 28%;
         z-index: 1;
         color: white;
     }
@@ -83,7 +83,13 @@
     .caption h3 {
         font-size: 1.2rem;
         font-weight: 400;
-        padding-bottom: .5rem;
+        padding-bottom: 5px;
+    }
+
+    .caption h4{
+        font-size: 1.4rem;
+        padding-top: 13px;
+        letter-spacing: 0;
     }
 
     .btn-lg {

@@ -137,6 +137,11 @@
         <a class="btn btn-outline-light btn-lg" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
                                                                                                   aria-hidden="true"> </i>
             My Resume</a>
+        <h4>
+            <a href="mailto: dvandermaden0@berkeley.edu" target="_blank"><i class="fas fa-envelope-square"></i></a>
+            <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Daniel-VDM" target="_blank"><i class="fab fa-github-square"></i></a>
+        </h4>
     </div>
 </div>
 
@@ -341,20 +346,23 @@
                 </div>
             </div>
             <br>
-            <div class="card exp narrow EarlyExp fade">
-                <div class="row no-gutters">
-                    <div class="col-md-12 text-center EarlyExp">
-                        <button class="btn EarlyExp" type="button" data-toggle="collapse" data-target="#EarlyExp"
-                                aria-expanded="false" aria-controls="EarlyExp">
-                            <i class="fas fa-chevron-down"></i> &nbsp; Click to see noteworthy early experiences &nbsp;
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+            <div class="exp-bottom narrow">
+                <div class="card exp EarlyExp fade">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 text-center EarlyExp">
+                            <button class="btn EarlyExp" type="button" data-toggle="collapse" data-target="#EarlyExp"
+                                    aria-expanded="false" aria-controls="EarlyExp">
+                                <i class="fas fa-chevron-down"></i>
+                                &nbsp; Click to see noteworthy early experiences &nbsp;
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="collapse" id="EarlyExp">
-                <div class="card exp narrow fade">
+            <div class="collapse narrow" id="EarlyExp">
+                <div class="card exp EarlyExp narrow fade">
                     <div class="row no-gutters">
                         <div class="col-md-2 col-xs-0 text-center exp-pic">
                             <img src="img/jsei.png" class="card-img">
@@ -376,7 +384,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card exp narrow fade">
+                <div class="card exp EarlyExp narrow fade">
                     <div class="row no-gutters">
                         <div class="col-md-2 col-xs-0 text-center exp-pic">
                             <img src="img/tutor.jpg" class="card-img">
@@ -398,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card exp narrow fade">
+                <div class="card exp EarlyExp narrow fade">
                     <div class="row no-gutters">
                         <div class="col-md-2 col-xs-0 text-center exp-pic">
                             <img src="img/cauldron.jpg" class="card-img">
@@ -429,7 +437,7 @@
 
 <div id="portfolio" class="offset">
     <div class="row portfolio-bg">
-        <div class="narrow fade">
+        <div class="narrow">
             <!-- Section Heading -->
             <div class="col-12 text-center">
                 <h3 class="heading">Portfolio</h3>
@@ -437,7 +445,7 @@
             </div>
             <!-- Section Content -->
             <div class="row">
-                <div class="col-md-12 port-intro-pad">
+                <div class="col-md-12 port-intro-pad fade">
                     <div class="card port-intro">
                         <p>
                             Below you will find an interactive list of notable projects that I've done throughout my
@@ -458,340 +466,351 @@
                     </div>
                 </div>
             </div>
-            <div class="card card-port">
-                <div class="card-header port" id="chatBotHeading">
-                    <button id="_chatBot" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#chatBot" aria-expanded="true" aria-controls="chatBot">
-                        Easy Seq2Seq Chatbot<br>
-                        <span class="badge badge-info port-badge1">Python 3</span> <span
-                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Keras</span>
-                        <span class="badge badge-info port-badge">nltk</span> <span class="badge badge-info port-badge">spaCy</span>
-                    </button>
-                </div>
-                <div id="chatBot" class="collapse portfolioBody show" aria-labelledby="chatBotHeading">
-                    <div class="card-body port text-justify">
-                        <p>This is a personal project that I work on in my free time.</p>
+            <div class="fade">
+                <div class="card card-port">
+                    <div class="card-header port" id="chatBotHeading">
+                        <button id="_chatBot" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#chatBot" aria-expanded="true" aria-controls="chatBot">
+                            Easy Seq2Seq Chatbot<br>
+                            <span class="badge badge-info port-badge1">Python 3</span> <span
+                                class="badge badge-info port-badge">Scipy</span> <span
+                                class="badge badge-info port-badge">Keras</span>
+                            <span class="badge badge-info port-badge">nltk</span> <span
+                                class="badge badge-info port-badge">spaCy</span>
+                        </button>
+                    </div>
+                    <div id="chatBot" class="collapse portfolioBody show" aria-labelledby="chatBotHeading">
+                        <div class="card-body port text-justify">
+                            <p>This is a personal project that I work on in my free time.</p>
 
-                        <p>At its core, this project implements a chatbot using a sequence to sequence (seq2seq)
-                            model. But more importantly, it provides an easy way to define training and model
-                            parameters so that anyone could try out different data sets with different models and
-                            see how the resulting chatbots differ.</p>
+                            <p>At its core, this project implements a chatbot using a sequence to sequence (seq2seq)
+                                model. But more importantly, it provides an easy way to define training and model
+                                parameters so that anyone could try out different data sets with different models and
+                                see how the resulting chatbots differ.</p>
 
-                        <p><b>Key features:</b> It has variable parameters for the data processing and model. It
-                            uses a vocab cache and an encoded data cache for quicker data reprocessing. It can save
-                            and load models. It can recover and resume model training if the script is interrupted.
-                            It uses a more memory friendly way of training the model, so it can use relatively large
-                            training data sets on standard hardware. It can use Name Entity Recognition to improve
-                            the perplexity of the model’s responses.
-                        </p>
+                            <p><b>Key features:</b> It has variable parameters for the data processing and model. It
+                                uses a vocab cache and an encoded data cache for quicker data reprocessing. It can save
+                                and load models. It can recover and resume model training if the script is interrupted.
+                                It uses a more memory friendly way of training the model, so it can use relatively large
+                                training data sets on standard hardware. It can use Name Entity Recognition to improve
+                                the perplexity of the model’s responses.
+                            </p>
 
-                        <!-- TODO: What did I learn... -->
+                            <!-- TODO: What did I learn... -->
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/Easy-Seq2Seq-chatbot"
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and an in-depth overview can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Easy-Seq2Seq-chatbot"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="websiteHeading">
-                    <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#website" aria-expanded="true" aria-controls="website">
-                        My Resume Website<br>
-                        <span class="badge badge-info port-badge1">HTML5</span> <span
-                            class="badge badge-info port-badge1">CSS3</span> <span
-                            class="badge badge-info port-badge1">Java Script</span> <span
-                            class="badge badge-info port-badge">Bootstrap 4</span>
-                    </button>
-                </div>
-                <div id="website" class="collapse portfolioBody show" aria-labelledby="websiteHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of website
-                        </p>
+                <div class="card card-port">
+                    <div class="card-header port" id="websiteHeading">
+                        <button id="_website" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#website" aria-expanded="true" aria-controls="website">
+                            My Resume Website<br>
+                            <span class="badge badge-info port-badge1">HTML5</span> <span
+                                class="badge badge-info port-badge1">CSS3</span> <span
+                                class="badge badge-info port-badge1">Java Script</span> <span
+                                class="badge badge-info port-badge">Bootstrap 4</span>
+                        </button>
+                    </div>
+                    <div id="website" class="collapse portfolioBody show" aria-labelledby="websiteHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of website
+                            </p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/Daniel-VDM.github.io"
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Daniel-VDM.github.io"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header port" id="fileServerHeading">
-                    <button id="_fileServer" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#fileServer" aria-expanded="true" aria-controls="fileServer">
-                        Concurrent Cached File Server<br>
-                        <span class="badge badge-info port-badge1">Golang</span>
-                    </button>
-                </div>
-                <div id="fileServer" class="collapse portfolioBody show" aria-labelledby="fileServerHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of FileServer
-                        </p>
-                        <p>
-                            TODO: repo!!!
-                        </p>
+                <div class="card">
+                    <div class="card-header port" id="fileServerHeading">
+                        <button id="_fileServer" class="btn port-header-btn text-left" type="button"
+                                data-toggle="collapse"
+                                data-target="#fileServer" aria-expanded="true" aria-controls="fileServer">
+                            Concurrent Cached File Server<br>
+                            <span class="badge badge-info port-badge1">Golang</span>
+                        </button>
+                    </div>
+                    <div id="fileServer" class="collapse portfolioBody show" aria-labelledby="fileServerHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of FileServer
+                            </p>
+                            <p>
+                                TODO: repo!!!
+                            </p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href=""
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and an in-depth overview can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href=""
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="loranHeading">
-                    <button id="_loran" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#loran" aria-expanded="false" aria-controls="loran">
-                        Modernized eLoran Implementation<br>
-                        <span class="badge badge-info port-badge1">C</span> <span
-                            class="badge badge-info port-badge1">Python 2</span> <span
-                            class="badge badge-info port-badge">Scipy</span> <span
-                            class="badge badge-info port-badge">Matplotlib</span>
-                    </button>
-                </div>
-                <div id="loran" class="collapse portfolioBody show" aria-labelledby="loranHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of eLoran
-                        </p>
+                <div class="card card-port">
+                    <div class="card-header port" id="loranHeading">
+                        <button id="_loran" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#loran" aria-expanded="false" aria-controls="loran">
+                            Modernized eLoran Implementation<br>
+                            <span class="badge badge-info port-badge1">C</span> <span
+                                class="badge badge-info port-badge1">Python 2</span> <span
+                                class="badge badge-info port-badge">Scipy</span> <span
+                                class="badge badge-info port-badge">Matplotlib</span>
+                        </button>
+                    </div>
+                    <div id="loran" class="collapse portfolioBody show" aria-labelledby="loranHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of eLoran
+                            </p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and scheme details are under a non-disclosure agreement.
-                                However, I would be happy to expand more on the topic upon request.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button"
-                                   class="btn btn port-body-btn disabled"
-                                   aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and scheme details are under a non-disclosure agreement.
+                                    However, I would be happy to expand more on the topic upon request.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button"
+                                       class="btn btn port-body-btn disabled"
+                                       aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="npApproxHeading">
-                    <button id="_npApprox" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
-                        Approximate Solver for a NP-Hard Problem<br>
-                        <span class="badge badge-info port-badge1">Python 3</span> <span
-                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Matplotlib</span>
-                        <span class="badge badge-info port-badge">NetworkX</span>
-                    </button>
-                </div>
-                <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
-                    <div class="card-body port text-justify">
-                        <p>This was a group project for the <a href="https://cs170.org/" target="_blank">Efficient
-                            Algorithms and Intractable Problems</a> course at UC Berkeley.</p>
+                <div class="card card-port">
+                    <div class="card-header port" id="npApproxHeading">
+                        <button id="_npApprox" class="btn port-header-btn text-left" type="button"
+                                data-toggle="collapse"
+                                data-target="#npApprox" aria-expanded="false" aria-controls="npApprox">
+                            Approximate Solver for a NP-Hard Problem<br>
+                            <span class="badge badge-info port-badge1">Python 3</span> <span
+                                class="badge badge-info port-badge">Scipy</span> <span
+                                class="badge badge-info port-badge">Matplotlib</span>
+                            <span class="badge badge-info port-badge">NetworkX</span>
+                        </button>
+                    </div>
+                    <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
+                        <div class="card-body port text-justify">
+                            <p>This was a group project for the <a href="https://cs170.org/" target="_blank">Efficient
+                                Algorithms and Intractable Problems</a> course at UC Berkeley.</p>
 
-                        <p>It approximates a solution to the following problem: Given a group of children, friendship
-                            relations, <i>n</i> buses and a set of trouble groups, find an assignment of students to the
-                            buses that maximizes the number of friendship relations that are on the same bus. The
-                            difficulty comes from this added condition: Groups of children that form a trouble group and
-                            are all assigned to the same bus do not have their friendships counted.</p>
+                            <p>It approximates a solution to the following problem: Given a group of children,
+                                friendship relations, <i>n</i> buses and a set of trouble groups, find an assignment of
+                                students to the buses that maximizes the number of friendship relations that are on the
+                                same bus. The difficulty comes from this added condition: Groups of children that form a
+                                trouble group and are all assigned to the same bus do not have their friendships
+                                counted.</p>
 
-                        <p>My group's solver uses a combination of greedy algorithms and local searches. Note that the
-                            details of our solver can be found in a write-up that is included in the project repo. </p>
+                            <p>My group's solver used a combination of efficient greedy algorithms with various
+                                heuristics as well as some local search algorithms. Note that the details of our solver
+                                can be found in a write-up that is included in the project repo. </p>
 
-                        <p><b>Achievements:</b> My group’s approximate solution was in the top 10% of all approximations
-                            in the course (the ranking metric is explained in the repo). I also learned to coordinate
-                            and utilize the expertise of my team-mates as we all had different backgrounds (EE, Math,
-                            CS).</p>
+                            <p><b>Achievements:</b> My group’s solution was in the top 10% of all
+                                approximations in the course (the ranking metric is explained in the repo). I also
+                                learned to coordinate and Kutilize the expertise of my team-mates as we all had
+                                different backgrounds (EE, Math, CS).</p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/CS170_Project"
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and an in-depth overview can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/CS170_Project"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="coRefHeading">
-                    <button id="_coRef" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#coRef" aria-expanded="false" aria-controls="coRef">
-                        Coreference Annotator<br>
-                        <span class="badge badge-info port-badge1">Python 3</span> <span
-                            class="badge badge-info port-badge">Scipy</span> <span class="badge badge-info port-badge">Pandas</span>
-                        <span class="badge badge-info port-badge">Scikit-learn</span> <span
-                            class="badge badge-info port-badge">nltk</span>
-                    </button>
-                </div>
-                <div id="coRef" class="collapse portfolioBody show" aria-labelledby="coRefHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of Coref
-                        </p>
+                <div class="card card-port">
+                    <div class="card-header port" id="coRefHeading">
+                        <button id="_coRef" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#coRef" aria-expanded="false" aria-controls="coRef">
+                            Coreference Annotator<br>
+                            <span class="badge badge-info port-badge1">Python 3</span> <span
+                                class="badge badge-info port-badge">Scipy</span> <span
+                                class="badge badge-info port-badge">Pandas</span>
+                            <span class="badge badge-info port-badge">Scikit-learn</span> <span
+                                class="badge badge-info port-badge">nltk</span>
+                        </button>
+                    </div>
+                    <div id="coRef" class="collapse portfolioBody show" aria-labelledby="coRefHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of Coref
+                            </p>
 
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/Coreference-Annotator"
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and an in-depth overview can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Coreference-Annotator"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="cnnHeading">
-                    <button id="_cnn" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#cnn" aria-expanded="false" aria-controls="cnn">
-                        Parallelized CNN Image Classifier<br>
-                        <span class="badge badge-info port-badge1">C</span> <span class="badge badge-info port-badge">Gprof</span>
-                        <span class="badge badge-info port-badge">Intel AVX</span> <span
-                            class="badge badge-info port-badge">OpenMP</span>
-                    </button>
-                </div>
-                <div id="cnn" class="collapse portfolioBody show" aria-labelledby="cnnHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of CNN
-                        </p>
+                <div class="card card-port">
+                    <div class="card-header port" id="cnnHeading">
+                        <button id="_cnn" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#cnn" aria-expanded="false" aria-controls="cnn">
+                            Parallelized CNN Image Classifier<br>
+                            <span class="badge badge-info port-badge1">C</span> <span
+                                class="badge badge-info port-badge">Gprof</span>
+                            <span class="badge badge-info port-badge">Intel AVX</span> <span
+                                class="badge badge-info port-badge">OpenMP</span>
+                        </button>
+                    </div>
+                    <div id="cnn" class="collapse portfolioBody show" aria-labelledby="cnnHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of CNN
+                            </p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                Since this project will be assigned in future offerings of Machine Structures (CS61c) at
-                                UC Berkeley, I am unable to post my project files due to concerns of plagiarism.
-                                However, I would be happy to send the files over upon request.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button"
-                                   class="btn btn port-body-btn disabled"
-                                   aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    Since this project will be assigned in future offerings of Machine Structures
+                                    (CS61c) at UC Berkeley, I am unable to post my project files due to concerns of
+                                    plagiarism. However, I would be happy to send the files over upon request.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button"
+                                       class="btn btn port-body-btn disabled"
+                                       aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="compilerHeading">
-                    <button id="_compiler" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#compiler" aria-expanded="false" aria-controls="compiler">
-                        61Ccc Compiler (to RISC-V)<br>
-                        <span class="badge badge-info port-badge1">C</span> <span class="badge badge-info port-badge1">RISC-V</span>
-                        <span class="badge badge-info port-badge">CUnit</span>
-                    </button>
-                </div>
-                <div id="compiler" class="collapse portfolioBody show" aria-labelledby="compilerHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of Compiler
-                        </p>
+                <div class="card card-port">
+                    <div class="card-header port" id="compilerHeading">
+                        <button id="_compiler" class="btn port-header-btn text-left" type="button"
+                                data-toggle="collapse"
+                                data-target="#compiler" aria-expanded="false" aria-controls="compiler">
+                            61Ccc Compiler (to RISC-V)<br>
+                            <span class="badge badge-info port-badge1">C</span> <span
+                                class="badge badge-info port-badge1">RISC-V</span>
+                            <span class="badge badge-info port-badge">CUnit</span>
+                        </button>
+                    </div>
+                    <div id="compiler" class="collapse portfolioBody show" aria-labelledby="compilerHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of Compiler
+                            </p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                Since this project will be assigned in future offerings of Machine Structures (CS61c) at
-                                UC Berkeley, I am unable to post my project files due to concerns of plagiarism.
-                                However, I would be happy to send the files over upon request.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center align-items-end">
-                                <a type="button"
-                                   class="btn btn port-body-btn disabled"
-                                   aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    Since this project will be assigned in future offerings of Machine Structures
+                                    (CS61c) at UC Berkeley, I am unable to post my project files due to concerns of
+                                    plagiarism. However, I would be happy to send the files over upon request.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center align-items-end">
+                                    <a type="button"
+                                       class="btn btn port-body-btn disabled"
+                                       aria-disabled="true"><i class="fab fa-github"></i> Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card card-port">
-                <div class="card-header port" id="schemeHeading">
-                    <button id="_scheme" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#scheme" aria-expanded="false" aria-controls="scheme">
-                        Scheme Interpreter<br>
-                        <span class="badge badge-info port-badge1">Python 3</span> <span
-                            class="badge badge-info port-badge1">Scheme</span>
-                    </button>
-                </div>
-                <div id="scheme" class="collapse portfolioBody show" aria-labelledby="schemeHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of Scheme
-                        </p>
+                <div class="card card-port">
+                    <div class="card-header port" id="schemeHeading">
+                        <button id="_scheme" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#scheme" aria-expanded="false" aria-controls="scheme">
+                            Scheme Interpreter<br>
+                            <span class="badge badge-info port-badge1">Python 3</span> <span
+                                class="badge badge-info port-badge1">Scheme</span>
+                        </button>
+                    </div>
+                    <div id="scheme" class="collapse portfolioBody show" aria-labelledby="schemeHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of Scheme
+                            </p>
 
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/Scheme-Interpreter"
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and an in-depth overview can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Scheme-Interpreter"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="card card-port">
+                    <div class="card-header port" id="blocksHeading">
+                        <button id="_blocks" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
+                                data-target="#blocks" aria-expanded="false" aria-controls="blocks">
+                            Sliding Block Puzzle Solver<br>
+                            <span class="badge badge-info port-badge1">Java</span>
+                        </button>
+                    </div>
+                    <div id="blocks" class="collapse portfolioBody show" aria-labelledby="blocksHeading">
+                        <div class="card-body port text-justify">
+                            <p>
+                                TODO: Body of Blocks
+                            </p>
 
-
-            <div class="card card-port">
-                <div class="card-header port" id="blocksHeading">
-                    <button id="_blocks" class="btn port-header-btn text-left" type="button" data-toggle="collapse"
-                            data-target="#blocks" aria-expanded="false" aria-controls="blocks">
-                        Sliding Block Puzzle Solver<br>
-                        <span class="badge badge-info port-badge1">Java</span>
-                    </button>
-                </div>
-                <div id="blocks" class="collapse portfolioBody show" aria-labelledby="blocksHeading">
-                    <div class="card-body port text-justify">
-                        <p>
-                            TODO: Body of Blocks
-                        </p>
-
-                        <div class="row">
-                            <div class="col-md-9 col-xs-12 port-foot">
-                                The project files and an in-depth overview can be found on <a
-                                    href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
-                            </div>
-                            <div class="col-md-3 col-xs-12 port-foot text-center">
-                                <a type="button" href="https://github.com/Daniel-VDM/Sliding-Block-Puzzle-Solver"
-                                   target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i> Project
-                                    Repo</a>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 port-foot">
+                                    The project files and an in-depth overview can be found on <a
+                                        href="https://github.com/Daniel-VDM" target="_blank">my GitHub page</a>.
+                                </div>
+                                <div class="col-md-3 col-xs-12 port-foot text-center">
+                                    <a type="button" href="https://github.com/Daniel-VDM/Sliding-Block-Puzzle-Solver"
+                                       target="_blank" class="btn btn port-body-btn"><i class="fab fa-github"></i>
+                                        Project Repo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -890,12 +909,14 @@
                 <h3><b>Contact Info</b></h3>
                 <p>
                     &#9742 +1 (714) 251-4974 <br>
-                    &#9993 <a href="mailto: dvandermaden0@berkeley.edu">dvandermaden0@berkeley.edu</a>
+                    &#9993 <a href="mailto: dvandermaden0@berkeley.edu" target="_blank">dvandermaden0@berkeley.edu</a>
                 </p>
-                <a href="https://github.com/Daniel-VDM" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.facebook.com/daniel.vandermaden" target="_blank"><i
-                        class="fab fa-facebook-square"></i></a>
+                <div class="logos">
+                    <a href="https://github.com/Daniel-VDM" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/daniel.vandermaden" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                </div>
             </div>
             <div class="socket"></div>
             <div class="col-md-5 text-center footer">
