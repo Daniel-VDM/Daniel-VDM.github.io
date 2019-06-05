@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
