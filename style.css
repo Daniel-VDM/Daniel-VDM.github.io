@@ -272,6 +272,24 @@ h3.heading {
     margin-top: 0;
 }
 
+.col-md-12.text-center.EarlyExp{
+    padding: 0;
+}
+
+.btn.EarlyExp {
+    color: white;
+    border: none;
+    outline:0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.btn.EarlyExp:hover{
+    color: #4db8ff;
+}
+
 
 /*Portfolio Stuff*/
 .heading-underline.portfolio-line {

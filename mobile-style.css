@@ -232,6 +232,10 @@
         padding-bottom: 0;
     }
 
+    .btn.EarlyExp{
+        font-size: .9rem;
+    }
+
 
     /*Mobile portfolio*/
     .heading-underline.portfolio-line {
@@ -331,6 +335,10 @@
         font-size: 0.7rem;
     }
 
+    .card.exp.narrow.EarlyExp{
+        padding: 0;
+    }
+
     .card-body.port {
         box-shadow: inset 0 1px 5px #000000;
     }
@@ -384,6 +392,10 @@
 
     .skills b {
         font-size: 1rem;
+    }
+
+    .btn.EarlyExp{
+        font-size: .79rem;
     }
 
     h5.card-title.text-center,
