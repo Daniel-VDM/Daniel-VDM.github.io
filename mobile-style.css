@@ -86,7 +86,7 @@
         padding-bottom: 5px;
     }
 
-    .caption h4{
+    .caption h4 {
         font-size: 1.4rem;
         padding-top: 13px;
         letter-spacing: 0;
@@ -238,7 +238,7 @@
         padding-bottom: 0;
     }
 
-    .btn.EarlyExp{
+    .btn.EarlyExp {
         font-size: .9rem;
     }
 
@@ -263,11 +263,12 @@
 
 
     /*Mobile Skills*/
-    .heading-underline.skills-line{
+    .heading-underline.skills-line {
         height: 1px;
         width: 6.15rem;
         margin-bottom: 5px;
     }
+
     .skills-bg {
         padding-left: 0;
         padding-right: 0;
@@ -341,7 +342,7 @@
         font-size: 0.7rem;
     }
 
-    .card.exp.narrow.EarlyExp{
+    .card.exp.narrow.EarlyExp {
         padding: 0;
     }
 
@@ -400,7 +401,7 @@
         font-size: 1rem;
     }
 
-    .btn.EarlyExp{
+    .btn.EarlyExp {
         font-size: .79rem;
     }
 

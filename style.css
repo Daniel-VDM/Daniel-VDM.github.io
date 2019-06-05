@@ -97,7 +97,7 @@ body {
     padding-bottom: .85rem;
 }
 
-.caption h4{
+.caption h4 {
     padding-top: 20px;
     font-size: 2rem;
     font-weight: 400;
@@ -105,7 +105,7 @@ body {
     letter-spacing: 2px;
 }
 
-.caption h4 a{
+.caption h4 a {
     color: #dde0e6;
 }
 
@@ -289,34 +289,34 @@ h3.heading {
     margin-top: 0;
 }
 
-.col-md-12.text-center.EarlyExp{
+.col-md-12.text-center.EarlyExp {
     padding: 0;
 }
 
 .btn.EarlyExp {
     color: white;
     border: none;
-    outline:0;
+    outline: 0;
     box-shadow: none;
     background-color: transparent;
     font-size: 1.3rem;
     width: 100%;
 }
 
-.btn.EarlyExp:hover{
+.btn.EarlyExp:hover {
     color: #4db8ff;
 }
 
-.card.exp.EarlyExp{
+.card.exp.EarlyExp {
     width: 100%;
 }
 
-.exp-bottom.narrow{
-    padding:0;
+.exp-bottom.narrow {
+    padding: 0;
     margin-top: 0;
 }
 
-#EarlyExp.narrow{
+#EarlyExp.narrow {
     padding-top: 0;
     margin-top: 0;
 }
@@ -355,13 +355,13 @@ h3.heading {
     float: right;
 }
 
-.btn.port-intro:hover{
+.btn.port-intro:hover {
     color: white;
     background-color: #4db8ff;
 }
 
 .btn.port-intro:focus,
-.btn.port-intro:active{
+.btn.port-intro:active {
     box-shadow: 0 0 0 0.2rem rgba(77, 184, 255, 0.75);
 }
 
@@ -544,7 +544,7 @@ footer p {
     padding-top: .1rem;
 }
 
-.logos{
+.logos {
     letter-spacing: 8px;
 }
 
