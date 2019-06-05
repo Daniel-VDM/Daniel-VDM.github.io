@@ -317,10 +317,24 @@ h3.heading {
     margin: 0;
 }
 
-.btn.btn-outline-success.port-intro {
+.btn.port-intro {
+    background-color: transparent;
     border-radius: 0;
+    color: #4db8ff;
+    border-color: #4db8ff;
     float: right;
 }
+
+.btn.port-intro:hover{
+    color: white;
+    background-color: #4db8ff;
+}
+
+.btn.port-intro:focus,
+.btn.port-intro:active{
+    box-shadow: 0 0 0 0.2rem rgba(77, 184, 255, 0.75);
+}
+
 
 .btn.port-header-btn.text-left {
     width: 100%;
