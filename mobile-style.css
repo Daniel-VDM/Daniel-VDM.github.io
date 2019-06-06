@@ -131,22 +131,22 @@
         padding-right: 0;
     }
 
-    .card.about-wrapper{
+    .card.about-wrapper {
         padding: 5px;
         margin: auto;
         width: 95%;
     }
 
     .card.about-pad {
-        border-width: 0!important;
+        border-width: 0 !important;
     }
 
-    .card.about-pad p{
+    .card.about-pad p {
         font-size: .87rem;
     }
 
 
-        /*Mobile Education stuff*/
+    /*Mobile Education stuff*/
     .heading-underline.education-line {
         margin-bottom: 5px;
         height: 1px;
@@ -275,7 +275,7 @@
 
     }
 
-    .card.port-wrapper{
+    .card.port-wrapper {
         padding: 6px;
         border-width: 2px;
     }

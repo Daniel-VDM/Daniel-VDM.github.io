@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+
 @keyframes glowing {
-    0% { box-shadow: 0 0 0 #4db8ff; }
-    20% { box-shadow: 0 0 5px #4db8ff; }
-    40% { box-shadow: 0 0 2px #4db8ff; }
-    80% { box-shadow: 0 0 4px #4db8ff; }
-    100% { box-shadow: 0 0 0 #4db8ff; }
+    0% {
+        box-shadow: 0 0 0 #4db8ff;
+    }
+    20% {
+        box-shadow: 0 0 5px #4db8ff;
+    }
+    40% {
+        box-shadow: 0 0 2px #4db8ff;
+    }
+    80% {
+        box-shadow: 0 0 4px #4db8ff;
+    }
+    100% {
+        box-shadow: 0 0 0 #4db8ff;
+    }
 }
 
 body {
@@ -177,11 +188,11 @@ h3.heading {
     border-color: transparent;
 }
 
-.card.about-wrapper{
+.card.about-wrapper {
     background-color: #E9ECEF;
     border-radius: 0;
-    border-width: 2px!important;
-    border-color: #4db8ff!important;
+    border-width: 2px !important;
+    border-color: #4db8ff !important;
     padding: 7px;
 }
 
@@ -351,7 +362,7 @@ h3.heading {
     padding: 0 1px 20px 1px !important;
 }
 
-.card.port-wrapper{
+.card.port-wrapper {
     background-color: white;
     padding: 7px;
     border-radius: 0;
