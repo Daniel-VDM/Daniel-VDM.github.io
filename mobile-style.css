@@ -131,11 +131,15 @@
         padding-right: 0;
     }
 
-    .card.about-pad {
+    .card.about-wrapper{
+        padding: 5px;
         margin: auto;
         width: 95%;
-        border-width: 3px!important;
-        box-shadow: 0 0 5px #4db8ff;
+        border-width: 2px!important;
+    }
+
+    .card.about-pad {
+        border-width: 0!important;
     }
 
     .card.about-pad p{
@@ -270,6 +274,11 @@
         margin-top: 12px;
         font-size: .8rem;
 
+    }
+
+    .card.port-wrapper{
+        padding: 6px;
+        border-width: 2px;
     }
 
 

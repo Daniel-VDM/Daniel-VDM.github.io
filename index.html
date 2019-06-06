@@ -83,38 +83,41 @@
             </div>
             <!-- Section Content -->
             <div class="row">
-                <div class="card about-pad fade">
-                    <p class="text-justify fade">Hi there! I am a senior at the University Of California, Berkeley
-                        pursuing a B.A. in Computer Science. I am currently finishing up my degree (3 classes remaining)
-                        this fall and I am looking to do an experience building internship at the same time.</p>
+                <div class="card about-wrapper fade">
+                    <div class="card about-pad">
+                        <p class="text-justify fade">Hi there! I am a senior at the University Of California, Berkeley
+                            pursuing a B.A. in Computer Science. I am currently finishing up my degree (3 classes
+                            remaining) this fall and I am looking to do an experience building internship at the same
+                            time.</p>
 
-                    <p class="text-justify fade">I have always enjoyed the process of building and showing my creations.
-                        This is why software development/engineering appealed so much to me throughout my time in higher
-                        education — and has ultimately pushed me to learn a vast skill set in the world of Computer
-                        Science. I have also gained a particular academic interest in Natural Language Processing,
-                        Human-Computer Interaction, and Artificial Intelligence throughout my time at UC Berkeley.</p>
+                        <p class="text-justify fade">I have always enjoyed the process of building and showing my
+                            creations. This is why software development/engineering appealed so much to me throughout my
+                            time in higher education — and has ultimately pushed me to learn a vast skill set in the
+                            world of Computer Science. I have also gained a particular academic interest in Natural
+                            Language Processing, Human-Computer Interaction, and Artificial Intelligence throughout my
+                            time at UC Berkeley.</p>
 
-                    <p class="text-justify fade">I also enjoy helping and teaching other people. I spent a semester at
-                        UC Berkeley tutoring C, C++, Java, and Python in the EECS department's <a
-                                href="https://selfpaced.bitbucket.io" target="_blank">self-paced center</a>. I also
-                        joined a student organization called <a href="https://csmberkeley.github.io" target="_blank">
-                            Computer Science Mentors</a> where I mentored a group of 5 students through their lower
-                        division
-                        EECS courses. Currently, in my spare time, I am working on a <a
-                                href="https://github.com/Daniel-VDM/Seq2Seq-chatbot" target="_blank">chatbot</a> program
-                        that allows a student to more easily learn how different parameters of a neural network model
-                        affects the fidelity of a chatbot.</p>
+                        <p class="text-justify fade">I also enjoy helping and teaching other people. At UC Berkeley, I
+                            tutored C, C++, Java, and Python in the EECS department's <a
+                                    href="https://selfpaced.bitbucket.io" target="_blank">self-paced center</a>. I also
+                            joined a student organization called <a href="https://csmberkeley.github.io"
+                                                                    target="_blank"> Computer Science Mentors</a> where
+                            I mentored a group of 5 students through their lower division EECS courses. Furthermore, in
+                            my spare time, I am working on a <a href="https://github.com/Daniel-VDM/Seq2Seq-chatbot"
+                                                                target="_blank">chatbot</a> program that allows a
+                            student to more easily learn how different parameters of a neural network model affects the
+                            fidelity of a chatbot.</p>
 
-                    <p class="text-justify fade">
-                        I have had the opportunity to professionally work with a team during my 2018 summer internship
-                        at <a href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a> where I
-                        helped develop a modernized eLoran (radio navigation and data) system. During my time there, I
-                        implemented the new eLoran logic in a custom transmitter timer unit and created development
-                        tools for the timer unit. The internship taught me a lot of practical skills such as how the
-                        code review process works in a professional setting, how to create a robust test suite, and how
-                        to communicate with different teams to get a task done.
-                    </p>
+                        <p class="text-justify fade">
+                            I have also had the opportunity to professionally work with a large team during my 2018
+                            summer internship at <a href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>
+                            where I helped develop a modernized eLoran (radio navigation and data) system. During my
+                            time there, I implemented the new eLoran logic in a custom transmitter timer unit and
+                            created development tools for the timer unit. The internship taught me a lot of practical
+                            skills such as how the code review process works in a professional setting, how to create a
+                            robust test suite, and how to communicate with different teams to get a task done.</p>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -372,17 +375,18 @@
     <div class="row portfolio-bg">
         <div class="narrow">
             <!-- Section Heading -->
-            <div class="col-12 text-center">
+            <div class="col-12 text-center fade">
                 <h3 class="heading">Portfolio</h3>
                 <div class="heading-underline portfolio-line"></div>
             </div>
             <!-- Section Content -->
             <div class="row">
                 <div class="col-md-12 port-intro-pad fade">
+                    <div class="card port-wrapper">
                     <div class="card port-intro">
                         <p>
                             Below you will find an interactive list of notable projects that I've done throughout my
-                            time at UC Berkeley and beyond.<br><br>
+                            time at UC Berkeley and beyond!<br><br>
 
                             You can click on each project to see a short description of what it is, some detail on its
                             key features as well as an overview of what I've learned from the project. Also, if
@@ -390,12 +394,13 @@
                             descriptions. Lastly, if you would like to know more about any of the projects listed below,
                             feel free to contact me! <br><br>
 
-                            I will be updating the list once I have new things to share!
+                            I will be updating the list once I have new things to share.
                             <button class="btn port-intro" type="button" onclick="portfolioToggle()"
                                     aria-expanded="false">
                                 Toggle All Descriptions
                             </button>
                         </p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -454,7 +459,7 @@
                             <span class="badge badge-info port-badge1">Python 2</span> <span
                                 class="badge badge-info port-badge1">C</span> <span
                                 class="badge badge-info port-badge">Scipy</span> <span
-                                class="badge badge-info port-badge">Matplotlib</span>
+                                class="badge badge-info port-badge">Pandas</span>
                         </button>
                     </div>
                     <div id="loran" class="collapse portfolioBody show" aria-labelledby="loranHeading">
@@ -551,8 +556,7 @@
                             Approximate Solver for a NP-Hard Problem<br>
                             <span class="badge badge-info port-badge1">Python 3</span> <span
                                 class="badge badge-info port-badge">Scipy</span> <span
-                                class="badge badge-info port-badge">Matplotlib</span>
-                            <span class="badge badge-info port-badge">NetworkX</span>
+                                class="badge badge-info port-badge">NetworkX</span>
                         </button>
                     </div>
                     <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
@@ -570,7 +574,7 @@
                             <p>My group's solver used a combination of efficient greedy algorithms with various
                                 heuristics as well as some local search algorithms. Note that the details of our solver
                                 can be found in a write-up that is included in the project repo. </p>
-
+                            <!-- INCLUDE INFO ABOUT USING AWS-->
                             <p><b>Achievements:</b> My group’s solution was in the top 10% of all
                                 approximations in the course (the ranking metric is explained in the repo). I also
                                 learned to coordinate and Kutilize the expertise of my team-mates as we all had
@@ -793,9 +797,8 @@
                     </div>
                     <div class="col-md-8 col-xs-12 skills-body">
                         <div class="card-body skills-body">
-                            Scipy/Numpy/Pandas &nbsp; NLTK &nbsp; Keras &nbsp; Scikit-learn &nbsp; NetworkX &nbsp;
-                            JUnit<br>
-                            Spark &nbsp; OpenMP &nbsp; Intel AVX &nbsp; CUnit &nbsp; AWS EC2 &nbsp; MySQL &nbsp;
+                            Scipy/Numpy/Pandas &nbsp; NLTK &nbsp; Keras &nbsp; Scikit-learn &nbsp; NetworkX &nbsp; Spark<br>
+                            JUnit &nbsp; OpenMP &nbsp; Intel AVX &nbsp; CUnit &nbsp; AWS EC2 &nbsp; MySQL &nbsp;
                             Bootstrap
                         </div>
                     </div>

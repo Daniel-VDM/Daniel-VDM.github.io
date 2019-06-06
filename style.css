@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
 @keyframes glowing {
     0% { box-shadow: 0 0 0 #4db8ff; }
-    40% { box-shadow: 0 0 5px #4db8ff; }
-    60% { box-shadow: 0 0 5px #4db8ff; }
+    20% { box-shadow: 0 0 5px #4db8ff; }
+    40% { box-shadow: 0 0 2px #4db8ff; }
+    80% { box-shadow: 0 0 4px #4db8ff; }
     100% { box-shadow: 0 0 0 #4db8ff; }
 }
 
@@ -168,12 +169,20 @@ h3.heading {
 }
 
 .card.about-pad {
-    border-radius: 0;
-    border-width: 4px!important;
-    border-color: #4db8ff!important;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.5);
     background-color: white;
+    border-radius: 0;
+    border-width: 0;
     padding: 1rem 1rem 0;
-    box-shadow: 0 0 10px #4db8ff;
+    border-color: transparent;
+}
+
+.card.about-wrapper{
+    background-color: #E9ECEF;
+    border-radius: 0;
+    border-width: 3px!important;
+    border-color: #4db8ff!important;
+    padding: 8px;
 }
 
 
@@ -342,13 +351,20 @@ h3.heading {
     padding: 0 1px 20px 1px !important;
 }
 
+.card.port-wrapper{
+    background-color: white;
+    padding: 7px;
+    border-radius: 0;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #4db8ff;
+}
+
 .card.port-intro {
     padding: 16px;
-    background-color: #E9ECEF;
-    border-width: 5px;
-    border-color: #4db8ff;
+    background-image: radial-gradient(circle, #f5fafa, #E9ECEF);
+    border-width: 0;
     border-radius: 0;
-    /*box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);*/
 }
 
 .card.port-intro p {
