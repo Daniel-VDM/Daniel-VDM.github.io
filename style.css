@@ -18,6 +18,16 @@
     }
 }
 
+::selection {
+    color: white;
+    background-color: #4db8ff;
+}
+
+::-moz-selection {
+    color: white;
+    background-color: #4db8ff;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
@@ -180,12 +190,16 @@ h3.heading {
 }
 
 .card.about-pad {
-    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
     background-color: white;
     border-radius: 0;
     border-width: 0;
     padding: 1rem 1rem 0;
     border-color: transparent;
+}
+
+.card.about-pad p {
+    font-size: 1.13rem;
 }
 
 .card.about-wrapper {
@@ -373,7 +387,7 @@ h3.heading {
 
 .card.port-intro {
     padding: 16px;
-    background-image: radial-gradient(circle, #f5fafa, #E9ECEF);
+    background-image: radial-gradient(circle, #f8fdfd, #E9ECEF);
     border-width: 0;
     border-radius: 0;
 }

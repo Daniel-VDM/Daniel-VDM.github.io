@@ -109,13 +109,15 @@
                             fidelity of a chatbot.</p>
 
                         <p class="text-justify fade">
-                            I have also had the opportunity to professionally work with a large team during my 2018
-                            summer internship at <a href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>
-                            where I helped develop a modernized eLoran (radio navigation and data) system. During my
-                            time there, I implemented the new eLoran logic in a custom transmitter timer unit and
-                            created development tools for the timer unit. The internship taught me a lot of practical
+                            I have also had the opportunity to professionally work with a team of engineers during my
+                            2018 summer internship at <a href="https://www.microsemi.com/company/about-us"
+                                                         target="_blank">Microsemi</a> where I helped develop a
+                            modernized eLoran (radio navigation and data) system. During my time there, I implemented
+                            the proprietary eLoran logic in a custom transmitter timer unit and created data collection
+                            and development tools for said unit. Overall, the internship taught me a lot of practical
                             skills such as how the code review process works in a professional setting, how to create a
-                            robust test suite, and how to communicate with different teams to get a task done.</p>
+                            robust test suite, and how to effectively communicate with different teams to get a task
+                            done.</p>
 
                     </div>
                 </div>
@@ -190,13 +192,13 @@
                     </div>
                     <div class="col-md-10 col-xs-12">
                         <div class="card-body exp-body">
-                            <h5 class="card-title"><b>Software Engineering Intern</b>
-                                <br>Microsemi | <i>Frequency and Timing Division</i></h5>
+                            <h5 class="card-title"><b>Software Engineering Intern</b> <br>Microsemi | <i>Frequency and
+                                Timing Division</i></h5>
                             <p class="card-text text-justify">I was part of a team that worked on a modernized eLoran
-                                (radio navigation and data) system. In short, it would function as a position,
-                                navigation, and timing system that is similar to (but independent of) GPS. I was tasked
-                                with efficiently implementing a proprietary eLoran signal scheme (in Python and C) which
-                                interfaced with a <a href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>
+                                (radio navigation and data) system which could function as a self-contained backup of
+                                GPS. I was tasked with efficiently implementing a proprietary eLoran signal scheme (in
+                                Python and C) which interfaced with a <a
+                                        href="https://www.microsemi.com/company/about-us" target="_blank">Microsemi</a>
                                 eLoran transmitter timing unit. I was also tasked with creating development tools that
                                 simulated said timing unit’s behavior and outputted vital timing statistics. The
                                 development tools were mostly done in Python using Scipy, with some use of C for the
@@ -383,24 +385,24 @@
             <div class="row">
                 <div class="col-md-12 port-intro-pad fade">
                     <div class="card port-wrapper">
-                    <div class="card port-intro">
-                        <p>
-                            Below you will find an interactive list of notable projects that I've done throughout my
-                            time at UC Berkeley and beyond!<br><br>
+                        <div class="card port-intro">
+                            <p>
+                                Below you will find an interactive list of notable projects that I've done throughout my
+                                time at UC Berkeley and beyond!<br><br>
 
-                            You can click on each project to see a short description of what it is, some detail on its
-                            key features as well as an overview of what I've learned from the project. Also, if
-                            available, a link to each project's repository can be found in their respective
-                            descriptions. Lastly, if you would like to know more about any of the projects listed below,
-                            feel free to contact me! <br><br>
+                                You can click on each project to see a short description of what it is, some detail on
+                                its key features as well as an overview of what I've learned from the project. Also, if
+                                available, a link to each project's repository can be found in their respective
+                                descriptions. Lastly, if you would like to know more about any of the projects listed
+                                below, feel free to contact me! <br><br>
 
-                            I will be updating the list once I have new things to share.
-                            <button class="btn port-intro" type="button" onclick="portfolioToggle()"
-                                    aria-expanded="false">
-                                Toggle All Descriptions
-                            </button>
-                        </p>
-                    </div>
+                                I will be updating the list once I have new things to share.
+                                <button class="btn port-intro" type="button" onclick="portfolioToggle()"
+                                        aria-expanded="false">
+                                    Toggle All Descriptions
+                                </button>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -421,20 +423,27 @@
                         <div class="card-body port text-justify">
                             <p>This is a personal project that I work on in my free time.</p>
 
-                            <p>At its core, this project implements a chatbot using a sequence to sequence (seq2seq)
-                                model. But more importantly, it provides an easy way to define training and model
-                                parameters so that anyone could try out different data sets with different models and
-                                see how the resulting chatbots differ.</p>
-
-                            <p><b>Key features:</b> It has variable parameters for the data processing and model. It
-                                uses a vocab cache and an encoded data cache for quicker data reprocessing. It can save
-                                and load models. It can recover and resume model training if the script is interrupted.
-                                It uses a more memory friendly way of training the model, so it can use relatively large
-                                training data sets on standard hardware. It can use Name Entity Recognition to improve
-                                the perplexity of the model’s responses.
+                            <p><b><i style="color: #68cdff">Discription:</i></b> At its core, this project implements a
+                                chatbot using a sequence to sequence (seq2seq) model. But more importantly, it provides
+                                an easy way to define the model parameters so that anyone can more easily try out
+                                different data and model combinations.
                             </p>
 
-                            <!-- TODO: What did I learn... -->
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It has variable parameters for the
+                                model and data processing. It uses a vocab cache and an encoded data cache for quicker
+                                data reprocessing. It can save and load models. It can recover and resume model training
+                                if the script is interrupted. It uses a more memory friendly way of training the model,
+                                so it can use relatively large data sets on standard hardware. It can use Name Entity
+                                Recognition to improve the perplexity of the model’s responses.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to use Keras to
+                                implement a sequence to sequence model and I learned how to filter a generic data set
+                                for useful training data using NLTK and spaCy. I also learned how to efficiently deal
+                                with large training data sets as well as how to implement an efficient caching system to
+                                greatly reduce re-computation. Lastly, I learned how to use AWS EC2 GPU instances to
+                                train large models with this project.
+                            </p>
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
@@ -562,23 +571,33 @@
                     <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
                         <div class="card-body port text-justify">
                             <p>This was a group project for the <a href="https://cs170.org/" target="_blank">Efficient
-                                Algorithms and Intractable Problems</a> course at UC Berkeley.</p>
+                                Algorithms and Intractable Problems</a> course at UC Berkeley. My group’s solution was
+                                in the top 10% of all approximations in the course (the ranking metric is explained in
+                                the repo).
+                            </p>
 
-                            <p>It approximates a solution to the following problem: Given a group of children,
-                                friendship relations, <i>n</i> buses and a set of trouble groups, find an assignment of
-                                students to the buses that maximizes the number of friendship relations that are on the
-                                same bus. The difficulty comes from this added condition: Groups of children that form a
-                                trouble group and are all assigned to the same bus do not have their friendships
-                                counted.</p>
+                            <p><b><i style="color: #68cdff">Discription:</i></b> The script approximates a solution to
+                                the following problem: Given a group of children, friendship relations, <i>n</i> buses
+                                and a set of trouble groups, find an assignment of students to the buses that maximizes
+                                the number of friendship relations that are on the same bus. The difficulty comes from
+                                this added condition: Groups of children that form a trouble group and are all assigned
+                                to the same bus do not have their friendships counted.
+                            </p>
 
-                            <p>My group's solver used a combination of efficient greedy algorithms with various
-                                heuristics as well as some local search algorithms. Note that the details of our solver
-                                can be found in a write-up that is included in the project repo. </p>
-                            <!-- INCLUDE INFO ABOUT USING AWS-->
-                            <p><b>Achievements:</b> My group’s solution was in the top 10% of all
-                                approximations in the course (the ranking metric is explained in the repo). I also
-                                learned to coordinate and Kutilize the expertise of my team-mates as we all had
-                                different backgrounds (EE, Math, CS).</p>
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It uses a greedy algorithm with
+                                various heuristics and tie-breakers (each suited to a certain input/solution structure)
+                                to compute a good initial solution in polynomial time. It uses a local search
+                                'optimizer' and a simple Monte Carlo tree search 'optimizer' to improve solutions. It
+                                has an easy way to visualize any given input problem or partial solution as a graph
+                                using NetworkX.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to come up with (and
+                                implement) an effective and efficient greedy algorithm. I also learned how to
+                                effectively visualize problems as a graph using NetworkX. But most importantly, I
+                                learned to coordinate and utilize the expertise of my team-mates as we all had different
+                                backgrounds (EE, Math, and CS).
+                            <p>
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
