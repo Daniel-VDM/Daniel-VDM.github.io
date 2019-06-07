@@ -19,14 +19,11 @@
         width: 95%;
     }
 
-    .exp {
-        width: 95%;
-    }
-
     .skills-body {
         font-size: 1.1rem;
         padding: 0 0 0 0;
     }
+
 }
 
 
@@ -134,7 +131,6 @@
     .card.about-wrapper {
         padding: 5px;
         margin: 16px;
-        width: 95%;
     }
 
     .card.about-pad {
@@ -210,6 +206,7 @@
     .row.dark {
         padding-top: 16px;
     }
+
 
     .heading-underline.experience-line {
         height: 1px;
@@ -361,12 +358,18 @@
         font-size: 0.7rem;
     }
 
-    .card.exp.narrow.EarlyExp {
-        padding: 0;
+    .card.exp {
+        max-width: 90%;
+        margin: 0 auto auto;
     }
 
     .card-body.port {
         box-shadow: inset 0 1px 5px #000000;
+    }
+
+    .col-md-2.col-xs-0.text-center.exp-pic {
+        padding-left: 20px;
+        padding-bottom: 20px;
     }
 
 

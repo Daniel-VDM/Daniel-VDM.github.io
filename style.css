@@ -181,7 +181,7 @@ h3.heading {
 
 .about-bg {
     /*It will bug if we use 0px*/
-    padding: .1px 2rem 44.8px;
+    padding: .1px 0 44.8px;
     background-color: #E9ECEF;
 }
 
@@ -284,6 +284,12 @@ h3.heading {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 40px 1rem 60.8px;
+}
+
+.row.dark {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .card-text small {
@@ -528,7 +534,7 @@ h3.heading {
 }
 
 .skills-bg {
-    padding: .1px 2rem;
+    padding: .1px auto;
     background-color: #E9ECEF;
 }
 
