@@ -389,7 +389,7 @@ h3.heading {
     background-image: radial-gradient(circle, #f8fdfd, #E9ECEF);
     border-radius: 0;
     border-width: 0;
-    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card.port-intro p {
