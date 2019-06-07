@@ -399,11 +399,15 @@ h3.heading {
 .btn.port-intro {
     background-color: #4db8ff;
     border-radius: 0;
+    border-width: 1px;
+    border-color: #4db8ff;
     color: white;
     float: right;
 }
 
 .btn.port-intro:hover {
+    border-width: 1px;
+    border-color: #4191cd;
     background-color: #43a9e6;
 }
 
@@ -507,7 +511,9 @@ h3.heading {
 }
 
 .btn.btn.port-body-btn:hover {
-    color: black;
+    border-color: #28a745;
+    border-width: 1px;
+    color: #28a745;
     background-color: white;
 }
 
