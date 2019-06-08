@@ -490,14 +490,21 @@
                             <p><b><i style="color: #68cdff">Discription:</i></b> I was part of a team that worked on a
                                 modernized eLoran scheme. The goal for this new scheme was to substantially increase
                                 data rates and signal reliability while minimizing hardware upgrades of existing Loran
-                                transmission stations. My contributions to the project are as follows: I learned and
+                                transmission stations. My contributions to the project were as follows: I learned and
                                 documented the limits of the project's Transmission Timer Unit (TTU) using custom stress
                                 testing scripts. I implemented the new eLoran scheme in Python and interfaced it with
                                 the TTU in C. Lastly, I created development tools and data collection tools for the TTU
                                 using Python and C.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Key Features:</i></b> TODO
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> The proprietary scheme's TTU script
+                                has easily modifiable parameters for on the fly changes in live integration tests. The
+                                project now has a 'base' TTU logic script that efficiently interfaces with its hardware
+                                and has a flexible API (this facilitates a quicker implementation process for different
+                                schemes). The development tool can simulate a perfect TTU's behavior given a TTU logic
+                                script (this removes the need for a physical TTU during the implementation process of a
+                                scheme). Lastly, the data collection tool collects timing, buffer sizes, and various
+                                statuses and saves it as a Pandas data frame for analysis.
                             </p>
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> TODO
