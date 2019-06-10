@@ -497,7 +497,7 @@
                                 development tools and data collection tools for the TTU using Python and C.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Key Features:</i></b> The project now has a 'base' TTU logic
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> The project now has a "base" TTU logic
                                 script that has a flexible API and efficiently interfaces with its hardware. The
                                 proprietary scheme's TTU script now has easily modifiable parameters for on the fly
                                 scheme changes. The project now has a development tool that can simulate a perfect TTU's
@@ -660,10 +660,9 @@
 
                             <p><b><i style="color: #68cdff">Key Features:</i></b> It uses a greedy algorithm with
                                 various heuristics and tie-breakers (each suited to a certain input/solution structure)
-                                to compute a good initial solution in polynomial time. It uses a local search
-                                'optimizer' and a simple Monte Carlo tree search 'optimizer' to improve solutions. It
-                                has an easy way to visualize any given input or partial solution as a graph using
-                                NetworkX.
+                                to compute a good initial solution in polynomial time. It uses a local search and a
+                                simple Monte Carlo tree search to improve solutions. It has an easy way to visualize any
+                                given input or partial solution as a graph using NetworkX.
                             </p>
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to come up with (and
@@ -764,15 +763,23 @@
 
                             <p><b><i style="color: #68cdff">Description:</i></b> This project optimizes a batched
                                 forward pass of a given Convolutional Neural Network (CNN) image classifier (implemented
-                                in C). Here, a batch contains 1000+ pictures, and the program would run on a machine
+                                in C). Note that a batch contains 1000+ pictures, and the program would run on a machine
                                 that has an Intel Haswell CPU. My optimized classifier is about 20 times faster than
                                 stock (for reference, a 16x gain was full points).
                             </p>
 
-                            <p><b><i style="color: #68cdff">Key Features:</i></b> TODO
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It uses Intel AVX intrinsics to
+                                execute 4 additions simultaneously and 4 multiplications simultaneously (SIMD). It
+                                unrolls each layer's "dot product for loop" to reduced overhead. It "blocks" out the
+                                matrix multiplication to keep the working set hot in the CPU's cache. Lastly, It splits
+                                the batch into mini-batches (according to the number of threads that the machine has)
+                                and runs the forward passes for each mini-batch in parallel using OpenMP.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> TODO
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to use Gprof to
+                                profile C programs. I learned how to use Intel AVX to efficiently execute a single
+                                instruction on multiple matrix entries. Lastly, I learned how to use OpenMP to
+                                parallelize the forward passes in a batch.
                             <p>
 
                             <div class="row">
@@ -809,7 +816,7 @@
                                 Berkeley.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Description:</i></b> TODO
+                            <p><b><i style="color: #68cdff">Description:</i></b> TODO explain 61Ccc here.
                             </p>
 
                             <p><b><i style="color: #68cdff">Key Features:</i></b> TODO
