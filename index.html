@@ -445,8 +445,8 @@
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to use Keras to
                                 implement a sequence to sequence model, and I learned how to filter a generic data set
-                                for useful training data using NLTK and spaCy. I also learned how to efficiently deal
-                                with large data sets as well as how to implement an efficient caching system to greatly
+                                for useful training data using NLTK and spaCy. I learned how to efficiently deal with
+                                large data sets as well as how to implement an efficient caching system to greatly
                                 reduce re-computation. Lastly, I learned how to use AWS EC2 GPU instances to train large
                                 models with this project.
                             </p>
@@ -715,7 +715,7 @@
                                 add features for the logistic regression model. It efficiently uses memory when training
                                 the model. Lastly, it does some filtering (based on mentions) on the training data set
                                 to improve the accuracy of the model.<br>
-                                <i>Note: please reference the project <a
+                                <i>Note: Please reference the project <a
                                         href="https://github.com/Daniel-VDM/Coreference-Annotator/blob/master/write-up.pdf"
                                         target="_blank">write-up</a> (found in the project repository) for more details
                                     about the model's features and data filtering.</i>
@@ -750,6 +750,7 @@
                             Optimized CNN Image Classifier<br>
                             <span class="badge badge-info port-badge1">C</span> <span
                                 class="badge badge-info port-badge">Gprof</span>
+                            <span class="badge badge-info port-badge">Valgrind</span>
                             <span class="badge badge-info port-badge">Intel AVX</span> <span
                                 class="badge badge-info port-badge">OpenMP</span>
                         </button>
@@ -771,9 +772,10 @@
                             <p><b><i style="color: #68cdff">Key Features:</i></b> It uses Intel AVX intrinsics to
                                 execute 4 additions simultaneously and 4 multiplications simultaneously (SIMD). It
                                 unrolls each layer's "dot product for loop" to reduced overhead. It "blocks" out the
-                                matrix multiplication to keep the working set hot in the CPU's cache. Lastly, It splits
-                                the batch into mini-batches (according to the number of threads that the machine has)
-                                and runs the forward passes for each mini-batch in parallel using OpenMP.
+                                matrix multiplication to keep the working set hot in the CPU's cache. It does not leak
+                                memory. Lastly, It splits the batch into mini-batches (according to the number of
+                                threads that the machine has) and runs the forward passes for each mini-batch in
+                                parallel using OpenMP.
                             </p>
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to use Gprof to
@@ -785,7 +787,7 @@
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
                                     Since this project will be assigned in future offerings of Machine Structures
-                                    (CS61c) at UC Berkeley, I am unable to post my project files due to concerns of
+                                    (CS61C) at UC Berkeley, I am unable to post my project files due to concerns of
                                     plagiarism. However, I would be happy to send the files over upon requests.
                                 </div>
                                 <div class="col-md-3 col-xs-12 port-foot text-center">
@@ -807,6 +809,7 @@
                             <span class="badge badge-info port-badge1">C</span> <span
                                 class="badge badge-info port-badge1">RISC-V</span>
                             <span class="badge badge-info port-badge">CUnit</span>
+                            <span class="badge badge-info port-badge">Valgrind</span>
                         </button>
                     </div>
                     <div id="compiler" class="collapse portfolioBody show" aria-labelledby="compilerHeading">
@@ -816,19 +819,36 @@
                                 Berkeley.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Description:</i></b> TODO explain 61Ccc here.
+                            <p><b><i style="color: #68cdff">Description:</i></b> This project compiles 61Ccc code to
+                                RISC-V. The 61Ccc language is a subset of the C that has the following: variable
+                                declarations (with initialization and support for pointers), struct definitions,
+                                function declarations/definitions, if/else statements, for loops, break statements,
+                                continue statements and return statements. Furthermore, 61Ccc only has the following
+                                data types: char, int, bool, struct, and pointers to the previous 4 types. Lastly, 61Ccc
+                                only supports unary and binary operations.<br>
+                                <i>Note: To run the compiled 61Ccc code, I used a RISC-V emulator called <a
+                                        href="https://venus.cs61c.org/" target="_blank">Venus</a></i>.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Key Features:</i></b> TODO
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It has a lexer that catches syntax
+                                errors and filters out comments. It has a parser that creates an abstract syntax tree
+                                (AST). It has a debugging mode that prints the tokens and the AST. It has an error
+                                handler that can report syntax errors and the associated line number from the AST. It
+                                has a large CUnit test suit that ensures that the lexer, parser, and code generator
+                                function correctly. It does not have a memory leak that grows proportional to the input
+                                size. Lastly, it generates RISC-V code that adheres to the caller/callee saved
+                                conventions for general compatibility.
                             </p>
 
-                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> TODO
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to manage memory in
+                                C. I learned how to use Valgrind to debug memory leaks and segfaults. I learned how to
+                                create unit tests with CUnit. Lastly, I learned how to write RISC-V assembly.
                             <p>
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
                                     Since this project will be assigned in future offerings of Machine Structures
-                                    (CS61c) at UC Berkeley, I am unable to post my project files due to concerns of
+                                    (CS61C) at UC Berkeley, I am unable to post my project files due to concerns of
                                     plagiarism. However, I would be happy to send the files over upon requests.
                                 </div>
                                 <div class="col-md-3 col-xs-12 port-foot text-center align-items-end">
