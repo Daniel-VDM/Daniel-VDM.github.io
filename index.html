@@ -430,8 +430,8 @@
 
                             <p><b><i style="color: #68cdff">Description:</i></b> At its core, this project implements a
                                 chatbot using a <a href="https://arxiv.org/pdf/1409.3215.pdf" target="_blank">sequence
-                                    to sequence (seq2seq) model</a>. But more importantly, it has an easy way to define
-                                the model parameters, which enables anyone to more easily try out different model and
+                                    to sequence (seq2seq) model</a>. But more importantly, it has easy ways of defining
+                                model parameters, which enables anyone to more easily try out different model and
                                 data combinations.
                             </p>
 
@@ -500,9 +500,9 @@
                             <p><b><i style="color: #68cdff">Key Features:</i></b> The project now has a 'base' TTU logic
                                 script that has a flexible API and efficiently interfaces with its hardware. The
                                 proprietary scheme's TTU script now has easily modifiable parameters for on the fly
-                                changes. The project now has a development tool that can simulate a perfect TTU's
+                                scheme changes. The project now has a development tool that can simulate a perfect TTU's
                                 behavior given a TTU logic script. Lastly, the project now has a data collection tool
-                                that collects pulse timings, command timings, buffer sizes, as well as various statuses
+                                that collects pulse timings, command timings, buffer sizes, and various statuses
                                 and saves it as a Pandas data frame for analysis.
                             </p>
 
@@ -516,7 +516,7 @@
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
-                                    The project files and scheme details are under an NDA, but I would be happy to
+                                    The project files and scheme details are under an NDA, however I would be happy to
                                     expand more on the topic (at least as much as I can) if asked. So please contact me
                                     if you wish to know more.
                                 </div>
@@ -591,8 +591,9 @@
                     <div id="fileServer" class="collapse portfolioBody show" aria-labelledby="fileServerHeading">
                         <div class="card-body port text-justify">
                             <p>
-                                This was the final project done for the <a href="https://cs61c.org/" target="_blank">Machine
-                                Structures</a> course taken at UC Berkeley
+                                This was the final project done for the Machine Structures <a href="https://cs61c.org/"
+                                                                                              target="_blank">course</a>
+                                taken at UC Berkeley.
                             </p>
 
                             <p><b><i style="color: #68cdff">Description:</i></b> This is a file server that features a
@@ -643,10 +644,10 @@
                     </div>
                     <div id="npApprox" class="collapse portfolioBody show" aria-labelledby="npApproxHeading">
                         <div class="card-body port text-justify">
-                            <p>This was a group project for the <a href="https://cs170.org/" target="_blank">Efficient
-                                Algorithms and Intractable Problems</a> course at UC Berkeley. My group’s
-                                solution was in the top 10% of all approximations in the course (the ranking metric is
-                                explained in the repo).
+                            <p>This was the group project for the Efficient Algorithms and Intractable Problems <a
+                                    href="https://cs170.org/" target="_blank">course</a> at UC Berkeley. Our approximate
+                                solver yielded solutions that were in the top 10% of all approximations in the course
+                                (the ranking metric is explained in the repo).
                             </p>
 
                             <p><b><i style="color: #68cdff">Description:</i></b> The script approximates a solution to
@@ -661,8 +662,8 @@
                                 various heuristics and tie-breakers (each suited to a certain input/solution structure)
                                 to compute a good initial solution in polynomial time. It uses a local search
                                 'optimizer' and a simple Monte Carlo tree search 'optimizer' to improve solutions. It
-                                has an easy way to visualize any given input problem or a partial solution as a graph
-                                using NetworkX.
+                                has an easy way to visualize any given input or partial solution as a graph using
+                                NetworkX.
                             </p>
 
                             <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to come up with (and
@@ -701,10 +702,31 @@
                     </div>
                     <div id="coRef" class="collapse portfolioBody show" aria-labelledby="coRefHeading">
                         <div class="card-body port text-justify">
-                            <p>
-                                TODO: Body of Coref
+                            <p>This was a project done for the combined graduate/undergraduate Natural Language
+                                Processing <a href="http://people.ischool.berkeley.edu/~dbamman/nlp18.html"
+                                              target="_blank">course</a> at UC Berkeley.
                             </p>
 
+                            <p><b><i style="color: #68cdff">Description:</i></b> This project annotates the antecedent
+                                for each pronoun in a given data set using a Logistic Regression model. It achieves a
+                                ~70% accuracy on a test data set.
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Key Features:</i></b> It has an easy way to redefine and/or
+                                add features for the logistic regression model. It efficiently uses memory when training
+                                the model. Lastly, it does some filtering (based on mentions) on the training data set
+                                to improve the accuracy of the model.<br>
+                                <i>Note: please reference the project <a
+                                        href="https://github.com/Daniel-VDM/Coreference-Annotator/blob/master/write-up.pdf"
+                                        target="_blank">write-up</a> (found in the project repository) for more details
+                                    about the model's features and data filtering.</i>
+                            </p>
+
+                            <p><b><i style="color: #68cdff">Skills Acquired:</i></b> I learned how to process large
+                                data sets using Pandas. I learned how to work with NLTK to filer training data. I learned
+                                how to work with Scikit-learn's Logistic Regression model. Lastly, I learned how to
+                                efficiently encode data for the model using Numpy/Scipy.
+                            <p>
 
                             <div class="row">
                                 <div class="col-md-9 col-xs-12 port-foot">
@@ -904,7 +926,7 @@
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <script>
     window.onload = function () {
-        sleep(500) // Midpage reload fade fix
+        sleep(400) // Midpage reload fade fix
         portfolioToggle(); // Portfolio icon fix
     };
 
