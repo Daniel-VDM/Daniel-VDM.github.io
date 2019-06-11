@@ -375,7 +375,11 @@ h3.heading {
 }
 
 .portfolio-bg {
-    padding: 0.1px auto 60.8px;
+    padding: 0.1px auto 59px;
+}
+
+.row.portfolio-bg{
+    padding-bottom: 59px;
 }
 
 .col-md-12.port-intro-pad {
