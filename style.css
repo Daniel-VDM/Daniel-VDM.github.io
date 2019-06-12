@@ -580,8 +580,8 @@ h3.heading {
 /*Contact Info stuff*/
 .socket {
     width: 100%;
-    height: 2px;
-    background-color: #505962;
+    height: 1px;
+    background-color: #4295d2;
     margin-bottom: 5px;
 }
 
