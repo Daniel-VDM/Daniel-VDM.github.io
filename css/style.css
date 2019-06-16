@@ -63,7 +63,7 @@ body {
 #LandingPageNav {
     height: 59px;
     font-size: 1.2rem;
-    background: #4db8ff !important;
+    background: radial-gradient(circle, rgba(77,184,255,1) 10%, rgba(109,197,255,1) 100%) !important;
     box-shadow: 0 .2rem .8em rgba(0, 0, 0, 0.8);
 }
 
