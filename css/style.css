@@ -98,7 +98,7 @@ body {
 
 /*Landing Page stuff*/
 .home-inner {
-    background-image: url(img/bg.jpeg);
+    background-image: url(../img/bg.jpeg);
 }
 
 .caption {
@@ -276,7 +276,7 @@ h3.heading {
 
 /*Experience stuff*/
 .fixed {
-    background-image: url(img/expBG.jpg);
+    background-image: url(../img/expBG.jpg);
     z-index: -1;
 }
 
