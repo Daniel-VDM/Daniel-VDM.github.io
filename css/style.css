@@ -60,14 +60,14 @@ body {
 
 
 /*Navbar Stuff*/
-#LandingPageNav{
+#LandingPageNav {
     height: 59px;
     font-size: 1.2rem;
-    background: #4db8ff!important;
+    background: #4db8ff !important;
     box-shadow: 0 .2rem .8em rgba(0, 0, 0, 0.8);
 }
 
-.nav-link.LandingPageNav:hover{
+.nav-link.LandingPageNav:hover {
     color: black !important;
 }
 
@@ -198,6 +198,10 @@ h3.heading {
 
 .about-bg a {
     color: #4db8ff;
+}
+
+.about-pad-in {
+    padding: .75rem !important;
 }
 
 .card.about-pad {
@@ -389,7 +393,7 @@ h3.heading {
     padding: 0.1px auto 59px;
 }
 
-.row.portfolio-bg{
+.row.portfolio-bg {
     padding-bottom: 59px;
 }
 

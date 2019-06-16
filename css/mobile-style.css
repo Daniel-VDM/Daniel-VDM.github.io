@@ -30,7 +30,7 @@
 /*Mobile Changes*/
 @media (max-width: 850px) {
     /*Mobile Nav Bar*/
-    #LandingPageNav{
+    #LandingPageNav {
         opacity: 0;
         position: fixed;
         top: auto;
@@ -130,6 +130,10 @@
     .about-bg {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .about-img {
+        max-width: 65%;
     }
 
     .card.about-wrapper {
@@ -438,8 +442,8 @@
     }
 }
 
-@media (max-width: 426px){
-    .col-md-2.col-xs-0.text-center.exp-pic{
+@media (max-width: 426px) {
+    .col-md-2.col-xs-0.text-center.exp-pic {
         padding: 16px 0 0;
     }
 }

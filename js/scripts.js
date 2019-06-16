@@ -15,11 +15,10 @@ function sleep(ms) {
 
 // Navbar change script
 jQuery(document).ready(function () {
-    let windowHeight = $(window).height()-60;
-
     jQuery(window).scroll(function () {
+        let windowHeight = $(window).height() - 59;
         let scrollPos = jQuery(window).scrollTop();
-        if (scrollPos >= windowHeight){
+        if (scrollPos >= windowHeight) {
             $("#LandingPageNav").fadeOut("fast");
         } else {
             $("#LandingPageNav").fadeIn("fast")
