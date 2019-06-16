@@ -60,6 +60,17 @@ body {
 
 
 /*Navbar Stuff*/
+#LandingPageNav{
+    height: 59px;
+    font-size: 1.2rem;
+    background: #4db8ff!important;
+    box-shadow: 0 .2rem .8em rgba(0, 0, 0, 0.8);
+}
+
+.nav-link.LandingPageNav:hover{
+    color: black !important;
+}
+
 .navbar {
     text-transform: uppercase;
     font-weight: 700;

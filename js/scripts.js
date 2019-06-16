@@ -13,6 +13,22 @@ function sleep(ms) {
     }
 }
 
+// Navbar change script
+jQuery(document).ready(function () {
+    let windowHeight = $(window).height()-60;
+
+    jQuery(window).scroll(function () {
+        let scrollPos = jQuery(window).scrollTop();
+        if (scrollPos >= windowHeight){
+            $("#LandingPageNav").fadeOut("fast");
+        } else {
+            $("#LandingPageNav").fadeIn("fast")
+        }
+    });
+
+});
+
+
 let isPortfolioToggled = true; // Global for portfolioToggle()
 
 // Global toggler for the interactive list in the portfolio section.

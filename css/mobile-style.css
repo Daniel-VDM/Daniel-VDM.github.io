@@ -30,6 +30,15 @@
 /*Mobile Changes*/
 @media (max-width: 850px) {
     /*Mobile Nav Bar*/
+    #LandingPageNav{
+        opacity: 0;
+        position: fixed;
+        top: auto;
+        height: 0;
+        width: 0;
+        bottom: 0;
+    }
+
     .navbar-brand {
         font-size: 1.6rem;
     }

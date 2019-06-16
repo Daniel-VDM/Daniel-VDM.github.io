@@ -14,43 +14,73 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-<div id="home">
-    <!-- Nav bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#home"><i class="fas fa-home"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="RestPageNav">
+    <a class="navbar-brand" href="#home"><i class="fas fa-home"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                          aria-hidden="true"> </i>
-                        Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
+                                                                                      aria-hidden="true"> </i>
+                    Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="LandingPageNav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive1">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link LandingPageNav" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="home">
     <!-- Landing Page BG -->
     <div class="landing">
         <div class="home-wrap">
@@ -58,7 +88,7 @@
         </div>
     </div>
     <!-- Landing Page Content -->
-    <div class="caption text-center">
+    <div class="caption text-center" id="Sig">
         <img src="img/sig.png" class="img-fluid" alt="Responsive image">
         <h1><b>Daniel Van Der Maden</b></h1>
         <h3><i>Student | Software Engineer</i></h3>
