@@ -3,7 +3,7 @@ window.onload = function () {
     portfolioToggle(); // Portfolio icon fix
 };
 
-// Simple sleep function.
+// Simple sleep function
 function sleep(ms) {
     let start = new Date().getTime();
     for (let i = 0; i < 1e7; i++) {
@@ -24,13 +24,12 @@ jQuery(document).ready(function () {
             $("#LandingPageNav").fadeIn("fast")
         }
     });
-
 });
 
 
 let isPortfolioToggled = true; // Global for portfolioToggle()
 
-// Global toggler for the interactive list in the portfolio section.
+// Global toggler for the interactive list in the portfolio section
 function portfolioToggle() {
     let btnObjs = document.getElementsByClassName("btn port-header-btn text-left");
     for (let i = 0; i < btnObjs.length; i++) {
@@ -46,7 +45,7 @@ function portfolioToggle() {
     isPortfolioToggled = !isPortfolioToggled;
 }
 
-// Add fading when elements come in/out of view.
+// Add fading when elements come in/out of view
 $(window).on("load", function () {
     $(window).scroll(function () {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
