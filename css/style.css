@@ -62,7 +62,7 @@ body {
 /*Navbar Stuff*/
 #LandingPageNav {
     height: 50px;
-    font-size: 1.2rem;
+    font-size: 1.12rem;
     background: #4db8ff !important;
     box-shadow: 0 .1rem .6em rgba(0, 0, 0, 0.9);
 }
@@ -94,8 +94,13 @@ body {
     padding-top: 8px !important;
 }
 
-.navbar-nav li {
-    padding-right: .4rem;
+#LandingPageNav.navbar-nav li {
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+
+#homeBtn{
+    padding-left: 8px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
