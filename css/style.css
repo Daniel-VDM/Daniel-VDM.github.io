@@ -186,6 +186,10 @@ body {
     animation: bounce 2s infinite;
 }
 
+.landingBottom a{
+    color: white;
+}
+
 .caption h1 {
     font-size: 3.5rem;
     font-weight: 700;
