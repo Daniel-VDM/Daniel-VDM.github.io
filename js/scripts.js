@@ -47,12 +47,18 @@ function portfolioToggle() {
 
 // Add fading when elements come in/out of view
 $(window).on("load", function () {
+    let ua = navigator.userAgent;
+    let isNotSupported = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1 || ua.indexOf("Edge/") > -1;
     $(window).scroll(function () {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $(".fade").each(function () {
             if ($(this).offset().top < windowBottom) { //object comes into view (scrolling down)
                 if ($(this).css("opacity") == 0) {
-                    $(this).fadeTo(300, 1);
+                    if (isNotSupported){
+                        $(this).fadeTo(0, 1);
+                    } else {
+                        $(this).fadeTo(300, 1);
+                    }
                 }
             } else { //object goes out of view (scrolling up)
                 if ($(this).css("opacity") == 1) {
