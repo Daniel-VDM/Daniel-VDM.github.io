@@ -13,6 +13,16 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
+<script>
+    let ua = navigator.userAgent;
+    if (ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1 || ua.indexOf("Edge/") > -1) {
+        alert('This browser is NOT SUPPORTED. ' +
+            '\nPlease use Chrome, Safari or Firefox. ' +
+            '\n\nFor reference my resume is at: ' +
+            '\nhttps://www.danielvandermaden.com/resume.pdf');
+    }
+</script>
+
 <body data-spy="scroll" data-target="#navbarResponsive">
 <!-- Nav bar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -25,8 +35,8 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                      aria-hidden="true"> </i>
+                <a class="nav-link" href="resume.pdf" target="_blank"><i class="fa fa-file-pdf"
+                                                                         aria-hidden="true"> </i>
                     Resume</a>
             </li>
             <li class="nav-item">
@@ -92,8 +102,8 @@
         <img src="img/sig.png" class="img-fluid" alt="Responsive image">
         <h1><b>Daniel Van Der Maden</b></h1>
         <h3><i>Student | Software Engineer</i></h3>
-        <a class="btn btn-outline-light btn-lg" href="DanielVDMadenResume.pdf" target="_blank"><i class="fa fa-file-pdf"
-                                                                                                  aria-hidden="true"> </i>
+        <a class="btn btn-outline-light btn-lg" href="resume.pdf" target="_blank"><i class="fa fa-file-pdf"
+                                                                                     aria-hidden="true"> </i>
             My Resume</a>
         <h4>
             <a href="mailto: contact@danielvandermaden.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
