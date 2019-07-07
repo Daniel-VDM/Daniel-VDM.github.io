@@ -174,19 +174,32 @@ body {
 .landingContent {
     width: 100%;
     max-width: 100%;
+    margin: 0;
     position: absolute;
-    bottom: 10%;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%, -60%);
     z-index: 1;
     color: white;
 }
 
 .landingBottom {
-    margin-top: 30px;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    -webkit-animation: bounce 2.2s infinite;
+    animation: bounce 2.2s infinite;
 }
 
-.landingBottom a{
+.col-xs-12.landingBottom {
+    padding: 0;
+}
+
+.landingBottom a {
     color: #E9ECEF;
 }
 

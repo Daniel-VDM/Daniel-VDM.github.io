@@ -120,14 +120,13 @@
     .landingContent {
         width: 100%;
         max-width: 100%;
+        margin: 0;
         position: absolute;
-        bottom: 20%;
+        top: 52%;
+        left: 52%;
+        transform: translate(-52%, -52%);
         z-index: 1;
         color: white;
-    }
-
-    .landingBottom {
-        margin-top: 15px;
     }
 
     .caption h1 {
