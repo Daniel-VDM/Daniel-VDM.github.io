@@ -73,9 +73,9 @@
         max-width: 100%;
         padding: 0 0 11%;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 51%;
+        left: 51%;
+        transform: translate(-51%, -51%);
         z-index: 1;
         color: white;
     }
